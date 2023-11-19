@@ -2,10 +2,11 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import { Button, Checkbox } from "fluent-svelte";
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Ivirius</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -18,12 +19,17 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to your old<br />SvelteKit app
 	</h1>
 
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
+
+	<h3>
+		<Button>Click me!</Button>
+		<Checkbox>Check me!</Checkbox>
+	</h3>
 
 	<Counter />
 </section>
