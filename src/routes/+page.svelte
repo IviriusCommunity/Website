@@ -11,9 +11,9 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<TextBlock>Main Page</TextBlock>
-	</h1>
+	<span>
+		Main Page
+	</span>
 
 	<h2>
 		<Button>Click me!</Button>
