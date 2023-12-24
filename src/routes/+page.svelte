@@ -1,6 +1,6 @@
 <script>
 	import * as Fluent from "fluent-svelte";
-Fluent.</script>
+</script>
 
 <svelte:head>
 	<title>Ivirius</title>
