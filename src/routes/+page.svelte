@@ -1,9 +1,6 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { Button, Checkbox, TextBlock } from "fluent-svelte";
-</script>
+	import * as Fluent from "fluent-svelte";
+Fluent.</script>
 
 <svelte:head>
 	<title>Ivirius</title>
@@ -11,13 +8,10 @@
 </svelte:head>
 
 <section>
-	<span>
-		Main Page
-	</span>
-
 	<h2>
-		<Button>Click me!</Button>
-		<Checkbox>Check me!</Checkbox>
+		<Fluent.TextBlock variant="caption">Main Page</Fluent.TextBlock>
+		<Fluent.Button>Click me!</Fluent.Button>
+		<Fluent.Checkbox>Check me!</Fluent.Checkbox>
 	</h2>
 
 </section>
