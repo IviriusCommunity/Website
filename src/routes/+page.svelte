@@ -2,17 +2,17 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { Button, Checkbox } from "fluent-svelte";
+	import { Button, Checkbox, TextBlock } from "fluent-svelte";
 </script>
 
 <svelte:head>
 	<title>Ivirius</title>
-	<meta name="description" content="Ivirius website" />
+	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
 <section>
 	<h1>
-		Main Page
+		<TextBlock>Main Page</TextBlock>
 	</h1>
 
 	<h2>
