@@ -12,7 +12,6 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
-	color: var(--color-text);
 }
 
 body {
