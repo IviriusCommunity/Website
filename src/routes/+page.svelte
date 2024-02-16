@@ -11,6 +11,7 @@
 	<h2>
 		<Fluent.TextBlock variant="caption">Main Page</Fluent.TextBlock>
 		<Fluent.Button>Click me!</Fluent.Button>
+		<Fluent.Button>Click me!</Fluent.Button>
 		<Fluent.Checkbox>Check me!</Fluent.Checkbox>
 	</h2>
 
