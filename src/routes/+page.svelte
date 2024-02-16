@@ -13,6 +13,7 @@
 		<Fluent.Button>Click me!</Fluent.Button>
 		<Fluent.Button>Click me!</Fluent.Button>
 		<Fluent.Checkbox>Check me!</Fluent.Checkbox>
+		<Fluent.TextBox/>
 	</h2>
 
 </section>
