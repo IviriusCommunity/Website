@@ -4,36 +4,44 @@
 </script>
 
 <svelte:head>
-	<title>Ivirius</title>
-	<meta name="description" content="Ivirius official website" />
+	<title>Ivirius Text Editor Plus</title>
+	<meta name="description" content="Professional text editor app for Windows 11" />
 </svelte:head>
 
 <section class="centered-section">
 	<h1>
-		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
+		<Fluent.TextBlock variant="titleLarge">Ivirius Text Editor Plus</Fluent.TextBlock>
 	</h1>
  <h2>
-		<Fluent.TextBlock variant="body" align="center">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
+		<Fluent.TextBlock variant="body" align="center">This is the Ivirius Text Editor Plus - our most advanced app</Fluent.TextBlock>
  </h2>
 </section>
  
 <section class="centered-section">
 	<h2>
-		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-		<Fluent.Button style="margin: 15px">Download Ivirius Text Editor</Fluent.Button>
-		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
+		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download</Fluent.Button>
+		<Fluent.Button disabled="true" variant="hyperlink" style="margin: 15px">GitHub</Fluent.Button>
 	</h2>
 
 </section>
  
 <section class="margin-section">
 	<h1>
-		<Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
+		<Fluent.TextBlock variant="subtitle">Made to focus</Fluent.TextBlock>
  </h1>
  <h2>
-		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus is a rich text editor app built on the Windows App SDK using WinUI 3.</Fluent.TextBlock>
+		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus is designed for maximum focus while editing your text, for a better user experience compared to standard text editors.</Fluent.TextBlock>
 	</h2>
 
+</section>
+ 
+<section class="margin-section">
+	<h1>
+		<Fluent.TextBlock variant="subtitle">Beautiful design</Fluent.TextBlock>
+ </h1>
+ <h2>
+		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus uses WinUI and <a href="httpsL//ivirius.vercel.app/crimsonui">CrimsonUI</a> for the main layout, making it consistent with the Windows 11 design.</Fluent.TextBlock>
+	</h2>
 </section>
 
 <style>
