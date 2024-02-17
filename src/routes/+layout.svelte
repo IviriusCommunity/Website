@@ -2,6 +2,7 @@
 	import './styles.css';
 	import "fluent-svelte/theme.css";
 	import { Navbar } from "$site/lib/nabvar";
+	import { IconButton, Tooltip } from "fluent-svelte";
 </script>
 
 <div class="app">
