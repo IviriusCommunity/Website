@@ -19,11 +19,9 @@
 
 <section>
 	<h2>
-		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
-		<Fluent.Button>Click me!</Fluent.Button>
-		<Fluent.Button>Click me!</Fluent.Button>
-		<Fluent.Checkbox>Check me!</Fluent.Checkbox>
-		<Fluent.TextBox/>
+		<Fluent.Button variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
+		<Fluent.Button>Download Ivirius Text Editor</Fluent.Button>
+		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
 	</h2>
 
 </section>
