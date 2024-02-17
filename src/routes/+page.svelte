@@ -17,7 +17,7 @@
  </h2>
 </section>
  
-<section>
+<section class="margin-section">
 	<h2>
 		<Fluent.Button variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
 		<Fluent.Button>Download Ivirius Text Editor</Fluent.Button>
@@ -36,5 +36,8 @@
 	}
     .centered-section {
         text-align: center;
+    }
+    .margin-section {
+        margin: 25px;
     }
 </style>
