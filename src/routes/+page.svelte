@@ -8,7 +8,7 @@
 	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
-<section>
+<section class="centered-section">
 	<h1>
 		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
 	</h1>
@@ -34,7 +34,7 @@
 		background-color: var(--fds-solid-background-base);
 		color: var(--fds-text-primary);
 	}
-    section {
+    .centered-section {
         text-align: center;
     }
 </style>
