@@ -19,7 +19,7 @@
  
 <section class="centered-section">
 	<h2>
-		<Fluent.Button class="margin-section" variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
+		<Fluent.Button margin="25px" variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
 		<Fluent.Button class="margin-section">Download Ivirius Text Editor</Fluent.Button>
 		<Fluent.Button class="margin-section">Download Ivirius Hub</Fluent.Button>
 	</h2>
