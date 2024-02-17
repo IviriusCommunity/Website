@@ -9,8 +9,16 @@
 </svelte:head>
 
 <section>
+	<h1>
+		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
+		<Fluent.TextBlock variant="subtitle">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
+	</h1>
+
+</section>
+
+<section>
 	<h2>
-		<Fluent.TextBlock variant="caption">Main Page</Fluent.TextBlock>
+		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
 		<Fluent.Button>Click me!</Fluent.Button>
 		<Fluent.Button>Click me!</Fluent.Button>
 		<Fluent.Checkbox>Check me!</Fluent.Checkbox>
