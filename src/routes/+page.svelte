@@ -55,7 +55,4 @@
     .margin-section {
         margin: 25px;
     }  
-    body {
-        margin: 0;
-    }
 </style>
