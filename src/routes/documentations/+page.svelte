@@ -30,7 +30,8 @@
 <section class="centered-section">
         <h2>
 <Fluent.ListItems>
-  <Fluent.ListItem/>
+  <Fluent.ListItem selected="true">Text</Fluent.ListItem>
+  <Fluent.ListItem>Text 2</Fluent.ListItem>
 </Fluent.ListItems>
         </h2>
 
