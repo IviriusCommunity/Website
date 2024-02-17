@@ -1,7 +1,7 @@
 <script>
 	import './styles.css';
 	import "fluent-svelte/theme.css";
-	import { Navbar } from "lib/nabvar";
+	import { Navbar } from "lib/navbar";
 	import { IconButton, Tooltip } from "fluent-svelte";
 </script>
 
