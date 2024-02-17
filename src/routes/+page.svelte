@@ -8,6 +8,11 @@
 	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
+<section>
+<Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b&"/>
+ <Fluent.TextBlock variant="title">Ivirius</Fluent.TextBlock>
+</section>
+
 <section class="centered-section">
 	<h1>
 		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
