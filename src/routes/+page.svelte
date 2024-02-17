@@ -8,6 +8,10 @@
 	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
+<section>
+<Fluent:NavigationView/>
+</section>
+
 <section class="centered-section">
 	<h1>
 		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
