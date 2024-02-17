@@ -41,7 +41,7 @@
  </h1>
  <h2>
 		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus uses WinUI and </Fluent.TextBlock>
-<Fluent.Button variant="hyperlink"  onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button>
+<Fluent.Button style="padding: 0px" variant="hyperlink"  onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button>
 <Fluent.TextBlock variant="body">for the main layout, making it consistent with the Windows 11 design.</Fluent.TextBlock>
 	</h2>
 </section>
