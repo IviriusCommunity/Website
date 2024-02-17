@@ -11,9 +11,10 @@
 <section>
 	<h1>
 		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
-		<Fluent.TextBlock variant="subtitle">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
 	</h1>
-
+ <h2>
+		<Fluent.TextBlock variant="subtitle">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
+ </h2>
 </section>
 
 <section>
