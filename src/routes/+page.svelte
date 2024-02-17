@@ -20,15 +20,11 @@
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+	@import url("https://unpkg.com/fluent-svelte/theme.css");
 
-	h1 {
-		width: 100%;
+	/* Some base styles to get things looking right. */
+	:global(body) {
+		background-color: var(--fds-solid-background-base);
+		color: var(--fds-text-primary);
 	}
 </style>
