@@ -54,6 +54,7 @@
 	}
     .centered-section {
         text-align: center;
+        margin: 25px;
     }
     .margin-section {
         margin: 25px;
