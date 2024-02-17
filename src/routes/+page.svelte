@@ -16,7 +16,7 @@
 		<Fluent.TextBlock variant="body" align="center">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
  </h2>
 </section>
-
+ 
 <section>
 	<h2>
 		<Fluent.Button variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
