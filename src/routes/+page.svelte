@@ -13,6 +13,7 @@
   <Fluent.TextBlock variant="bodyLarge" style="margin-top: 25px">Ivirius</Fluent.TextBlock>
   <Fluent.Button style="margin-top: 22px; margin-bottom: 22px; margin-left: 15px">Home</Fluent.Button>
   <Fluent.Button style="margin-top: 22px; margin-bottom: 22px; margin-left: 15px" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button>
+  <Fluent.Button style="margin-top: 22px; margin-bottom: 22px; margin-left: 15px" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/documentations';">Documentations</Fluent.Button>
 </section>
 
 <section class="centered-section">
