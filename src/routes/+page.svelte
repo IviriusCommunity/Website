@@ -36,4 +36,7 @@
 		background-color: var(--fds-solid-background-base);
 		color: var(--fds-text-primary);
 	}
+    section {
+        text-align: center;
+    }
 </style>
