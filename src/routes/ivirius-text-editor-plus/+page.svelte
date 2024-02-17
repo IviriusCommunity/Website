@@ -40,7 +40,7 @@
 		<Fluent.TextBlock variant="subtitle">Beautiful design</Fluent.TextBlock>
  </h1>
  <h2>
-		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus uses WinUI and <a href="https://ivirius.vercel.app/crimsonui">CrimsonUI</a> for the main layout, making it consistent with the Windows 11 design.</Fluent.TextBlock>
+		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus uses WinUI and <Fluent.Hyperlink href="https://ivirius.vercel.app/crimsonui">CrimsonUI</Fluent.Hyperlink> for the main layout, making it consistent with the Windows 11 design.</Fluent.TextBlock>
 	</h2>
 </section>
 
