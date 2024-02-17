@@ -17,11 +17,19 @@
  </h2>
 </section>
  
-<section class="margin-section">
+<section class="centered-section">
 	<h2>
 		<Fluent.Button variant="accent">Download Ivirius Text Editor Plus</Fluent.Button>
 		<Fluent.Button>Download Ivirius Text Editor</Fluent.Button>
 		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
+	</h2>
+
+</section>
+ 
+<section class="margin-section">
+	<h2>
+		<Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
+		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus is a rich text editor app built on the Windows App SDK using WinUI 3.</Fluent.TextBlock>
 	</h2>
 
 </section>
