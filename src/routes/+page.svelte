@@ -9,7 +9,7 @@
 </svelte:head>
 
 <section>
-<Fluent:NavigationView/>
+<Fluent:ListItem/>
 </section>
 
 <section class="centered-section">
