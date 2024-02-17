@@ -57,8 +57,10 @@
     .centered-section {
         text-align: center;
         margin: 25px;
+        max-width: 1800px;
     }
     .margin-section {
         margin: 25px;
+        max-width: 1800px;
     }  
 </style>
