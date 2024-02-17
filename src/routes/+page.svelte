@@ -10,7 +10,7 @@
 
 <section style="display: flex; align-items: left; background: rgba(0, 0, 0, 0.15);">
   <Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b" style="width: 35px; height: 35px; margin: 20px;" />
-  <Fluent.TextBlock variant="bodyLarge" style="margin: 17px">Ivirius</Fluent.TextBlock>
+  <Fluent.TextBlock variant="bodyLarge" style="margin-top: 22px">Ivirius</Fluent.TextBlock>
 </section>
 
 <section class="centered-section">
