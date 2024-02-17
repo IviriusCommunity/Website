@@ -6,7 +6,6 @@
 <svelte:head>
 	<title>Ivirius</title>
 	<meta name="description" content="Ivirius official website" />
-<Fluent:Button>Click</Fluent:Button>
 </svelte:head>
 
 <section class="centered-section">
