@@ -29,7 +29,7 @@
 
 <section class="centered-min-section">
         <h2>
-  <Fluent.ListItem selected="true" onclick="window.location.href='https://ivirius.vercel.app/windowdecorations';">WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.ListItem>
+  <Fluent.ListItem onclick="window.location.href='https://ivirius.vercel.app/documentations/windowdecorations';">WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.ListItem>
   <Fluent.ListItem disabled="true">CrimsonUI</Fluent.ListItem>
         </h2>
 
