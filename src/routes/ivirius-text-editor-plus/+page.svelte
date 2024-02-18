@@ -22,7 +22,6 @@
 		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download</Fluent.Button>
 		<Fluent.Button disabled="true" variant="hyperlink" style="margin: 15px">GitHub</Fluent.Button>
 	</h2>
-
 </section>
  
 <section class="margin-section">
