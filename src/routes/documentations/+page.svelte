@@ -27,20 +27,10 @@
  </h2>
 </section>
 
-<section class="centered-section">
+<section class="centered-min-section">
         <h2>
-  <Fluent.ListItem selected="true">Text</Fluent.ListItem>
-  <Fluent.ListItem>Text 2</Fluent.ListItem>
-        </h2>
-
-</section>
-
-<section class="margin-section">
-        <h1>
-                <Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
- </h1>
- <h2>
-                <Fluent.TextBlock variant="body">Ivirius Text Editor Plus is a rich text editor app built on the Windows App SDK using WinUI 3.</Fluent.TextBlock>
+  <Fluent.ListItem selected="true" onclick="window.location.href='https://ivirius.vercel.app/windowdecorations';">WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.ListItem>
+  <Fluent.ListItem disabled="true">CrimsonUI</Fluent.ListItem>
         </h2>
 
 </section>
@@ -57,6 +47,11 @@
         text-align: center;
         margin: 25px;
         max-width: 1800px;
+    }
+    .centered-min-section {
+        text-align: center;
+        margin: 25px;
+        max-width: 400px;
     }
     .margin-section {
         margin: 25px;
