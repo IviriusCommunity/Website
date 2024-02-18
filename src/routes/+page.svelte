@@ -33,7 +33,6 @@
 		<Fluent.Button style="margin: 15px">Download Ivirius Text Editor</Fluent.Button>
 		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
 	</h2>
-
 </section>
  
 <section class="margin-section">
