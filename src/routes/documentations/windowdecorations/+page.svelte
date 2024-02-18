@@ -20,10 +20,10 @@
 
 <section class="centered-section">
         <h1>
-                <Fluent.TextBlock variant="titleLarge">Documentations</Fluent.TextBlock>
+                <Fluent.TextBlock variant="titleLarge">Documentations - WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.TextBlock>
         </h1>
  <h2>
-                <Fluent.TextBlock variant="body" align="center">Find documentations for various tools from Ivirius.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body" align="center">This page will teach you how to hide the title bar area completely in UWP.</Fluent.TextBlock>
  </h2>
 </section>
 
@@ -33,6 +33,18 @@
   <Fluent.ListItem disabled="true">CrimsonUI</Fluent.ListItem>
         </h2>
 
+</section>
+
+<section class="margin-section">
+        <h1>
+                <Fluent.TextBlock variant="body" align="center">Have you ever wondered how to hide the title bar buttons in UWP, and then searched for hours and hours and did not find anything? That's not because it's impossible, it's because this feature is part of UWP's LimitedAccessFeatures, meaning that it is not documented on Microsoft's website.</Fluent.TextBlock>
+        </h1>
+ <h2>
+                <Fluent.TextBlock variant="body" align="center">Compared to the standard TitleBar.ExtendsContentIntoTitleBar = true; method, this function hides the title bar area, including the buttons. However, due to it being a limited access extension, it only works on AppWindow.</Fluent.TextBlock>
+ </h2>
+<h3>
+                <Fluent.TextBlock variant="body" align="center">More information coming soon.</Fluent.TextBlock>
+</h3>
 </section>
 
 <style>
@@ -52,6 +64,7 @@
         text-align: center;
         margin: 25px;
         max-width: 400px;
+        align: center;
     }
     .margin-section {
         margin: 25px;
