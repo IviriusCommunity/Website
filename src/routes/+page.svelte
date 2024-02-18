@@ -37,13 +37,51 @@
 </section>
  
 <section class="margin-section">
-	<h1>
-		<Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
- </h1>
- <h2>
-		<Fluent.TextBlock variant="body">Ivirius Text Editor Plus is a rich text editor app built on the Windows App SDK using WinUI 3.</Fluent.TextBlock>
-	</h2>
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
+        </h1>
+        <h2>
+                <Fluent.TextBlock variant="body">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+        </h2>
+        <h3>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/ivirius-text-editor-plus';">Learn more</Fluent.Button>
+        </h3>
+</section>
 
+<section class="margin-section">
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Ivirius Text Editor</Fluent.TextBlock>
+        </h1>
+        <h2>
+                <Fluent.TextBlock variant="body">The Ivirius Text Editor is a lightweight, feature-rich editor for Windows 11, offering standard RTF editing and convenient tabs. It seamlessly integrates with Windows 11's UI through the WinUI styles library. The editor ensures worry-free work with its autosave feature, saving your documents on every change. Download it from the Microsoft Store for a fluid text editing experience.</Fluent.TextBlock>
+        </h2>
+        <h3>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/ivirius-text-editor';">Learn more</Fluent.Button>
+        </h3>
+</section>
+
+<section class="margin-section">
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Ivirius Hub</Fluent.TextBlock>
+        </h1>
+        <h2>
+                <Fluent.TextBlock variant="body">The Ivirius Hub is the sample app from Ivirius, offering the Ivirius.Windowing API for UWP child windows and CrimsonUI XAML code. Experience a fast and fluid sample app that showcases the capabilities of our well built tools. This versatile UWP and Windows App SDK hub is available for download on the Microsoft Store.</Fluent.TextBlock>
+        </h2>
+        <h3>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/ivirius-hub';">Learn more</Fluent.Button>
+        </h3>
+</section>
+
+<section class="margin-section">
+        <h1>
+                <Fluent.TextBlock variant="subtitle">CrimsonUI</Fluent.TextBlock>
+        </h1>
+        <h2>
+                <Fluent.TextBlock variant="body">CrimsonUI is a dynamic UI library designed for UWP and Windows App SDK. Rooted in WinUI and influenced by FireCube's GlowUI, CrimsonUI seamlessly blends default WinUI elements with glowing, shiny components. Immerse yourself in stunning animations, ensuring a very smooth and beautiful user experience. Elevate your app's visual appeal with the elegance of CrimsonUI.</Fluent.TextBlock>
+        </h2>
+        <h3>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">Learn more</Fluent.Button>
+        </h3>
 </section>
 
 <style>
