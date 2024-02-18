@@ -52,6 +52,7 @@
         text-align: center;
         margin: 25px;
         max-width: 400px;
+        align: center;
     }
     .margin-section {
         margin: 25px;
