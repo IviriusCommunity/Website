@@ -29,10 +29,8 @@
 
 <section class="centered-section">
         <h2>
-<Fluent.ListItems>
   <Fluent.ListItem selected="true">Text</Fluent.ListItem>
   <Fluent.ListItem>Text 2</Fluent.ListItem>
-</Fluent.ListItems>
         </h2>
 
 </section>
