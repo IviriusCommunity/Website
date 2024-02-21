@@ -89,15 +89,7 @@
         /* Some base styles to get things looking right. */
         :global(body) {
                 background-color: var(--fds-solid-background-base);
-                color: var(--fds-text-primary);
-        }
-    .centered-section {
-        text-align: center;
-        margin: 25px;
-    }
-    .margin-section {
-        margin: 25px;
-    }  
+                color: var(--fds-text-primary);  
 	--fds-accent-light-3: 7, 69%, 100%;
 	--fds-accent-light-2: 7, 75%, 100%;
 	--fds-accent-light-1: 7, 86%, 100%;
@@ -105,4 +97,12 @@
 	--fds-accent-dark-1: 7, 100%, 81%;
 	--fds-accent-dark-2: 7, 100%, 73%;
 	--fds-accent-dark-3: 7, 100%, 62%;
+        }
+    .centered-section {
+        text-align: center;
+        margin: 25px;
+    }
+    .margin-section {
+        margin: 25px;
+    }
 </style>
