@@ -20,7 +20,7 @@
 
 <section class="centered-section">
         <h1>
-                <Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
+                <Fluent.TextBlock variant="titleLarge">CrimsonUI</Fluent.TextBlock>
         </h1>
  <h2>
                 <Fluent.TextBlock variant="body" align="center">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
@@ -90,6 +90,8 @@
         :global(body) {
                 background-color: var(--fds-solid-background-base);
                 color: var(--fds-text-primary);  
+        }
+        :root {
 	--fds-accent-light-3: 7, 69%, 100%;
 	--fds-accent-light-2: 7, 75%, 100%;
 	--fds-accent-light-1: 7, 86%, 100%;
@@ -97,7 +99,7 @@
 	--fds-accent-dark-1: 7, 100%, 81%;
 	--fds-accent-dark-2: 7, 100%, 73%;
 	--fds-accent-dark-3: 7, 100%, 62%;
-        }
+}
     .centered-section {
         text-align: center;
         margin: 25px;
