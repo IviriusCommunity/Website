@@ -100,7 +100,7 @@
 	}
     .centered-section {
         text-align: center;
-        margin: 25px;
+        margin: 0 auto;
     }
     .margin-section {
         margin: 25px;
