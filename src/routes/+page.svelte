@@ -6,8 +6,6 @@
 <svelte:head>
 	<title>Ivirius</title>
 	<meta name="description" content="Ivirius official website" />
-  <image src="https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&" style="opacity: 0.05; width: 100%; height: 100%;"/>
-</svelte:head>
 
 <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: rgba(25, 25, 25, 0.15); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
   <Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
@@ -107,7 +105,7 @@
     }
     
     body {
-      background: url('your-image-url.jpg') no-repeat center center fixed;
+      background: url('https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&') no-repeat center center fixed;
       background-size: cover;
       opacity: 0.05; /* 5% opacity */
     }
