@@ -94,7 +94,7 @@
 	/* Some base styles to get things looking right. */
 	:global(body) {
 		background-color: var(--fds-solid-background-base);
-    background-image: url("https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&'");
+    background-image: url("https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&");
 		color: var(--fds-text-primary);
 	}
     .centered-section {
