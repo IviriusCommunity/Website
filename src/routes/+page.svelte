@@ -6,6 +6,7 @@
 <svelte:head>
 	<title>Ivirius</title>
 	<meta name="description" content="Ivirius official website" />
+  <image src="https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&" style="opacity: 0.05; width: 100%; height: 100%;"/>
 </svelte:head>
 
 <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: rgba(25, 25, 25, 0.15); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
