@@ -37,7 +37,7 @@
 
  <section class="centered-section">
 	<h2>
-		<Fluent.InfoBar severity="warning" title="Important!" message="This website is a work in progress and will be updated in the future."/>
+		<Fluent.InfoBar severity="caution" title="Important!" message="This website is a work in progress and will be updated in the future."/>
 	</h2>
 </section>
  
