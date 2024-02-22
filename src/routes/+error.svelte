@@ -33,7 +33,14 @@
         </h2>
 
 </section>
-
+<section>
+<h1>
+<Fluent.ContentDialog open="true" title="Uh oh...">
+No one's here. Try checking the URL and try again.
+                <Fluent.Button variant="accent" slot="footer" onclick="window.location.href='https://ivirius.webnode.page';">Home page</Fluent.Button>
+</Fluent.ContentDialog>
+</h1>
+</section>
 <style>
         @import url("https://unpkg.com/fluent-svelte/theme.css");
 
