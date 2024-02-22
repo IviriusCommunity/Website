@@ -104,5 +104,11 @@
     }
     .margin-section {
         margin: 25px;
-    }  
+    }
+    
+    body {
+      background: url('your-image-url.jpg') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.05; /* 5% opacity */
+    }
 </style>
