@@ -6,7 +6,8 @@
 <svelte:head>
 	<title>Ivirius</title>
 	<meta name="description" content="Ivirius official website" />
-
+<div class="image-container">
+  <div class="overlay-image">
 <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: rgba(25, 25, 25, 0.15); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
   <Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
   <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
@@ -87,14 +88,16 @@
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">Learn more</Fluent.Button>
         </h3>
 </section>
-
+ </div>
+</div>
 <style>
 	@import url("https://unpkg.com/fluent-svelte/theme.css");
 
 	/* Some base styles to get things looking right. */
 	:global(body) {
 		background-color: var(--fds-solid-background-base);
-		color: var(--fds-text-primary);background-image: url('https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&') no-repeat center center fixed;
+		color: var(--fds-text-primary);
+    
       background-size: cover;
       opacity: 0.05; /* 5% opacity */
 	}
@@ -104,5 +107,19 @@
     }
     .margin-section {
         margin: 25px;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* Adjust width and height accordingly */
+      /* Set your image URL */
+      background: url('https://cdn.discordapp.com/attachments/1139901541701124167/1210329956823994479/befunky_2024-1-4_22-54-9.png?ex=65ea2a9c&is=65d7b59c&hm=c1406aef9f01d5eb61f77f03cefd25471cae63502474874b4b1eb0fe141a6eaa&') no-repeat;
+      background-size: cover; /* or contain, based on your preference */
     }
 </style>
