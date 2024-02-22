@@ -2,7 +2,7 @@
 	import * as Fluent from "fluent-svelte";
 	import "fluent-svelte/theme.css";
 </script>
-
+ 
 <svelte:head>
 	<title>Ivirius</title>
 	<meta name="description" content="Ivirius official website" />
