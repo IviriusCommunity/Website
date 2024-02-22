@@ -105,6 +105,6 @@
     }
     .margin-section {
         margin: 0 auto;
-        padding:
+        padding: 25px;
     }
 </style>
