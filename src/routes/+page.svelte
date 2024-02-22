@@ -100,9 +100,11 @@
 	}
     .centered-section {
         text-align: center;
-        margin: 25px auto;
+        margin: 0 auto;
+        padding: 25px;
     }
     .margin-section {
-        margin: 25px auto;
+        margin: 0 auto;
+        padding:
     }
 </style>
