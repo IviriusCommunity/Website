@@ -18,26 +18,11 @@
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
 </section>
 
-<section class="centered-section">
-        <h1>
-                <Fluent.TextBlock variant="titleLarge">Uh oh...</Fluent.TextBlock>
-        </h1>
- <h2>
-                <Fluent.TextBlock variant="body" align="center">No one's here. Try checking the URL and try again.</Fluent.TextBlock>
- </h2>
-</section>
-
-<section class="centered-section">
-        <h2>
-                <Fluent.Button variant="accent" onclick="window.location.href='https://ivirius.webnode.page';">Home page</Fluent.Button>
-        </h2>
-
-</section>
 <section>
 <h1>
 <Fluent.ContentDialog open="true" title="Uh oh...">
 No one's here. Try checking the URL and try again.
-                <Fluent.Button variant="accent" slot="footer" onclick="window.location.href='https://ivirius.webnode.page';">Home page</Fluent.Button>
+                <Fluent.Button variant="accent" slot="footer" onclick="window.location.href='https://ivirius.vercel.app';">Home page</Fluent.Button>
 </Fluent.ContentDialog>
 </h1>
 </section>
