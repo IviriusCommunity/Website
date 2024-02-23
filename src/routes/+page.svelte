@@ -37,9 +37,9 @@
 	</h2>
 </section>
 
- <section class="centered-section">
+ <section class="margin-section">
 	<h2>
-		<Fluent.InfoBar severity="caution" title="Important!" message="This is the only finished page of this website. The rest are actively being worked on. Thank you for your patience." style="max-width:350px;"/>
+		<Fluent.InfoBar severity="caution" title="Important!" message="This is the only finished page of this website. The rest are actively being worked on. Thank you for your patience." style="max-width:550px;"/>
 	</h2>
 </section>
 
