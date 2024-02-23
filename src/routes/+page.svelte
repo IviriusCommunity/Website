@@ -110,16 +110,21 @@
 </section>
 
 <!--Bottom bar-->
-<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
-        <h1>
+<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
+  <Fluent.TextBlock variant="bodyStrong">
+    Partners
+  </Fluent.TextBlock>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';">spoo.me IRL shortener</Fluent.Button>
+  <Fluent.TextBlock variant="bodyStrong">
+    Developers and contributors
+  </Fluent.TextBlock>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';">ErrorTek</Fluent.Button>
+  <Fluent.TextBlock variant="bodyStrong">
+    Website
+  </Fluent.TextBlock>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';">Fluent Svelte</Fluent.Button>
-        </h1>
-        <h2>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-        </h2>
-        <h3>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
-        </h3>
 </section>
 
 <!--Styles-->
