@@ -110,7 +110,7 @@
 </section>
 
 <!--Bottom bar-->
-<section style="padding: 10px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
+<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
         <h1>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';">Fluent Svelte</Fluent.Button>
         </h1>
