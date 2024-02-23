@@ -114,17 +114,17 @@
   <Fluent.TextBlock variant="bodyStrong">
     Partners
   </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';">spoo.me IRL shortener</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me IRL shortener</Fluent.Button>
   <Fluent.TextBlock variant="bodyStrong">
     Developers and contributors
   </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';">ErrorTek</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-top: 10px; margin-bottom: 10px;">ErrorTek</Fluent.Button>
   <Fluent.TextBlock variant="bodyStrong">
     Website
   </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';">Fluent Svelte</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';" style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';" style="margin-top: 10px; margin-bottom: 10px;">Vercel</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
 </section>
 
 <!--Styles-->
