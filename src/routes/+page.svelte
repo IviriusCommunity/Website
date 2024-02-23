@@ -45,7 +45,7 @@
 
  <Fluent.ContentDialog bind:open title="Warning!">
    This website is experimental and still in its early stages of development. Please report any bugs to us via email at iviriuscompany.main@gmail.com.
-	<Fluent.Button slot="footer" variant="accent" on:click={() => (open = false)}>Proceed</Button>
+	<Fluent.Button slot="footer" variant="accent" on:click={() => (open = false)}>Proceed</Fluent.Button>
  </Fluent.ContentDialog>
 
 <section class="margin-section">
