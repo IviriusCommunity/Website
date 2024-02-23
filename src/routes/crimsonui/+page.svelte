@@ -99,8 +99,6 @@
         --fds-accent-dark-3: 7, 100%, 27%;
     }
 
-
-    
     :root {
         --fds-accent-light-3: 7, 100%, 71%;
         --fds-accent-light-2: 7, 100%, 67%;
