@@ -111,19 +111,19 @@
 
 <!--Bottom bar-->
 <section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
-  <Fluent.TextBlock variant="bodyStrong">
+  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
     Partners
   </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me IRL shortener</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong">
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button>
+  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
     Developers and contributors
   </Fluent.TextBlock>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-top: 10px; margin-bottom: 10px;">ErrorTek</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong">
+  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
     Website
   </Fluent.TextBlock>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';" style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';" style="margin-top: 10px; margin-bottom: 10px;">Vercel</Fluent.Button>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
 </section>
 
