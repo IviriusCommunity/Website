@@ -1,6 +1,8 @@
 <script>
 	import * as Fluent from "fluent-svelte";
 	import "fluent-svelte/theme.css";
+
+  let open = true;
 </script>
  
 <svelte:head>
@@ -37,10 +39,15 @@
 
  <section class="centered-section">
 	<h2>
-		<Fluent.InfoBar severity="caution" title="Important!" message="This website is a work in progress and will be updated in the future." style="max-width:250px;"/>
+		<Fluent.InfoBar severity="caution" title="Important!" message="This is the only finished page of this website. The rest are actively being worked on. Thank you for your patience." style="max-width:350px;"/>
 	</h2>
 </section>
- 
+
+ <Fluent.ContentDialog bind:open title="Warning!">
+   This website is experimental and still in its early stages of development. Please report any bugs to us via email at iviriuscompany.main@gmail.com.
+	<Button slot="footer" variant="accent" on:click={() => (open = false)}>Proceed</Button>
+ </Fluent.ContentDialog>
+
 <section class="margin-section">
         <h1>
                 <Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
@@ -90,21 +97,34 @@
 </section>
 
 <style>
+  /*Import theme*/
 	@import url("https://unpkg.com/fluent-svelte/theme.css");
 
 	/* Some base styles to get things looking right. */
-	:global(body) {
+	:global(body) 
+  {
+    /*Background color*/
 		background-color: var(--fds-solid-background-base);
+
+    /*Background image*/
     background-image: url("https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&");
+    
+    /*Background color*/
 		color: var(--fds-text-primary);
 	}
-    .centered-section {
-        text-align: center;
-        margin: 0 auto;
-        padding: 25px;
-    }
-    .margin-section {
-        margin: 0 auto;
-        padding: 25px;
-    }
+
+  /*Centered section*/
+  .centered-section 
+  {
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+  }
+
+  /*Left aligned centered section*/
+  .margin-section 
+  {
+    margin: 0 auto;
+    padding: 25px;
+  }
 </style>
