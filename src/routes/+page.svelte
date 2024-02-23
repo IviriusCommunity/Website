@@ -83,19 +83,6 @@
         </h3>
 </section>
 
-<!--Bottom bar-->
-<section style="display: flex; flex-wrap: wrap; padding: 10px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
-        <h1>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';">Fluent Svelte</Fluent.Button>
-        </h1>
-        <h2>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-        </h2>
-        <h3>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
-        </h3>
-</section>
-
 <!--Ivirius Hub-->
 <section class="margin-section">
         <h1>
@@ -122,10 +109,17 @@
         </h3>
 </section>
 
-onclick="window.location.href='https://ivirius.vercel.app/contact';">Contact us</Fluent.Button>
-
-  <!--About-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
+<!--Bottom bar-->
+<section style="display: flex; flex-wrap: wrap; padding: 10px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25);">
+        <h1>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';">Fluent Svelte</Fluent.Button>
+        </h1>
+        <h2>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
+        </h2>
+        <h3>
+          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
+        </h3>
 </section>
 
 <!--Styles-->
