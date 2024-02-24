@@ -126,7 +126,7 @@
 		background-color: var(--fds-solid-background-base);
 
     /*Background image*/
-    background-image: url("https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&");
+    background-image: url("https://ivirius.vercel.app/assets/BloomRed.png:");
 
     /*Background color*/
 		color: var(--fds-text-primary);
