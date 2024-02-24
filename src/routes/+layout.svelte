@@ -1,6 +1,6 @@
 <script>
-	/*import './styles.css';
-	import "fluent-svelte/theme.css";*/
+	import './styles.css';
+	import "fluent-svelte/theme.css";
 </script>
 
 <div class="app">
