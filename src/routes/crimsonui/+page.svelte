@@ -117,7 +117,7 @@
 <!--Styles-->
 <style>
   /*Import theme*/
-	@import url("https://unpkg.com/fluent-svelte/theme.css");
+	/*@import url("https://unpkg.com/fluent-svelte/theme.css");*/
 
 	/* Some base styles to get things looking right. */
 	:global(body) 
