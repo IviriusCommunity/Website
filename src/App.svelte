@@ -1,8 +1,8 @@
-<script>
+<!--<script>
 	import "fluent-svelte/theme.css";
 </script>
 
-<!--<style>
+<style>
 	@import url("https://unpkg.com/fluent-svelte/theme.css");
 
 	/* Some base styles to get things looking right. */

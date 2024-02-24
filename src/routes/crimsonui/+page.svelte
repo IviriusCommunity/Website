@@ -57,19 +57,6 @@
 	</h2>
 </section>
 
-<!--InfoBar-->
- <section class="margin-section">
-	<h2>
-		<Fluent.InfoBar severity="caution" title="Important!" message="This is the only finished page of this website. The rest are actively being worked on. Thank you for your patience." style="max-width:550px;"/>
-	</h2>
-</section>
-
-<!--Content dialog-->
- <Fluent.ContentDialog bind:open title="Warning!">
-   This website is experimental and still in its early stages of development. Please report any bugs to us via email at iviriuscompany.main@gmail.com.
-	<Fluent.Button slot="footer" variant="accent" on:click={() => (open = false)}>Proceed</Fluent.Button>
- </Fluent.ContentDialog>
-
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
@@ -161,6 +148,14 @@
     --fds-accent-dark-2: 7, 100%, 35%;
     --fds-accent-dark-3: 7, 100%, 27%;
   }
+  
+    --fds-accent-light-3: 7, 100%, 71%;
+    --fds-accent-light-2: 7, 100%, 67%;
+    --fds-accent-light-1: 7, 100%, 63%;
+    --fds-accent-base: 7, 100%, 54%;
+    --fds-accent-dark-1: 7, 100%, 47%;
+    --fds-accent-dark-2: 7, 100%, 35%;
+    --fds-accent-dark-3: 7, 100%, 27%;
   
   /*Centered section*/
   .centered-section 
