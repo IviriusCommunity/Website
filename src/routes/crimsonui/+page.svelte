@@ -1,7 +1,8 @@
 <script>
   //Imports
 	import * as Fluent from "fluent-svelte";
-
+  import "./styles.css";
+  
   //Variables
   let open = true;
 </script>
