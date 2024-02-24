@@ -141,13 +141,13 @@
     /*Background image*/
     background-image: url("https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&");
 
-        --fds-accent-light-3: 7, 100%, 71%;
+        /*--fds-accent-light-3: 7, 100%, 71%;
         --fds-accent-light-2: 7, 100%, 67%;
         --fds-accent-light-1: 7, 100%, 63%;
         --fds-accent-base: 7, 100%, 54%;
         --fds-accent-dark-1: 7, 100%, 47%;
         --fds-accent-dark-2: 7, 100%, 35%;
-        --fds-accent-dark-3: 7, 100%, 27%;
+        --fds-accent-dark-3: 7, 100%, 27%;*/
     /*Background color*/
 		color: var(--fds-text-primary);
 	}
