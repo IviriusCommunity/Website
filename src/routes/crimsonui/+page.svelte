@@ -140,7 +140,7 @@
 		color: var(--fds-text-primary); 
 	}
   
-  /*:root {
+  :root {
     --fds-accent-light-3: 7, 100%, 71%;
     --fds-accent-light-2: 7, 100%, 67%;
     --fds-accent-light-1: 7, 100%, 63%;
@@ -148,7 +148,7 @@
     --fds-accent-dark-1: 7, 100%, 47%;
     --fds-accent-dark-2: 7, 100%, 35%;
     --fds-accent-dark-3: 7, 100%, 27%;
-  }*/
+  }
   
   /*Centered section*/
   .centered-section 
