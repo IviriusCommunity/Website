@@ -129,7 +129,6 @@
     /*Background image*/
     background-image: url("https://github.com/IviriusMain/sveltekit-1/blob/main/src/routes/assets/BloomRed.png?raw=true");
 
-    :root {
 	/* Accent Colors */
 	--fds-accent-light-3: 7, 100%, 71%;
   --fds-accent-light-2: 7, 100%, 67%;
@@ -138,7 +137,7 @@
   --fds-accent-dark-1: 7, 100%, 47%;
   --fds-accent-dark-2: 7, 100%, 35%;
   --fds-accent-dark-3: 7, 100%, 27%;
-    }
+    
     
     /*Background color*/
 		color: var(--fds-text-primary); 
