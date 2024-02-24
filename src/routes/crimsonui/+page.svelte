@@ -147,8 +147,7 @@
         --fds-accent-base: 7, 100%, 54%;
         --fds-accent-dark-1: 7, 100%, 47%;
         --fds-accent-dark-2: 7, 100%, 35%;
-        --fds-accent-dark-3: 7, 
-    
+        --fds-accent-dark-3: 7, 100%, 27%;
     /*Background color*/
 		color: var(--fds-text-primary);
 	}
