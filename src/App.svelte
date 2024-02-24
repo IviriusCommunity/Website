@@ -1,4 +1,4 @@
-<!--<script>
+<script>
 	import "fluent-svelte/theme.css";
 </script>
 
@@ -10,4 +10,4 @@
 		background-color: var(--fds-solid-background-base);
 		color: var(--fds-text-primary);
 	}
-</style>-->
+</style>
