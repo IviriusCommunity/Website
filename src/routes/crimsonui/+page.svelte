@@ -1,7 +1,7 @@
 <script>
   //Imports
 	import * as Fluent from "fluent-svelte";
-  import "./crimsonui/styles.css";
+  import "./styles.css";
   
   //Variables
   let open = true;
