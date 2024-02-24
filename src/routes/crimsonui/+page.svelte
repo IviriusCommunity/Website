@@ -1,7 +1,7 @@
 <script>
   //Imports
 	import * as Fluent from "fluent-svelte";
-	/*import "fluent-svelte/theme.css";*/
+	import "fluent-svelte/theme.css";
 
   //Variables
   let open = true;
@@ -130,7 +130,7 @@
 <!--Styles-->
 <style>
   /*Import theme*/
-	@import url("https://unpkg.com/fluent-svelte/theme.css");
+	/*@import url("https://unpkg.com/fluent-svelte/theme.css");*/
 
 	/* Some base styles to get things looking right. */
 	:global(body) 
