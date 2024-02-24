@@ -126,10 +126,10 @@
 		background-color: var(--fds-solid-background-base);
 
     /*Background image*/
-    background-image: url("https://ivirius.vercel.app/assets/BloomRed.png:");
+    background-image: url("https://github.com/IviriusMain/sveltekit-1/blob/main/src/routes/assets/BloomRed.png?raw=true");
 
     /*Background color*/
-		color: var(--fds-text-primary);
+		color: var(--fds-text-primary); 
 	}
 
   :root {
