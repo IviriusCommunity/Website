@@ -66,7 +66,7 @@
 
 <section class="right-section">
 <h1>
-  <Fluent.Button variant="accent">
+  <Fluent.Button style="margin-left: auto" variant="accent">
     Send
   </Fluent.Button>
 </h1>
@@ -127,6 +127,7 @@
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end;
+    align: right;
   }
   
   /*Left aligned centered section*/
