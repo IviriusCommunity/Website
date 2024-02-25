@@ -54,13 +54,13 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%;"></Fluent.TextBox>
         </h1>
         <h2>
-                <Fluent.TextBox placeholder="Subject"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Subject" style="width: 100%;"></Fluent.TextBox>
         </h2>
         <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px;"></Fluent.TextBox>
+          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%;"></Fluent.TextBox>
         </h3>
 </section>
 
@@ -126,7 +126,7 @@
     max-width: 1250px;
     display: flex; 
     flex-direction: column; 
-    align-items: flex-end;
+    justify-content: flex-end;
   }
   
   /*Left aligned centered section*/
