@@ -66,7 +66,7 @@
                 <Fluent.TextBlock variant="subtitle">Easily blending in</Fluent.TextBlock>
         </h1>
         <h2>
-                <Fluent.TextBlock variant="body">CrimsonUI controls seamlessly integrate with Windows applications, featuring rest brushes that match the standard WinUI controls for a cohesive user experience.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">CrimsonUI controls are designed to integrate flawlessly with Windows applications, providing a seamless user interface experience. They feature rest brushes that are meticulously crafted to match the standard WinUI controls, ensuring a consistent and harmonious visual integration. This design philosophy allows for a cohesive user experience, where the CrimsonUI elements blend naturally with the native components of the Windows environment. The controls are built with attention to detail, aiming to enhance the aesthetics and functionality of applications while maintaining a familiar look and feel that users trust. With CrimsonUI, developers can elevate their application's interface, making it not only visually appealing but also intuitively usable, leveraging the robustness of Windows' native UI elements.</Fluent.TextBlock>
         </h2>
 </section>
 
@@ -75,7 +75,7 @@
                 <Fluent.TextBlock variant="subtitle">Simply beautiful</Fluent.TextBlock>
         </h1>
         <h2>
-                <Fluent.TextBlock variant="body">CrimsonUI uses a combination of glowing panels and accent color gradients to ensure a 3D, shiny aspect, similar to a neon effect.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">CrimsonUI’s design leverages the visual appeal of glowing panels and accent color gradients to create a dynamic 3D appearance, reminiscent of a neon glow. This effect adds depth and a touch of modernity to the user interface, ensuring that applications not only function well but also stand out with a contemporary, eye-catching aesthetic. The use of gradients and light effects in CrimsonUI controls helps to bring interfaces to life, making them more engaging and visually stimulating for users.</Fluent.TextBlock>
         </h2>
 </section>
 
