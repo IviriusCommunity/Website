@@ -65,11 +65,9 @@
 </section>
 
 <section class="right-section">
-<h1>
   <Fluent.Button style="margin-left: 100%:; margin-right: 0;" variant="accent">
     Send
   </Fluent.Button>
-</h1>
 </section>
 
 <!--Bottom bar-->
