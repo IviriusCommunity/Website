@@ -64,9 +64,11 @@
         </h3>
 </section>
 
-<section class="margin-section">
+<section class="right-section">
 <h1>
-  
+  <Fluent.Button variant="accent">
+    Send
+  </Fluent.Button>
 </h1>
 </section>
 
@@ -112,14 +114,23 @@
     text-align: center;
     margin: 0 auto;
     padding: 25px;
-    max-width: 850px;
+    max-width: 1250px;
   }
 
+  /*Right aligned section*/
+  .right-section 
+  {
+    text-align: right;
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 1250px;
+  }
+  
   /*Left aligned centered section*/
   .margin-section 
   {
     margin: 0 auto;
     padding: 25px;
-    max-width: 850px;
+    max-width: 1250px;
   }
   </style>
