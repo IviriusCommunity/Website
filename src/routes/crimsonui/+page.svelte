@@ -127,7 +127,7 @@
 		background-color: var(--fds-solid-background-base);
 
     /*Background image*/
-    background-image: url("https://github.com/IviriusMain/sveltekit-1/blob/main/src/routes/assets/BloomRed.png?raw=true");
+    background-image: url("https://github.com/IviriusMain/sveltekit-1/blob/main/src%2Froutes%2Fassets%2FBloomRed.png?raw=true");
 
 	/* Accent Colors */
 	/*--fds-accent-light-3: 7, 100%, 71%;
