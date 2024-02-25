@@ -145,6 +145,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 25px;
+    max-width: 1250px;
   }
 
   /*Left aligned centered section*/
@@ -152,5 +153,6 @@
   {
     margin: 0 auto;
     padding: 25px;
+    max-width: 1250px;
   }
 </style>
