@@ -54,18 +54,18 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%;"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;"></Fluent.TextBox>
         </h1>
         <h2>
-                <Fluent.TextBox placeholder="Subject" style="width: 100%;"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;"></Fluent.TextBox>
         </h2>
         <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%;"></Fluent.TextBox>
+          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;"></Fluent.TextBox>
         </h3>
 </section>
 
 <section class="right-section">
-  <Fluent.Button style="margin-left: 100%:; margin-right: 0;" variant="accent">
+  <Fluent.Button style="width: 60px; float: right;" variant="accent">
     Send
   </Fluent.Button>
 </section>
@@ -119,13 +119,12 @@
   .right-section 
   {
     text-align: right;
-    margin: 0 auto;
+    margin: auto;
     padding: 25px;
     max-width: 1250px;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
     justify-content: flex-end;
-    align: right;
+    justify-items: flex-end;
   }
   
   /*Left aligned centered section*/
