@@ -124,6 +124,9 @@
     margin: 0 auto;
     padding: 25px;
     max-width: 1250px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end;
   }
   
   /*Left aligned centered section*/
