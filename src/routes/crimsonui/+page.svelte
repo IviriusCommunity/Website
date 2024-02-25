@@ -23,10 +23,10 @@
   <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
 
   <!--Home-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;">Home</Fluent.Button>
+  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app';">Home</Fluent.Button>
   
   <!--CrimsonUI-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button>
+  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;">CrimsonUI</Fluent.Button>
 
   <!--Documentations-->
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/documentations';">Documentations</Fluent.Button>
@@ -41,59 +41,42 @@
 <!--Title-->
 <section class="centered-section">
 	<h1>
-		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
+		<Fluent.TextBlock variant="titleLarge">CrimsonUI</Fluent.TextBlock>
 	</h1>
  <h2>
-		<Fluent.TextBlock variant="body">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
+		<Fluent.TextBlock variant="body">Shiny, glowing UI elements.</Fluent.TextBlock>
  </h2>
 </section>
 
 <!--Download buttons-->
 <section class="centered-section">
 	<h2>
-		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-		<Fluent.Button style="margin: 15px">Download Ivirius Text Editor</Fluent.Button>
-		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
+		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';" disabled="true">Download CrimsonUI</Fluent.Button>
 	</h2>
 </section>
 
-<!--Ivirius Text Editor Plus-->
+ <section class="margin-section">
+	<h2>
+		<Fluent.InfoBar severity="information" title="Description" message="CrimsonUI is a dynamic UI library designed for UWP and Windows App SDK. Rooted in WinUI and influenced by FireCube's GlowUI, CrimsonUI seamlessly blends default WinUI elements with glowing, shiny components. Immerse yourself in stunning animations, ensuring a very smooth and beautiful user experience. Elevate your app's visual appeal with the elegance of CrimsonUI." style="max-width:750px;"/>
+	</h2>
+ </section>
+
 <section class="margin-section">
         <h1>
-                <Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
+                <Fluent.TextBlock variant="subtitle">Easily blending in</Fluent.TextBlock>
         </h1>
         <h2>
-                <Fluent.TextBlock variant="body">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">CrimsonUI controls seamlessly integrate with Windows applications, featuring rest brushes that match the standard WinUI controls for a cohesive user experience.</Fluent.TextBlock>
         </h2>
-        <h3>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-        </h3>
 </section>
 
-<!--Ivirius Hub-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBlock variant="subtitle">Ivirius Hub</Fluent.TextBlock>
+                <Fluent.TextBlock variant="subtitle">Simply beautiful</Fluent.TextBlock>
         </h1>
         <h2>
-                <Fluent.TextBlock variant="body">The Ivirius Hub is the sample app from Ivirius, offering the Ivirius.Windowing API for UWP child windows and CrimsonUI XAML code. Experience a fast and fluid sample app that showcases the capabilities of our well built tools. This versatile UWP and Windows App SDK hub is available for download on the Microsoft Store.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">CrimsonUI uses a combination of glowing panels and accent color gradients to ensure a 3D, shiny aspect, similar to a neon effect.</Fluent.TextBlock>
         </h2>
-        <h3>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/ivirius-hub';">Learn more</Fluent.Button>
-        </h3>
-</section>
-
-<!--CrimsonUI-->
-<section class="margin-section">
-        <h1>
-                <Fluent.TextBlock variant="subtitle">CrimsonUI</Fluent.TextBlock>
-        </h1>
-        <h2>
-                <Fluent.TextBlock variant="body">CrimsonUI is a dynamic UI library designed for UWP and Windows App SDK. Rooted in WinUI and influenced by FireCube's GlowUI, CrimsonUI seamlessly blends default WinUI elements with glowing, shiny components. Immerse yourself in stunning animations, ensuring a very smooth and beautiful user experience. Elevate your app's visual appeal with the elegance of CrimsonUI.</Fluent.TextBlock>
-        </h2>
-        <h3>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">Learn more</Fluent.Button>
-        </h3>
 </section>
 
 <!--Bottom bar-->
