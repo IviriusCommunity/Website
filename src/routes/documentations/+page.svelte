@@ -6,8 +6,8 @@
 
 <!--Head-->
 <svelte:head>
-  <title>Ivirius</title>
-  <meta name="description" content="Ivirius official website"/>
+  <title>Ivirius - Documentations</title>
+  <meta name="description" content="Ivirius - documentations for developers"/>
 </svelte:head>
 
 <!--Navbar-->
@@ -47,8 +47,16 @@
 
 <section class="margin-section">
         <h2>
+  <Fluent.ListItem selected>Documentations - Home</Fluent.ListItem>
+<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
   <Fluent.ListItem onclick="window.location.href='https://ivirius.vercel.app/documentations/windowdecorations';">Hide the title bar in UWP AppWindow</Fluent.ListItem>
   <Fluent.ListItem onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.ListItem>
+<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
+<Fluent.ListItem disabled>Acrylic Glass</Fluent.ListItem>
+<Fluent.ListItem disabled>Ivirius.Converters</Fluent.ListItem>
+<Fluent.ListItem disabled>Ivirius.Helpers</Fluent.ListItem>
+<Fluent.ListItem disabled>UWP - full customization sample</Fluent.ListItem>
+<Fluent.ListItem disabled>WASDK - full customization sample</Fluent.ListItem>
         </h2>
 
 </section>
@@ -106,5 +114,3 @@
     max-width: 1250px;
   }
 </style>
-
-
