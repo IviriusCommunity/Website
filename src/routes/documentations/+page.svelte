@@ -48,7 +48,7 @@
  </h2>
 </section>
 
-<section class="margin-section">>
+<section class="margin-section">
         <h2>
   <Fluent.ListItem onclick="window.location.href='https://ivirius.vercel.app/documentations/windowdecorations';">Hide the title bar in UWP AppWindow</Fluent.ListItem>
   <Fluent.ListItem onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.ListItem>
