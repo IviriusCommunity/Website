@@ -2,9 +2,6 @@
   //Imports
   import * as Fluent from "fluent-svelte";
   import "fluent-svelte/theme.css";
-
-  //Variables
-  let open = true;
 </script>
 
 <!--Head-->
