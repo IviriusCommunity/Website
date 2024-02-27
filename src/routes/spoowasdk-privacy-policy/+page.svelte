@@ -54,7 +54,7 @@
 
 <section class="margin-section">
         <h1>
-                <Fluent.TextBlock variant="subtitle" style="opacity: 0.5">Last updated: 28th of February 2024</Fluent.TextBlock>
+                <Fluent.TextBlock variant="caption" style="opacity: 0.5">Last updated: 28th of February 2024</Fluent.TextBlock>
         </h1>
 </section>
 
