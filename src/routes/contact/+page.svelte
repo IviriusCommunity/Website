@@ -6,7 +6,7 @@
   //Variables
   let open = true;
 
-  let email = "";
+  let email = "afafaf";
   let subject = "";
   let message = "";
 
