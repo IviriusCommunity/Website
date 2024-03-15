@@ -93,7 +93,7 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" oninput="{updateEmail(this.value)}"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" oninput="{updateEmail(this.value)}" value="test"></Fluent.TextBox>
         </h1>
         <h2>
                 <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" oninput="{updateSubject(this.value)}"></Fluent.TextBox>
