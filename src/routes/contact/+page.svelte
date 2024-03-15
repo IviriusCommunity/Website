@@ -6,9 +6,9 @@
   //Variables
   let open = true;
 
-  let email;
-  let subject;
-  let message;
+  let email = '';
+  let subject = '';
+  let message = '';
 
   function updateEmail(v) {
     email = v;
