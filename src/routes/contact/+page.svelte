@@ -83,13 +83,13 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" bind:value="{email}"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" bind:email></Fluent.TextBox>
         </h1>
         <h2>
-                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" bind:value="{subject}"></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" bind:subject></Fluent.TextBox>
         </h2>
         <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" bind:value="{message}"></Fluent.TextBox>
+          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" bind:message></Fluent.TextBox>
         </h3>
 </section>
 
