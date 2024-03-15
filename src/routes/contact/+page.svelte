@@ -6,9 +6,9 @@
   //Variables
   let open = true;
 
-  let email = "";
-  let subject = "";
-  let message = "";
+  const email = "";
+  const subject = "";
+  const message = "";
 
   async function sendToDiscord() {
     const webhookUrl = 'https://discord.com/api/webhooks/1217994733788598393/N7ctffAAkA0ejbMcyaCjjQWBCb1ISurlmaalys0_hBAl2c9ngl5gldWXGdEpZ3r_X6HG'; // Replace with your Discord webhook URL
@@ -83,13 +83,13 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" bind:email></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" bind:value={email}></Fluent.TextBox>
         </h1>
         <h2>
-                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" bind:subject></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" bind:value={subject}></Fluent.TextBox>
         </h2>
         <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" bind:message></Fluent.TextBox>
+          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" bind:value={message}></Fluent.TextBox>
         </h3>
 </section>
 
