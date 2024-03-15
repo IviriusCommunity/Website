@@ -92,7 +92,7 @@
 </section>
 
 <section class="right-section">
-  <Fluent.Button style="width: 60px; float: right;" variant="accent">
+  <Fluent.Button style="width: 60px; float: right;" variant="accent" onclick="{sendToDiscord()}">
     Send
   </Fluent.Button>
 </section>
