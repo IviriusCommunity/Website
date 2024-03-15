@@ -6,9 +6,9 @@
   //Variables
   let open = true;
 
-  let email = "sjdjfj";
-  let subject = "ajajs";
-  let message = "27r7";
+  let email;
+  let subject;
+  let message;
 
   function updateEmail(v) {
     email = v;
@@ -93,13 +93,13 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
         <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" <!--oninput="{updateEmail(this.value)}"-->></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" oninput="{updateEmail(this.value)}" bind:email></Fluent.TextBox>
         </h1>
         <h2>
-                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" <!--oninput="{updateSubject(this.value)}"-->></Fluent.TextBox>
+                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" oninput="{updateSubject(this.value)}" bind:subject></Fluent.TextBox>
         </h2>
         <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" <!--oninput="{updateMessage(this.value)}"-->></Fluent.TextBox>
+          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" oninput="{updateMessage(this.value)}" bind:message></Fluent.TextBox>
         </h3>
 </section>
 
