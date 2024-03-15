@@ -13,7 +13,7 @@
   async function sendToDiscord() {
     const webhookUrl = 'https://discord.com/api/webhooks/1217994733788598393/N7ctffAAkA0ejbMcyaCjjQWBCb1ISurlmaalys0_hBAl2c9ngl5gldWXGdEpZ3r_X6HG'; // Replace with your Discord webhook URL
     const payload = {
-      content: `Email: ${email}\nSubject: ${subject}\nMessage: ${message}`
+      content: "Email: " + email + "\nSubject: " + subject + "\nMessage: " + message
     };
 
     try {
