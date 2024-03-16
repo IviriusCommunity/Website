@@ -1,80 +1,133 @@
-<script>
-  //Imports
-	import * as Fluent from "fluent-svelte";
-	import "fluent-svelte/theme.css";
+<script lang="ts">
+	//Imports
+	import * as Fluent from 'fluent-svelte';
+	import 'fluent-svelte/theme.css';
 
-  //Variables
-  let open = true;
+	//Variables
+	let open = true;
 
-  var email = '';
-  var subject = '';
-  var message = '';
+	let email = '';
+	let subject = '';
+	let message = '';
 
-  function updateEmail(v) {
-    email = v;
+  function validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
   }
-  function updateSubject(v) {
-    subject = v;
-  }
-  function updateMessage(v) {
-    message = v;
-  }
-  
-  async function sendToDiscord() {
-    const webhookUrl = 'https://discord.com/api/webhooks/1217994733788598393/N7ctffAAkA0ejbMcyaCjjQWBCb1ISurlmaalys0_hBAl2c9ngl5gldWXGdEpZ3r_X6HG'; // Replace with your Discord webhook URL
-    var payload = {
-      content: "Email: " + email + "\nSubject: " + subject + "\nMessage: " + message
-    };
 
-    try {
-      var response = await fetch(webhookUrl, {
+	async function sendToDiscord() {
+
+    if (!validateEmail(email)) {
+      // add the code to show the email is not valid message
+      console.error('Email is not valid!');
+      return;
+    }
+
+		if (subject.length < 5) {
+      // add the code to show the subject is not valid message
+			console.error('Subject must be alteast 5 characters long!');
+			return;
+		}
+
+    if (message.length < 25) {
+      // add the code to show the message is not valid message
+      console.error('Message must be alteast 25 characters long!');
+      return;
+    }
+
+		const webhookUrl = 'https://ivirius-contact-host.vercel.app/contact';
+		const payload = new FormData();
+    payload.append('email', email);
+    payload.append('subject', subject);
+    payload.append('message', message);
+
+		try {
+      const response = await fetch(webhookUrl, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
+        body: payload
       });
 
-      if (response.ok) {
-        console.log('Successfully sent');
-      } else {
-        console.error('Failed to send');
+      if (!response.ok) {
+        if (response.status === 429) {
+          // add the code to show the rate limited message
+          console.error('Rate limited!');
+          return;
+        }
+        else {
+          // add the code to show the failed to send message
+          console.error('Failed to send message!');
+          return;
+        }
       }
+
+      const data = await response.json();
+      console.log(data);
     } catch (error) {
-      console.error('Error sending', error);
+      // add the code to show the error message
+      console.error('Error:', error);
     }
-  }
+
+    // clear the form
+    email = '';
+    subject = '';
+    message = '';
+	}
 </script>
 
 <!--Head-->
 <svelte:head>
 	<title>Ivirius</title>
-	<meta name="description" content="Ivirius official website"/>
+	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
 <!--Navbar-->
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
+<section
+	style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);"
+>
+	<!--Favicon-->
+	<Fluent.PersonPicture
+		src="https://ivirius.vercel.app/favicon.png"
+		style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"
+	/>
 
-  <!--Favicon-->
-  <Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
+	<!--Title-->
+	<Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;"
+		>Ivirius</Fluent.TextBlock
+	>
 
-  <!--Title-->
-  <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
+	<!--Home-->
+	<Fluent.Button
+		style="height: 32px; margin-right: 15px; align-items: center;"
+		variant="hyperlink"
+		onclick="window.location.href='https://ivirius.vercel.app';">Home</Fluent.Button
+	>
 
-  <!--Home-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app';">Home</Fluent.Button>
-  
-  <!--CrimsonUI-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button>
+	<!--CrimsonUI-->
+	<Fluent.Button
+		style="height: 32px; margin-right: 15px; align-items: center;"
+		variant="hyperlink"
+		onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button
+	>
 
-  <!--Documentations-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/documentations';">Documentations</Fluent.Button>
+	<!--Documentations-->
+	<Fluent.Button
+		style="height: 32px; margin-right: 15px; align-items: center;"
+		variant="hyperlink"
+		onclick="window.location.href='https://ivirius.vercel.app/documentations';"
+		>Documentations</Fluent.Button
+	>
 
-  <!--Contact us-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;">Contact us</Fluent.Button>
+	<!--Contact us-->
+	<Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;"
+		>Contact us</Fluent.Button
+	>
 
-  <!--About-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button>
+	<!--About-->
+	<Fluent.Button
+		style="height: 32px; margin-right: 15px; align-items: center;"
+		variant="hyperlink"
+		onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button
+	>
 </section>
 
 <!--Title-->
@@ -84,93 +137,111 @@
 	</h1>
 </section>
 
- <section class="margin-section">
-	<h2>
-		<Fluent.InfoBar severity="caution" title="Important!" message="This page is not functional yet." style="max-width:550px;"/>
-	</h2>
-</section>
-
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
-        <h1>
-                <Fluent.TextBox placeholder="Email" type="email" style="width: 100%; box-sizing: border-box;" oninput="{updateEmail(this.value)}" bind:email></Fluent.TextBox>
-        </h1>
-        <h2>
-                <Fluent.TextBox placeholder="Subject" style="width: 100%; box-sizing: border-box;" oninput="{updateSubject(this.value)}" bind:subject></Fluent.TextBox>
-        </h2>
-        <h3>
-          <Fluent.TextBox placeholder="Message" style="min-height: 150px; width: 100%; box-sizing: border-box;" oninput="{updateMessage(this.value)}" bind:message></Fluent.TextBox>
-        </h3>
+	<h1>
+		<Fluent.TextBox
+			placeholder="Email"
+			type="email"
+			style="width: 100%; box-sizing: border-box;"
+			bind:value={email}
+		/>
+	</h1>
+	<h2>
+		<Fluent.TextBox
+			placeholder="Subject"
+			style="width: 100%; box-sizing: border-box;"
+			bind:value={subject}
+		/>
+	</h2>
+	<h3>
+		<Fluent.TextBox
+			placeholder="Message"
+			style="min-height: 150px; width: 100%; box-sizing: border-box;"
+			bind:value={message}
+		/>
+	</h3>
 </section>
 
 <section class="right-section">
-  <Fluent.Button style="width: 60px; float: right;" variant="accent" onclick="{sendToDiscord()}">
-    Send
-  </Fluent.Button>
+	<Fluent.Button style="width: 60px; float: right;" variant="accent" on:click={sendToDiscord}>
+		Send
+	</Fluent.Button>
 </section>
-
 <!--Bottom bar-->
-<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Partners
-  </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Developers and contributors
-  </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-top: 10px; margin-bottom: 10px;">ErrorTek</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Website
-  </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';" style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
+<section
+	style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;"
+>
+	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">Partners</Fluent.TextBlock>
+	<Fluent.Button
+		variant="hyperlink"
+		onclick="window.location.href='https://www.spoo.me';"
+		style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button
+	>
+	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
+		Developers and contributors
+	</Fluent.TextBlock>
+	<Fluent.Button
+		variant="hyperlink"
+		onclick="window.location.href='https://website-2-sigma.vercel.app/';"
+		style="margin-top: 10px; margin-bottom: 10px;">ErrorTek</Fluent.Button
+	>
+	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">Website</Fluent.TextBlock>
+	<Fluent.Button
+		variant="hyperlink"
+		onclick="window.location.href='https://fluent-svelte.vercel.app';"
+		style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button
+	>
+	<Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';"
+		>Vercel</Fluent.Button
+	>
+	<Fluent.Button
+		variant="hyperlink"
+		onclick="window.location.href='https://ivirius.vercel.app/about';"
+		style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button
+	>
 </section>
 
 <!--Styles-->
 <style>
-  /*Import theme*/
-	@import url("https://unpkg.com/fluent-svelte/theme.css");
+	/*Import theme*/
+	@import url('https://unpkg.com/fluent-svelte/theme.css');
 
 	/* Some base styles to get things looking right. */
-	:global(body) 
-  {
-    /*Background color*/
+	:global(body) {
+		/*Background color*/
 		background-color: var(--fds-solid-background-base);
 
-    /*Background image*/
-    background-image: url("https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&");
-    
-    /*Background color*/
+		/*Background image*/
+		background-image: url('https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&');
+
+		/*Background color*/
 		color: var(--fds-text-primary);
 	}
 
-  /*Centered section*/
-  .centered-section 
-  {
-    text-align: center;
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 1250px;
-  }
+	/*Centered section*/
+	.centered-section {
+		text-align: center;
+		margin: 0 auto;
+		padding: 25px;
+		max-width: 1250px;
+	}
 
-  /*Right aligned section*/
-  .right-section 
-  {
-    text-align: right;
-    margin: auto;
-    padding: 25px;
-    max-width: 1250px;
-    display: flex;
-    justify-content: flex-end;
-    justify-items: flex-end;
-  }
-  
-  /*Left aligned centered section*/
-  .margin-section 
-  {
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 1250px;
-  }
-  </style>
+	/*Right aligned section*/
+	.right-section {
+		text-align: right;
+		margin: auto;
+		padding: 25px;
+		max-width: 1250px;
+		display: flex;
+		justify-content: flex-end;
+		justify-items: flex-end;
+	}
+
+	/*Left aligned centered section*/
+	.margin-section {
+		margin: 0 auto;
+		padding: 25px;
+		max-width: 1250px;
+	}
+</style>
