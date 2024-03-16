@@ -14,7 +14,7 @@
 <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
 
   <!--Favicon-->
-  <Fluent.PersonPicture src="https://cdn.discordapp.com/attachments/1137161703000375339/1188990519418834994/Ivirius.png?ex=65dd2236&is=65caad36&hm=f5647520279749bf9811d7908e38f0586bedeef666f65ccfee30fb727a36471b" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
+  <Fluent.PersonPicture src="https://ivirius.vercel.app/favicon.png" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
 
   <!--Title-->
   <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
@@ -85,7 +85,7 @@
   @import url("https://unpkg.com/fluent-svelte/theme.css");
 
   /* Some base styles to get things looking right. */
-  :global(body) 
+  :global(body)
   {
     /*Background color*/
     background-color: var(--fds-solid-background-base);
@@ -98,7 +98,7 @@
   }
 
   /*Centered section*/
-  .centered-section 
+  .centered-section
   {
     text-align: center;
     margin: 0 auto;
@@ -107,7 +107,7 @@
   }
 
   /*Left aligned centered section*/
-  .margin-section 
+  .margin-section
   {
     margin: 0 auto;
     padding: 25px;
