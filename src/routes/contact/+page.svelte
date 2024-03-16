@@ -86,7 +86,7 @@
 >
 	<!--Favicon-->
 	<Fluent.PersonPicture
-		src="https://ivirius.vercel.app/favicon.png"
+		src="/favicon.png"
 		style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"
 	/>
 
@@ -99,21 +99,21 @@
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app';">Home</Fluent.Button
+		onclick="window.location.href='/';">Home</Fluent.Button
 	>
 
 	<!--CrimsonUI-->
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button
+		onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button
 	>
 
 	<!--Documentations-->
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/documentations';"
+		onclick="window.location.href='/documentations';"
 		>Documentations</Fluent.Button
 	>
 
@@ -126,7 +126,7 @@
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button
+		onclick="window.location.href='/about';">About</Fluent.Button
 	>
 </section>
 
@@ -197,7 +197,7 @@
 	>
 	<Fluent.Button
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/about';"
+		onclick="window.location.href='/about';"
 		style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button
 	>
 </section>
