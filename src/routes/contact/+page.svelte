@@ -5,6 +5,7 @@
 
 	//Variables
 	let openTooShortMsg = false;
+  let openTooShortSub = false;
 
 	let email = '';
 	let subject = '';
