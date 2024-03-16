@@ -4,7 +4,7 @@
 	import 'fluent-svelte/theme.css';
 
 	//Variables
-	let open = true;
+	let openTooShortMsg = false;
 
 	let email = '';
 	let subject = '';
@@ -32,6 +32,7 @@
     if (message.length < 25) {
       // add the code to show the message is not valid message
       console.error('Message must be alteast 25 characters long!');
+      openTooShortMsg = true;
       return;
     }
 
@@ -139,6 +140,9 @@
 
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
+  <h1>
+<InfoBar title="Error!" message="Message is too short." bind:openTooShortMsg />
+  </h1>
 	<h1>
 		<Fluent.TextBox
 			placeholder="Email"
