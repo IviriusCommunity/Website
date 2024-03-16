@@ -142,7 +142,7 @@
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
   <h1>
-<InfoBar title="Error!" message="Message is too short." bind:openTooShortMsg />
+<Fluent.InfoBar title="Error!" message="Message is too short." bind:openTooShortMsg />
   </h1>
 	<h1>
 		<Fluent.TextBox
