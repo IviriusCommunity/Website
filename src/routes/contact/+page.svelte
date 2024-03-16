@@ -86,7 +86,7 @@
 >
 	<!--Favicon-->
 	<Fluent.PersonPicture
-		src="https://ivirius.vercel.app/favicon.png"
+		src="/favicon.png"
 		style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"
 	/>
 
@@ -99,21 +99,21 @@
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app';">Home</Fluent.Button
+		onclick="window.location.href='/';">Home</Fluent.Button
 	>
 
 	<!--CrimsonUI-->
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/crimsonui';">CrimsonUI</Fluent.Button
+		onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button
 	>
 
 	<!--Documentations-->
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/documentations';"
+		onclick="window.location.href='/documentations';"
 		>Documentations</Fluent.Button
 	>
 
@@ -126,7 +126,7 @@
 	<Fluent.Button
 		style="height: 32px; margin-right: 15px; align-items: center;"
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/about';">About</Fluent.Button
+		onclick="window.location.href='/about';">About</Fluent.Button
 	>
 </section>
 
@@ -197,7 +197,7 @@
 	>
 	<Fluent.Button
 		variant="hyperlink"
-		onclick="window.location.href='https://ivirius.vercel.app/about';"
+		onclick="window.location.href='/about';"
 		style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button
 	>
 </section>
@@ -213,7 +213,7 @@
 		background-color: var(--fds-solid-background-base);
 
 		/*Background image*/
-		background-image: url('https://cdn.discordapp.com/attachments/1141503151808184401/1210350581504278618/1000030651-safeimagekit.jpeg.png?ex=65ea3dd1&is=65d7c8d1&hm=facb30449de806bcb7bb777bd14e81dddb7bf7de9e882144896e0bc80b304153&');
+		background-image: url('https://i.spoo.me/825520');
 
 		/*Background color*/
 		color: var(--fds-text-primary);
