@@ -1,8 +1,3 @@
-<script>
-  //Imports
-  import * as Fluent from "fluent-svelte";
-  import "fluent-svelte/theme.css";
-</script>
 
 <!--Head-->
 <svelte:head>
@@ -35,31 +30,39 @@
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
 </section>
 
-<!--Title-->
-<section class="centered-section">
-  <h1>
-    <Fluent.TextBlock variant="titleLarge">Documentations</Fluent.TextBlock>
-  </h1>
- <h2>
-    <Fluent.TextBlock variant="body" align="center">Read documentations on various tools and APIs from Ivirius and less known features in UWP and Windows App SDK.</Fluent.TextBlock>
- </h2>
-</section>
-
+<div class="container">
+  <div class="panel">
+    <!-- Panel content -->
+    <h2>
+      <Fluent.ListItem selected>Documentations - Home</Fluent.ListItem>
+    <Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
+      <Fluent.ListItem onclick="window.location.href='/documentations/windowdecorations';">Hide the title bar in UWP AppWindow</Fluent.ListItem>
+      <Fluent.ListItem onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.ListItem>
+    <Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
+    <Fluent.ListItem disabled>Acrylic Glass</Fluent.ListItem>
+    <Fluent.ListItem disabled>Ivirius.Converters</Fluent.ListItem>
+    <Fluent.ListItem disabled>Ivirius.Helpers</Fluent.ListItem>
+    <Fluent.ListItem disabled>UWP - full customization sample</Fluent.ListItem>
+    <Fluent.ListItem disabled>WASDK - full customization sample</Fluent.ListItem>
+    </h2>
+  </div>
+  <div class="main-content" id="content">
+    <!-- Main content -->
 <section class="margin-section">
-        <h2>
-  <Fluent.ListItem selected>Documentations - Home</Fluent.ListItem>
-<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
-  <Fluent.ListItem onclick="window.location.href='/documentations/windowdecorations';">Hide the title bar in UWP AppWindow</Fluent.ListItem>
-  <Fluent.ListItem onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.ListItem>
-<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
-<Fluent.ListItem disabled>Acrylic Glass</Fluent.ListItem>
-<Fluent.ListItem disabled>Ivirius.Converters</Fluent.ListItem>
-<Fluent.ListItem disabled>Ivirius.Helpers</Fluent.ListItem>
-<Fluent.ListItem disabled>UWP - full customization sample</Fluent.ListItem>
-<Fluent.ListItem disabled>WASDK - full customization sample</Fluent.ListItem>
-        </h2>
+  <h2>
+    <Fluent.TextBlock variant="titleLarge">Documentations - Home</Fluent.TextBlock>
+  </h2>
+  <h2>
+    <Fluent.TextBlock variant="body" align="center">Read documentations about various tools and APIs from Ivirius and less known features in UWP and Windows App SDK.</Fluent.TextBlock>
+  </h2>
+  <h2>
+    <Fluent.TextBlock variant="body" align="center">Read documentations about various tools and APIs from Ivirius and less known features in UWP and Windows App SDK.</Fluent.TextBlock>
+  </h2>
 
 </section>
+
+</div>
+</div>
 
 <!--Bottom bar-->
 <section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
@@ -78,6 +81,7 @@
           <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
           <Fluent.Button variant="hyperlink" onclick="window.location.href='/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
 </section>
+
 
 <!--Styles-->
 <style>
@@ -113,4 +117,35 @@
     padding: 25px;
     max-width: 1250px;
   }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--fds-control-on-image-fill-default);
+  }
+  .main-content {
+    flex: 3;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 750px) {
+    .container {
+      flex-direction: column;
+    }
+    .panel, .main-content {
+      flex: 1;
+      width: auto;
+    }
+  }
 </style>
+
+<script>
+  //Imports
+  import * as Fluent from "fluent-svelte";
+  import "fluent-svelte/theme.css";
+</script>

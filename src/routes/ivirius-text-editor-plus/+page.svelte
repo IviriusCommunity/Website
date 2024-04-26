@@ -10,11 +10,11 @@
 <!--Head-->
 <svelte:head>
 	<title>Ivirius</title>
-	<meta name="description" content="Ivirius official website"/>
+	<meta name="description" content="Ivirius Text Editor Plus"/>
 </svelte:head>
 
 <!--Navbar-->
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: rgba(25, 25, 25, 0.15); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
+<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
 
   <!--Favicon-->
   <Fluent.PersonPicture src="/favicon.png" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
@@ -23,7 +23,7 @@
   <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
 
   <!--Home-->
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;">Home</Fluent.Button>
+  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/';">Home</Fluent.Button>
 
   <!--CrimsonUI-->
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
@@ -41,20 +41,46 @@
 <!--Title-->
 <section class="centered-section">
 	<h1>
-		<Fluent.TextBlock variant="titleLarge">Ivirius</Fluent.TextBlock>
+		<Fluent.TextBlock variant="titleLarge">Ivirius Text Editor Plus</Fluent.TextBlock>
 	</h1>
- <h2>
-		<Fluent.TextBlock variant="body" align="center">We made the #1 WordPad app in the Microsoft Store, which is available for Windows 10 and 11.</Fluent.TextBlock>
- </h2>
+  <h2>
+     <Fluent.TextBlock variant="body" align="center">Intuitive, easy to use, simply beautiful.</Fluent.TextBlock>
+  </h2>
+  <h2>
+     <Fluent.TextBlock variant="body" align="center">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+  </h2>
+  <!--Download buttons-->
+  <section class="centered-section">
+    <h2>
+      <Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
+      <Fluent.Button variant="hyperlink" onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';">Download Ivirius Text Editor</Fluent.Button>
+    </h2>
+  </section>
+  
+  <h2 id="content">
+    <img alt="Ivirius Text Editor Plus Light" src="https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/IviriusTextEditorPlusLightAppCrop.png"/>
+    <img alt="Ivirius Text Editor Plus Dark" src="https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/IviriusTextEditorPlusDarkAppCrop.png"/>
+  </h2>
 </section>
 
-<!--Download buttons-->
+<!--Title-->
 <section class="centered-section">
-	<h2>
-		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-		<Fluent.Button style="margin: 15px">Download Ivirius Text Editor</Fluent.Button>
-		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
-	</h2>
+  <h2 id="content">
+    <div>
+      <img alt="Ivirius Text Editor Plus Light" src="https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/TableInsert.png"/><!--Ivirius Text Editor Plus-->
+    </div>
+    <section class="margin-section">
+            <h1>
+                    <Fluent.TextBlock variant="subtitle">Ivirius Text Editor Plus</Fluent.TextBlock>
+            </h1>
+            <h2>
+                    <Fluent.TextBlock variant="body">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+            </h2>
+            <h3>
+              <Fluent.Button variant="hyperlink" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
+            </h3>
+    </section>
+  </h2>
 </section>
 
 <!--InfoBar-->
@@ -63,12 +89,6 @@
 		<Fluent.InfoBar severity="caution" title="Important!" message="This is the only finished page of this website. The rest are actively being worked on. Thank you for your patience." style="max-width:550px;"/>
 	</h2>
 </section>
-
-<!--Content dialog-->
- <Fluent.ContentDialog bind:open title="Warning!">
-   This website is experimental and still in its early stages of development. Please report any bugs to us via email at iviriuscompany.main@gmail.com.
-	<Fluent.Button slot="footer" variant="accent" on:click={() => (open = false)}>Proceed</Fluent.Button>
- </Fluent.ContentDialog>
 
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
@@ -110,7 +130,7 @@
 </section>
 
 <!--Bottom bar-->
-<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: rgba(25, 25, 25, 0.15); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
+<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
   <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
     Partners
   </Fluent.TextBlock>
@@ -151,6 +171,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 25px;
+    max-width: 1250px;
   }
 
   /*Left aligned centered section*/
@@ -158,5 +179,27 @@
   {
     margin: 0 auto;
     padding: 25px;
+    max-width: 1250px;
+  }
+  
+  #content {
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%; /* Ensures the container takes the full width of its parent */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line if needed */
+    justify-content: space-between; /* Distribute flex items evenly with space between them */
+}
+
+#content img, section {
+    max-width: calc(50% - 5px); /* Set the maximum width of each image to half of the container width, minus some margin */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+    margin-bottom: 10px; /* Add some bottom margin between images */
+}
+
+@media (max-width: 1000px) {
+    #content img, section {
+        max-width: 100%; /* Set the maximum width of each image to 100% on smaller screens */
+        margin-bottom: 10px; /* Keep the same bottom margin between images */
+    }  
   }
 </style>
