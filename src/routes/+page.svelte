@@ -52,7 +52,7 @@
 <section class="centered-section">
 	<h2>
 		<Fluent.Button variant="accent" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-		<Fluent.Button style="margin: 15px">Download Ivirius Text Editor</Fluent.Button>
+		<Fluent.Button style="margin: 15px" onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';">Download Ivirius Text Editor</Fluent.Button>
 		<Fluent.Button>Download Ivirius Hub</Fluent.Button>
 	</h2>
 </section>
