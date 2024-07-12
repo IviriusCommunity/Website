@@ -1,6 +1,6 @@
 <script>
 	import './styles.css';
-	import navbar from "../layout/Navbar.scss";
+	//import navbar from "../layout/Navbar.scss";
 	const navbarItems = [
 		{
 			name: "Home",
@@ -22,7 +22,7 @@
 
 <div class="app">
 	<main>
-		<navbar:Navbar items={navbarItems} buttons={navbarButtons}/>
+		<!--<navbar:Navbar items={navbarItems} buttons={navbarButtons}/>-->
 		
 		<slot></slot>
 	</main>
