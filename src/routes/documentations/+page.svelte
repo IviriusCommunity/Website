@@ -3,6 +3,8 @@
 <svelte:head>
   <title>Ivirius - Documentations</title>
   <meta name="description" content="Ivirius - documentations for developers"/>
+	<meta content="Ivirius Community Community" name="author" />
+	<meta content="#6ba4ff" name="theme-color" />
 </svelte:head>
 
 <!--Navbar-->
