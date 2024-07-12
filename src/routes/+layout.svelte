@@ -1,11 +1,30 @@
 <script>
 	import './styles.css';
-	/*import "fluent-svelte/theme.css";*/
+	import navbar from "../layout/Navbar.scss";
+	const navbarItems = [
+		{
+			name: "Home",
+			path: "/",
+		},
+		{
+			name: "Documentations",
+			path: "/documentations",
+		},
+	];
+
+	const navbarButtons = [
+		{
+			label: "Discord",
+			href: `https://discord.gg/`,
+		},
+	];
 </script>
 
 <div class="app">
 	<main>
-		<slot />
+		<navbar:Navbar items={navbarItems} buttons={navbarButtons}/>
+		
+		<slot></slot>
 	</main>
 </div>
 
