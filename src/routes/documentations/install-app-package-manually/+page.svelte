@@ -52,6 +52,18 @@
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">•</Fluent.TextBlock>
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">July 13, 2024</Fluent.TextBlock>
         </section>
+        <h2>
+                <Fluent.TextBlock variant="body">In this article, I will show you how to install a UWP app package along with its certificate and dependencies. A UWP package contains all the information required for a UWP, WinUI 3 or Win32 packaged app to install on your system.</Fluent.TextBlock>
+        </h2>
+        <h2>
+                <Fluent.TextBlock variant="body">When installing a UWP package, you might see this error appear.</Fluent.TextBlock>
+        </h2>
+        <section class="centered-section">
+                <img src="https://i.spoo.me/409589" alt="Certificate window"/>
+        </section>
+        <h2>
+                <Fluent.TextBlock variant="body">Here's how to properly install a UWP package:</Fluent.TextBlock>
+        </h2>
         <h1>
                 <Fluent.TextBlock variant="subtitle">Step 1 - Import app certificate</Fluent.TextBlock>
         </h1>
@@ -84,36 +96,23 @@
                 <Fluent.TextBlock variant="body">Click "Finish" to close the window.</Fluent.TextBlock>
         </h2>
         <h1>
-                <Fluent.TextBlock variant="subtitle">Step 1 - Import app certificate</Fluent.TextBlock>
+                <Fluent.TextBlock variant="subtitle">Step 2 - Install dependencies</Fluent.TextBlock>
         </h1>
         <h2>
-                <Fluent.TextBlock variant="body">If the app package comes with a certificate, double click on it. The window below will be opened.</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">If the app comes with another package that contains dependencies, you might need to install that one as well. Since these dependencies are mostly Microsoft runtimes, they don't require a certificate.</Fluent.TextBlock>
         </h2>
         <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000054-7cca57cca6/700/Screenshot%202022-11-30%20131454.webp?ph=57a6227aab" alt="Certificate window"/>
+                <img src="https://i.spoo.me/881744" alt="Certificate window"/>
         </section>
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Step 3 - Install the app</Fluent.TextBlock>
+        </h1>
         <h2>
-                <Fluent.TextBlock variant="body">Now, click "Install Certificate..."</Fluent.TextBlock>
+                <Fluent.TextBlock variant="body">Now that all the required dependencies have been installed, you can install the app package.</Fluent.TextBlock>
         </h2>
         <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000056-3f5313f532/700/Screenshot%202022-11-30%20131511.webp?ph=57a6227aab" alt="Certificate window"/>
+                <img src="https://i.spoo.me/184923" alt="Certificate window"/>
         </section>
-        <h2>
-                <Fluent.TextBlock variant="body">The following window will open. Make sure to select the "Local Machine" option and click "Next".</Fluent.TextBlock>
-                <Fluent.InfoBar style="margin-top: 20px;" severity="caution" title="Warning!" message="Requires administrator permissions." open></Fluent.InfoBar>
-        </h2>
-        <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000060-d95e0d95e2/450/Screenshot%202022-11-30%20131556.webp?ph=57a6227aab" alt="Certificate window"/>
-        </section>
-        <h2>
-                <Fluent.TextBlock variant="body">Select "Trusted Root Certification Authorities" to proceed. This will ensure the app's certificate is trusted by the system. Click "OK".</Fluent.TextBlock>
-        </h2>
-        <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000062-c9aefc9af0/700/Screenshot%202022-11-30%20131619.webp?ph=57a6227aab" alt="Certificate window"/>
-        </section>
-        <h2>
-                <Fluent.TextBlock variant="body">Click "Finish" to close the window.</Fluent.TextBlock>
-        </h2>
       </section>
       
       <!--Bottom bar-->
