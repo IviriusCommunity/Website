@@ -101,7 +101,7 @@
 	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
 
 	<!--Contact us-->
-	<Fluent.Button style="color: var(--fds-text-primary); border-color: var(--fds-accent-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink">Contact us</Fluent.Button>
+	<Fluent.Button style="color: var(--fds-accent-text-primary); border-color: var(--fds-accent-text-primary); height: 32px; margin-right: 15px; align-items: center;">Contact us</Fluent.Button>
 
 	<!--About-->
 	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
