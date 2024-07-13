@@ -92,7 +92,7 @@
 	<Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
 
 	<!--Home-->
-	<Fluent.Button style="height: 32px; color: var(--fds-accent-text-primary); margin-right: 15px; align-items: center;">Home</Fluent.Button>
+	<Fluent.Button style="height: 32px; color: var(--fds-text-primary); margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/';">Home</Fluent.Button>
 
 	<!--CrimsonUI-->
 	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
@@ -101,7 +101,7 @@
 	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
 
 	<!--Contact us-->
-	<Fluent.Button style="color: var(--fds-text-primary); border-color: var(--fds-accent-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/contact';">Contact us</Fluent.Button>
+	<Fluent.Button style="color: var(--fds-text-primary); border-color: var(--fds-accent-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink">Contact us</Fluent.Button>
 
 	<!--About-->
 	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
