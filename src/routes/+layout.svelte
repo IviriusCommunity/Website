@@ -46,16 +46,46 @@
 
 			<!-- Home -->
 			<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/';">Home</Fluent.Button>
-		
-			<!-- CrimsonUI -->
-			<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
-		
-			<!-- Rebound11 -->
-			<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/rebound11';">Rebound 11</Fluent.Button>
-		
-			<!-- Documentations -->
-			<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
-		
+			
+			<Fluent.Flyout placement="bottom">
+				<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Apps and Tools</Fluent.Button>
+				<svelte:fragment slot="flyout">
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Ivirius Text Editor</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Ivirius Text Editor Plus</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Rebound 11</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Certificate Installer For MSIX</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">CrimsonUI</Fluent.Button>
+					</div>
+				</svelte:fragment>
+			</Fluent.Flyout>
+
+			<Fluent.Flyout placement="bottom">
+				<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Community</Fluent.Button>
+				<svelte:fragment slot="flyout">
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">News</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Documentations</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Developer Sanctuary</Fluent.Button>
+					</div>
+					<div>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Ivirius Community on Discord</Fluent.Button>
+					</div>
+				</svelte:fragment>
+			</Fluent.Flyout>
+
 			<!-- Contact us -->
 			<Fluent.IconButton style="margin-left: Auto; margin-right: 15px; align-items: center;" onclick="window.location.href='/contact';">
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
