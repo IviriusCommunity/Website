@@ -71,13 +71,13 @@
           <Fluent.TextBlock variant="subtitle">Consistent</Fluent.TextBlock>
   </h1>
   <h2>
-          <Fluent.TextBlock variant="body">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+          <Fluent.TextBlock variant="body">Experience seamless and reliable performance with Ivirius Text Editor Plus, designed with Windows 11’s modern design language. The intuitive interface ensures that your text editing tasks are smooth and uninterrupted, providing a consistent user experience that aligns perfectly with the aesthetics and functionality of Windows 11. With features like autosave and a robust AI assistant, your work is always secure and up-to-date.</Fluent.TextBlock>
   </h2>
   <h1>
           <Fluent.TextBlock variant="subtitle">Powerful</Fluent.TextBlock>
   </h1>
   <h2>
-          <Fluent.TextBlock variant="body">The Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows 11. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
+          <Fluent.TextBlock variant="body">Unlock the full potential of your text editing with Ivirius Text Editor Plus. Equipped with advanced AI capabilities and table insertion, this editor empowers you to create and manage documents with ease. The integration of CrimsonUI and WinUI provides a robust and visually appealing interface, while the multitasking tabs and autosave feature ensure you can handle complex projects efficiently. Experience the power of seamless editing and enhanced productivity.</Fluent.TextBlock>
   </h2>
   <h1>
           <Fluent.TextBlock variant="subtitle">Made for everyone</Fluent.TextBlock>

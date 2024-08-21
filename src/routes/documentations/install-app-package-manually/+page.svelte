@@ -47,11 +47,17 @@
       <!--Author-->
       <section class="margin-section">
         <section style="display: flex; margin-bottom: -30px;">
-                <Fluent.PersonPicture src="/favicon.png" style="width: 30px; height: 30px; margin-right: 15px;"/>
+                <Fluent.PersonPicture src="https://i.spoo.me/247555" style="width: 30px; height: 30px; margin-right: 15px;"/>
                 <Fluent.TextBlock variant="body" style="margin-left: -25px; margin-top: 5px;">Author: Ivirius</Fluent.TextBlock>
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">•</Fluent.TextBlock>
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">July 13, 2024</Fluent.TextBlock>
         </section>
+        <h2>
+                <Fluent.InfoBar style="margin-top: 20px;" severity="information" title="Tip!" message="If you want to speed up the process, consider downloading our portable certificate installer for MSIX." open></Fluent.InfoBar>
+        </h2>
+        <h2>
+                <Fluent.Button variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download Quick Certificate Installer For MSIX</Fluent.Button>
+        </h2>
         <h2>
                 <Fluent.TextBlock variant="body">In this article, I will show you how to install a UWP app package along with its certificate and dependencies. A UWP package contains all the information required for a UWP, WinUI 3 or Win32 packaged app to install on your system.</Fluent.TextBlock>
         </h2>
