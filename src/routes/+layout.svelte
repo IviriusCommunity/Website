@@ -57,7 +57,7 @@
 						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Ivirius Text Editor Plus</Fluent.Button>
 					</div>
 					<div>
-						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Rebound 11</Fluent.Button>
+						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/rebound11';">Rebound 11</Fluent.Button>
 					</div>
 					<div>
 						<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;">Certificate Installer For MSIX</Fluent.Button>

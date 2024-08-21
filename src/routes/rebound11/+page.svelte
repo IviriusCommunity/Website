@@ -16,18 +16,19 @@
 </svelte:head>
 
 <!--Title-->
-<section class="centered-section-2" style="margin: 0px; alignment:stretch; max-width: 999999px; background-size: cover; background-position:center; background-image: url('https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/WebsiteBanner.png');">
-	<h1>
-		<Fluent.TextBlock variant="titleLarge" style="color: black">Ivirius</Fluent.TextBlock>
-	</h1>
- <h2>
-		<Fluent.TextBlock variant="body" align="center" style="color: black; font-size:18px">Bring consistency to Windows 11 with fluent apps and tools from Ivirius.</Fluent.TextBlock>
- </h2>
- <h2>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';">Download Ivirius Text Editor</Fluent.Button>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha/ReboundHubInstaller.exe'">Download Rebound 11</Fluent.Button>
- </h2>
+<section class="centered-section-2" style="margin: 0px; alignment:stretch; max-width: 999999px; background-size: cover; background-position:center; background-image: url('https://i.spoo.me/755932');">
+        <div style="width: 500px; margin: -25px; padding: 25px; height: 200px; background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));">
+
+                <h1>
+                        <Fluent.TextBlock variant="titleLarge" style="color: black">Rebound 11</Fluent.TextBlock>
+                </h1>
+         <h2>
+                        <Fluent.TextBlock variant="body" align="center" style="color: black; font-size:18px">Windows 11 as it should have been.</Fluent.TextBlock>
+         </h2>
+         <h2>
+           <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha/ReboundHubInstaller.exe';">Download</Fluent.Button>
+         </h2>
+        </div>
 </section>
 
 <section class="centered-section" style="margin-top: 20px;">
@@ -36,6 +37,7 @@
 
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
+        <img src="https://i.spoo.me/729297" style="border-radius: 8px; display: block; height: auto; width: auto; max-width: 1000px;"/>
   <h1>
           <Fluent.TextBlock variant="title">Ivirius Text Editor Plus</Fluent.TextBlock>
   </h1>
