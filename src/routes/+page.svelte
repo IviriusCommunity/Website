@@ -15,31 +15,6 @@
 	<meta content="#6ba4ff" name="theme-color" />
 </svelte:head>
 
-<!--Navbar-->
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
-
-  <!--Favicon-->
-  <Fluent.PersonPicture src="/favicon.png" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
-
-  <!--Title-->
-  <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
-
-  <!--Home-->
-  <Fluent.Button style="height: 32px; border-color: var(--fds-accent-text-primary); color: var(--fds-accent-text-primary); margin-right: 15px; align-items: center;">Home</Fluent.Button>
-
-  <!--CrimsonUI-->
-  <Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
-
-  <!--Documentations-->
-  <Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
-
-  <!--Contact us-->
-  <Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/contact';">Contact us</Fluent.Button>
-
-  <!--About-->
-  <Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
-</section>
-
 <!--Title-->
 <section class="centered-section-2" style="margin: 0px; alignment:stretch; max-width: 999999px; background-size: cover; background-position:center; background-image: url('https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/WebsiteBanner.png');">
 	<h1>
@@ -219,31 +194,6 @@
   <h2>
           <Fluent.TextBlock variant="body">We host several events in our Discord server (such as the Ivirius Summit), keeping you up to date about several exciting developments with our apps.</Fluent.TextBlock>
   </h2>
-</section>
-
-<!--Bottom bar-->
-<section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Partners
-  </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Developers and contributors
-  </Fluent.TextBlock>
-  <Fluent.Button variant="hyperlink" onclick="window.location.href='https://ivirius.vercel.app/';" style="margin-top: 10px; margin-bottom: 10px;">Ivirius</Fluent.Button>
-  <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-bottom: 10px;">ErrorTek</Fluent.Button>
-  <Fluent.Button variant="hyperlink" style="margin-bottom: 10px;">TheDevil</Fluent.Button>
-  <Fluent.Button variant="hyperlink" style="margin-bottom: 10px;">0x5BFA</Fluent.Button>
-  <Fluent.Button variant="hyperlink" style="margin-bottom: 10px;">FlamebladeOmega</Fluent.Button>
-  <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-    Website
-  </Fluent.TextBlock>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';" style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-          <Fluent.Button variant="hyperlink" onclick="window.location.href='/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
-          <Fluent.TextBlock variant="body" style="opacity: 0.5; margin-top: 10px; margin-bottom: 10px; margin-right: 25px;">
-            Ivirius' Official Website - Powered by Vercel and Fluent Svelte
-          </Fluent.TextBlock>
 </section>
 
 <!--Styles-->
