@@ -31,6 +31,39 @@
         </div>
 </section>
 
+<section>
+        
+        <section id="output" style="min-height: 200px;">Loading content...</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.6/markdown-it.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Markdown-it
+        var md = window.markdownit();
+
+        // Fetch the content of the Markdown file
+        fetch('/markdown/rebound11/content.md')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch content: ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(text => {
+                // Convert the Markdown content to HTML
+                var renderedHTML = md.render(text);
+                // Insert the rendered HTML into the output section
+                document.getElementById('output').innerHTML = renderedHTML;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('output').innerHTML = 'Failed to load content: ' + error.message;
+            });
+    });
+</script>
+
+</section>
+
 <section class="centered-section" style="margin-top: 20px;">
   <Fluent.TextBlock variant="titleLarge">Top apps</Fluent.TextBlock>
 </section>
