@@ -13,11 +13,55 @@
 	<meta name="description" content="Ivirius Community official website"/>
 	<meta content="Ivirius Community Community" name="author" />
 	<meta content="#6ba4ff" name="theme-color" />
+        <!-- Other head content -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"><style>
+                #output {
+                    min-height: 200px; /* Ensures there's space for the content */
+                    padding: 20px; /* Adds padding inside the box */
+                    border: 0px solid #ccc; /* Adds a border around the content */
+                    background-color: transparent; /* Makes the background transparent */
+                    font-family: 'Roboto', sans-serif; /* Applies the custom font */
+                    line-height: 1.6; /* Improves readability */
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 1250px;
+                }
+            
+                /* Optional: Customize Markdown elements */
+                #output h1, #output h2, #output h3 {
+                    color: #333; /* Change heading colors */
+                }
+            
+                #output a {
+                    color: #1a73e8; /* Customize link color */
+                    text-decoration: none; /* Remove underline from links */
+                }
+            
+                #output a:hover {
+                    text-decoration: underline; /* Underline on hover */
+                }
+            
+                #output code {
+                    background-color: #f4f4f4; /* Background for code blocks */
+                    border-radius: 4px; /* Rounded corners for code blocks */
+                    padding: 2px 4px; /* Padding inside code blocks */
+                }
+            
+                #output pre {
+                    background-color: #f4f4f4; /* Background for preformatted code */
+                    border-radius: 4px; /* Rounded corners for code blocks */
+                    padding: 10px; /* Padding inside code blocks */
+                    overflow-x: auto; /* Enable horizontal scrolling */
+                }
+            </style>
+            
+    <!-- Load Showdown library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.0.0/dist/showdown.min.js"></script>
 </svelte:head>
 
 <!--Title-->
 <section class="centered-section-2" style="margin: 0px; alignment:stretch; max-width: 999999px; background-size: cover; background-position:center; background-image: url('https://i.spoo.me/755932');">
-        <div style="width: 500px; margin: -25px; padding: 25px; height: 200px; background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));">
+        <div style="margin: -25px; padding: 25px; height: 200px; background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));">
 
                 <h1>
                         <Fluent.TextBlock variant="titleLarge" style="color: black">Rebound 11</Fluent.TextBlock>
@@ -32,36 +76,36 @@
 </section>
 
 <section>
-        
-        <section id="output" style="min-height: 200px;">Loading content...</section>
+    <section id="output">Loading content...</section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.6/markdown-it.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Initialize Markdown-it
-        var md = window.markdownit();
-
-        // Fetch the content of the Markdown file
-        fetch('/markdown/rebound11/content.md')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch content: ' + response.statusText);
-                }
-                return response.text();
-            })
-            .then(text => {
-                // Convert the Markdown content to HTML
-                var renderedHTML = md.render(text);
-                // Insert the rendered HTML into the output section
-                document.getElementById('output').innerHTML = renderedHTML;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById('output').innerHTML = 'Failed to load content: ' + error.message;
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Showdown converter
+            var converter = new showdown.Converter({
+                simplifiedAutoLink: true,
+                literalMidWordUnderscores: true
             });
-    });
-</script>
 
+            // Fetch the content of the Markdown file
+            fetch('/markdown/rebound11/content.md')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch content: ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // Convert the Markdown content to HTML
+                    var renderedHTML = converter.makeHtml(text);
+                    // Insert the rendered HTML into the output section
+                    document.getElementById('output').innerHTML = renderedHTML;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('output').innerHTML = 'Failed to load content: ' + error.message;
+                });
+        });
+    </script>
 </section>
 
 <section class="centered-section" style="margin-top: 20px;">

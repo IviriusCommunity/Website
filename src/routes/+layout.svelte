@@ -32,7 +32,6 @@
 			justify-content: flex-start;
 			padding: 10px;
 			background: var(--fds-solid-background-base);
-			border-bottom: 1px solid rgba(205, 205, 205, 0.25);
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -40,7 +39,9 @@
 			z-index: 1000; /* Ensures the navbar stays on top of other content */
 		">
 			<!-- Favicon -->
-			<img src="https://i.spoo.me/690700" style="width: 160px; height: 50.5px; margin-right: -15px; margin-left: 45px; margin-top: 2px; margin-bottom: 2px; align-items: center;" />
+			<img src="/favicon.png" style="width: 50px; height: 50px; margin-right: -15px; margin-left: 45px; margin-top: 2px; margin-bottom: 2px; align-items: center;" />
+
+            <Fluent.TextBlock style="font-weight: 650; font-size: 25px; opacity: 0.5; margin-left: 35px; margin-right: 35px;">Ivirius</Fluent.TextBlock>
 
 			<div style="width: 1px; height: 30px; margin-right: 15px; background-color: #AAAAAAAA;"></div>
 
@@ -101,7 +102,7 @@
 			</Fluent.IconButton>
 		</section>
 		
-		<div style="margin-top: 70px;">
+		<div class="bkgdiv" style="margin-top: 70px;">
 			<!-- Content -->
 			<slot></slot>
 		</div>
@@ -140,7 +141,26 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		
 	}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :global(body) {
+    /*Background image*/
+    background-image: url("https://raw.githubusercontent.com/Tropix126/fluent-svelte/main/static/bloom-mica-light.png");
+
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :global(body) {
+    /*Background image*/
+    background-image: url("https://raw.githubusercontent.com/Tropix126/fluent-svelte/main/static/bloom-mica-dark.png");
+
+    }
+}
 
 	main {
 		flex: 1;

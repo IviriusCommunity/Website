@@ -207,9 +207,6 @@
     /*Background color*/
 		background-color: var(--fds-solid-background-base);
 
-    /*Background image*/
-    background-image: url("https://i.spoo.me/825520");
-
     /*Background color*/
 		color: var(--fds-text-primary);
 	}
