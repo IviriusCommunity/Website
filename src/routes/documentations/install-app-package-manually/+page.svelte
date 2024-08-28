@@ -27,113 +27,108 @@
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">•</Fluent.TextBlock>
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">July 13, 2024</Fluent.TextBlock>
         </section>
+
         <h2>
                 <Fluent.TextBlock variant="body">In this article, I will show you how to install a UWP app package along with its certificate and dependencies. A UWP package contains all the information required for a UWP, WinUI 3 or Win32 packaged app to install on your system.</Fluent.TextBlock>
         </h2>
         <h2>
                 <Fluent.InfoBar style="margin-top: 20px;" severity="attention" title="Tip!" message="If you want to speed up the process, consider downloading our portable certificate installer for MSIX." open>
                         
-                <Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download Quick Certificate Installer For MSIX</Fluent.Button>
+                <Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download the Certificate Installer For MSIX</Fluent.Button>
                 </Fluent.InfoBar>
         </h2>
-        </section>
-        <section class="margin-section">
-                <section class="content-right">
-                        <div>
-                                <Fluent.TextBlock variant="body">UWP apps are packaged into bundles that contain all the required dependencies to be installed. When downloading such a bundle online, you might expect it to be easy to install, but it's not always a straightforward task. This article will help you fix the most common problem: missing certificates. When opening a UWP app bundle, you may see this error appear:</Fluent.TextBlock>
-                        </div>
-                        <img src="https://i.spoo.me/409589" alt="Certificate window"/>
-                </section>
-        </section>
-        <section class="margin-section">
+
+        <div>
+                <Fluent.TextBlock variant="body">UWP apps are packaged into bundles that contain all the required dependencies to be installed. When downloading such a bundle online, you might expect it to be easy to install, but it's not always a straightforward task. This article will help you fix the most common problem: missing certificates. When opening a UWP app bundle, you may see this error appear:</Fluent.TextBlock>
+        </div>
+        
         <section class="centered-section">
+                <img src="https://i.spoo.me/287069" alt="Certificate window"/>
         </section>
         <h2>
                 <Fluent.TextBlock variant="body">Here's how to properly install a UWP package:</Fluent.TextBlock>
         </h2>
         <h1>
+                <Fluent.TextBlock variant="subtitle" style="font-size: 30px;">Method 1 - Using the Certificate Installer For MSIX</Fluent.TextBlock>
+        </h1>  
+        <h1>
+                <Fluent.TextBlock variant="subtitle">
+                        Step 1 - Download the <a href="https://google.com">Certificate Installer for MSIX</a>
+                </Fluent.TextBlock>
+        </h1>   
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Step 2 - Open the program and navigate to the certificate file</Fluent.TextBlock>
+                <Fluent.InfoBar style="margin-top: 20px;" severity="caution" title="Warning!" message="Requires administrator permissions." open></Fluent.InfoBar>
+        </h1>    
+        <section class="centered-section">
+                <img src="https://i.spoo.me/751928"/>
+        </section> 
+        <h1>
+                <Fluent.TextBlock variant="subtitle">Step 3 - Press install</Fluent.TextBlock>
+        </h1>    
+        <h2>
+                <Fluent.TextBlock variant="body">If the certificate has been succesfully installed, the window will close automatically. If the certificate needs a password to be installed, please contact the developer and ask them to give you the password.</Fluent.TextBlock>
+        </h2>
+        <h1>
+                <Fluent.TextBlock variant="subtitle" style="font-size: 30px;">Method 2 - Manual installation</Fluent.TextBlock>
+        </h1>  
+        <h1>
                 <Fluent.TextBlock variant="subtitle">Step 1 - Import app certificate</Fluent.TextBlock>
         </h1>     
+        <h2>
+                
         <Fluent.TextBlock variant="body">Before you begin the installation of an untrusted Universal Windows Platform (UWP) package, it's crucial to ensure that the app's certificate is properly imported into your system. If the app package comes with a certificate file, this step is necessary to validate the package and allow for a smooth installation. To import the certificate, simply double-click on it. After the window below opens, follow the next steps.</Fluent.TextBlock>
-        <br/>
-        <br/>
+</h2>  
+<section class="centered-section">
+        <img src="https://i.spoo.me/979956"/>
+</section> 
+<h2>
         <Fluent.TextBlock variant="body">Now, click the "Install Certificate..." button. This action will open the Certificate Import Wizard, which will guide you through the process of adding the certificate to your system.</Fluent.TextBlock>
-        
-        <section>
-                <section class="content-right">
-                        <div>
-                           </div>
-        <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000054-7cca57cca6/700/Screenshot%202022-11-30%20131454.webp?ph=57a6227aab" alt="Certificate window"/>
+</h2>
+
+<section class="centered-section">
+        <img src="https://i.spoo.me/852685"/>
+</section> 
+
+<h2>
+        <Fluent.TextBlock variant="body">Make sure to select the "Local Machine" option and click "Next". This ensures that the certificate is installed for all users on the system, granting the app the necessary permissions to run properly.</Fluent.TextBlock>
+        <Fluent.InfoBar style="margin-top: 20px;" severity="caution" title="Warning!" message="Requires administrator permissions." open></Fluent.InfoBar>
+</h2>
+      
+<section class="centered-section">
+        <img src="https://i.spoo.me/443430"/>
+</section> 
+  
+<h2>
+        <Fluent.TextBlock variant="body">Select "Trusted Root Certification Authorities" to proceed. This step is crucial because it adds the app's certificate to the system's trusted root store, which means that Windows will recognize the certificate as valid and secure for UWP apps. Once you've made this selection, click "OK" to confirm and move forward with the installation process.</Fluent.TextBlock>
+</h2>
+<section class="centered-section">
+        <img src="https://i.spoo.me/541594"/>
+</section> 
+  
+<h2>
+        <Fluent.TextBlock variant="body">Click "Finish" to proceed.</Fluent.TextBlock>
+</h2>
+<h1>
+        <Fluent.TextBlock variant="subtitle">Step 2 - Install dependencies</Fluent.TextBlock>
+</h1>
+<h2>
+        <Fluent.TextBlock variant="body">If the app comes with another package that contains dependencies, you might need to install that one as well. Since these dependencies are mostly Microsoft runtimes, they don't require a certificate.</Fluent.TextBlock>
+</h2>
+<section class="centered-section">
+        <img src="https://i.spoo.me/831789"/>
+</section> 
+<h1>
+        <Fluent.TextBlock variant="subtitle">Step 3 - Install the app</Fluent.TextBlock>
+</h1>
+<h2>
+        <Fluent.TextBlock variant="body">Now that all the required dependencies have been installed, you can install the app package.</Fluent.TextBlock>
+</h2>
+<section class="centered-section">
+        <img src="https://i.spoo.me/311777"/>
 </section>
-        </section>
-        <section class="centered-section">
-                </section>
-        <h2>
-                </h2>
-        <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000056-3f5313f532/700/Screenshot%202022-11-30%20131511.webp?ph=57a6227aab" alt="Certificate window"/>
-        </section>
-        <h2>
-                <Fluent.TextBlock variant="body">Make sure to select the "Local Machine" option and click "Next". This ensures that the certificate is installed for all users on the system, granting the app the necessary permissions to run properly.</Fluent.TextBlock>
-                <Fluent.InfoBar style="margin-top: 20px;" severity="caution" title="Warning!" message="Requires administrator permissions." open></Fluent.InfoBar>
-        </h2>
-        <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000060-d95e0d95e2/450/Screenshot%202022-11-30%20131556.webp?ph=57a6227aab" alt="Certificate window"/>
-        </section>
-        <h2>
-                <Fluent.TextBlock variant="body">Select "Trusted Root Certification Authorities" to proceed. This step is crucial because it adds the app's certificate to the system's trusted root store, which means that Windows will recognize the certificate as valid and secure for UWP apps. Once you've made this selection, click "OK" to confirm and move forward with the installation process.</Fluent.TextBlock>
-        </h2>
-        <section class="centered-section">
-                <img src="https://57a6227aab.cbaul-cdnwnd.com/faa5aca8a748076d073f9c252b407e05/200000062-c9aefc9af0/700/Screenshot%202022-11-30%20131619.webp?ph=57a6227aab" alt="Certificate window"/>
-        </section>
-        <h2>
-                <Fluent.TextBlock variant="body">Click "Finish" to complete the certificate installation.</Fluent.TextBlock>
-        </h2>
-        <h1>
-                <Fluent.TextBlock variant="subtitle">Step 2 - Install dependencies</Fluent.TextBlock>
-        </h1>
-        <h2>
-                <Fluent.TextBlock variant="body">If the app comes with another package that contains dependencies, you might need to install that one as well. Since these dependencies are mostly Microsoft runtimes, they don't require a certificate.</Fluent.TextBlock>
-        </h2>
-        <section class="centered-section">
-                <img src="https://i.spoo.me/881744" alt="Certificate window"/>
-        </section>
-        <h1>
-                <Fluent.TextBlock variant="subtitle">Step 3 - Install the app</Fluent.TextBlock>
-        </h1>
-        <h2>
-                <Fluent.TextBlock variant="body">Now that all the required dependencies have been installed, you can install the app package.</Fluent.TextBlock>
-        </h2>
-        <section class="centered-section">
-                <img src="https://i.spoo.me/184923" alt="Certificate window"/>
-        </section>
-      </section>
-      
-      <!--Bottom bar-->
-      <section style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;">
-        <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-          Partners
-        </Fluent.TextBlock>
-                <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.spoo.me';" style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button>
-        <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-          Developers and contributors
-        </Fluent.TextBlock>
-        <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-top: 10px; margin-bottom: 10px;">Ivirius</Fluent.Button>
-        <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-bottom: 10px;">ErrorTek</Fluent.Button>
-        <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-bottom: 10px;">TheDevil</Fluent.Button>
-        <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-bottom: 10px;">0x5BFA</Fluent.Button>
-        <Fluent.Button variant="hyperlink" onclick="window.location.href='https://website-2-sigma.vercel.app/';" style="margin-bottom: 10px;">FlamebladeOmega</Fluent.Button>
-        <Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-          Website
-        </Fluent.TextBlock>
-                <Fluent.Button variant="hyperlink" onclick="window.location.href='https://fluent-svelte.vercel.app';" style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button>
-                <Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';">Vercel</Fluent.Button>
-                <Fluent.Button variant="hyperlink" onclick="window.location.href='/about';" style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button>
-                <Fluent.TextBlock variant="body" style="opacity: 0.5; margin-top: 10px; margin-bottom: 10px; margin-right: 25px;">
-                  Ivirius Community (2020 - 2024) Official Website - Powered by Vercel and Fluent Svelte
-                </Fluent.TextBlock>
-      </section>
-      
+</section>
+
       <!--Styles-->
       <style>
         /*Import theme*/
@@ -144,9 +139,6 @@
         {
           /*Background color*/
                       background-color: var(--fds-solid-background-base);
-      
-          /*Background image*/
-          background-image: url("https://i.spoo.me/825520");
       
           /*Background color*/
                       color: var(--fds-text-primary);
@@ -182,11 +174,11 @@ border-radius: 8px;
         {
           margin: 0 auto;
           padding: 25px;
-          max-width: 1250px;
+          max-width: 750px;
           text-align: justify;
         }
         
-        @media (min-width: 1250px) {
+        @media (min-width: 600px) {
           .centered-section-2 {
             text-align: center;
           }
@@ -229,6 +221,13 @@ border-radius: 8px;
       margin-left: 75px;
       margin-right: 75px;
   }
+
+  a {
+    color: var(--fds-accent-default);         /* Text color */
+    text-decoration: none;  /* Removes underline */
+    font-size: 16px;        /* Font size */
+    font-family: Arial, sans-serif;  /* Font family */
+}
 
   @media (max-width: 1000px) {
       .content-right img {
