@@ -21,7 +21,6 @@
 		"@types/cookie": "^0.5.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
 		"fluent-svelte": "^1.6.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
