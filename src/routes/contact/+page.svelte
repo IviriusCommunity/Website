@@ -4,8 +4,9 @@
 	import 'fluent-svelte/theme.css';
 
 	//Variables
-	let openTooShortMsg = false;
+	let open = false;
   let openTooShortSub = false;
+  let errorMessage = '';
 
 	let email = '';
 	let subject = '';
@@ -20,20 +21,22 @@
 
     if (!validateEmail(email)) {
       // add the code to show the email is not valid message
-      console.error('Email is not valid!');
+      errorMessage = 'Email is not valid!';
+	  open = true;
       return;
     }
 
 		if (subject.length < 5) {
       // add the code to show the subject is not valid message
-			console.error('Subject must be alteast 5 characters long!');
+      errorMessage = 'Subject must be alteast 5 characters long!';
+	  open = true;
 			return;
 		}
 
     if (message.length < 25) {
       // add the code to show the message is not valid message
-      console.error('Message must be alteast 25 characters long!');
-      openTooShortMsg = true;
+      errorMessage = 'Message must be alteast 25 characters long!';
+	  open = true;
       return;
     }
 
@@ -52,21 +55,30 @@
       if (!response.ok) {
         if (response.status === 429) {
           // add the code to show the rate limited message
-          console.error('Rate limited!');
+      errorMessage = 'Rate limited!';
+	  open = true;
           return;
         }
         else {
           // add the code to show the failed to send message
-          console.error('Failed to send message!');
+      errorMessage = 'Failed to send message!';
+	  open = true;
           return;
         }
       }
+
+if (response.ok == true)
+{
+      errorMessage = 'Thank you for contacting us. We will reach out to you as soon as possible.';
+	  open = true;
+}
 
       const data = await response.json();
       console.log(data);
     } catch (error) {
       // add the code to show the error message
-      console.error('Error:', error);
+      errorMessage = 'Error';
+	  open = true;
     }
 
     // clear the form
@@ -82,31 +94,6 @@
 	<meta name="description" content="Ivirius official website" />
 </svelte:head>
 
-<!--Navbar-->
-<section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: var(--fds-solid-background-base); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
-
-	<!--Favicon-->
-	<Fluent.PersonPicture src="/favicon.png" style="width: 35px; height: 35px; margin-right: 15px; margin-left: 15px; margin-top: 18px; align-items: center;"/>
-
-	<!--Title-->
-	<Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
-
-	<!--Home-->
-	<Fluent.Button style="height: 32px; color: var(--fds-text-primary); margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/';">Home</Fluent.Button>
-
-	<!--CrimsonUI-->
-	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
-
-	<!--Documentations-->
-	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
-
-	<!--Contact us-->
-	<Fluent.Button style="color: var(--fds-accent-text-primary); border-color: var(--fds-accent-text-primary); height: 32px; margin-right: 15px; align-items: center;">Contact us</Fluent.Button>
-
-	<!--About-->
-	<Fluent.Button style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
-</section>
-
 <!--Title-->
 <section class="centered-section">
 	<h1>
@@ -116,9 +103,7 @@
 
 <!--Ivirius Text Editor Plus-->
 <section class="margin-section">
-  <h1>
-<Fluent.InfoBar title="Error!" message="Message is too short." bind:openTooShortMsg />
-  </h1>
+	<Fluent.InfoBar id="errmessage" bind:open>{errorMessage}</Fluent.InfoBar>
 	<h1>
 		<Fluent.TextBox
 			placeholder="Email"
@@ -135,51 +120,29 @@
 		/>
 	</h2>
 	<h3>
-		<Fluent.TextBox
+		<textarea
 			placeholder="Message"
-			style="min-height: 150px; width: 100%; box-sizing: border-box;"
+			style="min-height: 150px; width: 100%; box-sizing: border-box;
+			padding: 10px;
+			resize: none;
+			border: 1px solid var(--fds-control-stroke-default);
+			background-color: var(--fds-control-fill-default);
+			font-family: Arial, sans-serif;
+			border-radius: 4px;
+			color: var(--fds-text-primary);"
 			bind:value={message}
 		/>
 	</h3>
 </section>
 
 <section class="right-section">
-	<Fluent.Button style="width: 60px; float: right;" variant="accent" on:click={sendToDiscord}>
+	<Fluent.Button style="width: 30%; float: right;" onclick="window.location.href='https://dsc.gg/ivirius'">
+		Contact Us on Discord
+	</Fluent.Button>
+	<div style="width: 5%;"/>
+	<Fluent.Button style="width: 30%; float: right;" variant="accent" on:click={sendToDiscord}>
 		Send
 	</Fluent.Button>
-</section>
-<!--Bottom bar-->
-<section
-	style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px; background: var(--fds-solid-background-base); border-top: 1px solid rgba(205, 205, 205, 0.25); display: flex; flex-direction: column; align-items: flex-start;"
->
-	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">Partners</Fluent.TextBlock>
-	<Fluent.Button
-		variant="hyperlink"
-		onclick="window.location.href='https://www.spoo.me';"
-		style="margin-top: 10px; margin-bottom: 10px;">spoo.me URL shortener</Fluent.Button
-	>
-	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">
-		Developers and contributors
-	</Fluent.TextBlock>
-	<Fluent.Button
-		variant="hyperlink"
-		onclick="window.location.href='https://website-2-sigma.vercel.app/';"
-		style="margin-top: 10px; margin-bottom: 10px;">ErrorTek</Fluent.Button
-	>
-	<Fluent.TextBlock variant="bodyStrong" style="margin-top: 10px;">Website</Fluent.TextBlock>
-	<Fluent.Button
-		variant="hyperlink"
-		onclick="window.location.href='https://fluent-svelte.vercel.app';"
-		style="margin-top: 10px; margin-bottom: 10px;">Fluent Svelte</Fluent.Button
-	>
-	<Fluent.Button variant="hyperlink" onclick="window.location.href='https://www.vercel.com';"
-		>Vercel</Fluent.Button
-	>
-	<Fluent.Button
-		variant="hyperlink"
-		onclick="window.location.href='/about';"
-		style="margin-top: 10px; margin-bottom: 10px;">About</Fluent.Button
-	>
 </section>
 
 <!--Styles-->
@@ -192,19 +155,23 @@
 		/*Background color*/
 		background-color: var(--fds-solid-background-base);
 
-		/*Background image*/
-		background-image: url('https://i.spoo.me/825520');
-
 		/*Background color*/
 		color: var(--fds-text-primary);
 	}
+
+	textarea:focus {
+            /* Styles for focus state */
+            border-color: var(--fds-accent-default);   /* Change border color when focused */
+            outline: none;           /* Remove default outline */
+			background-color: var(--fds-control-on-image-fill-default);
+        }
 
 	/*Centered section*/
 	.centered-section {
 		text-align: center;
 		margin: 0 auto;
 		padding: 25px;
-		max-width: 1250px;
+		max-width: 650px;
 	}
 
 	/*Right aligned section*/
@@ -212,16 +179,17 @@
 		text-align: right;
 		margin: auto;
 		padding: 25px;
-		max-width: 1250px;
+		max-width: 650px;
 		display: flex;
 		justify-content: flex-end;
 		justify-items: flex-end;
+		margin-top: -50px;
 	}
 
 	/*Left aligned centered section*/
 	.margin-section {
 		margin: 0 auto;
 		padding: 25px;
-		max-width: 1250px;
+		max-width: 650px;
 	}
 </style>
