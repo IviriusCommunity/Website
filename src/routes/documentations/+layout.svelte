@@ -12,7 +12,7 @@
     <div class="panel">
         <!-- Panel content -->
         <h2>
-            <Fluent.Expander expanded> General <div slot="content">
+            <Fluent.Expander expanded class="newexpander"> General <div slot="content">
                     <Fluent.ListItem selected>Home</Fluent.ListItem>
                     <Fluent.ListItem onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.ListItem>
                     <Fluent.ListItem onclick="window.location.href='/documentations/install-app-package-manually';">Install app package manually</Fluent.ListItem>
@@ -75,7 +75,8 @@
     
     @use "../mixins" as *;
 
-.expander {
+:global(.newexpander) {
+    background-color: transparent;
 	&.direction- {
 		&down {
 			&.expander-content {
@@ -142,7 +143,7 @@
 		padding-inline-start: 16px;
 		padding: 8px;
 		background-clip: padding-box;
-		background-color: var(--card-background-default);
+		background-color: transparent;
 		border: 1px solid var(--card-stroke-default);
 		border-radius: var(--control-corner-radius);
 		&-title {
@@ -152,11 +153,11 @@
 			box-shadow: var(--focus-stroke);
 		}
 		&:hover .expander-chevron {
-			background-color: var(--subtle-fill-secondary);
+            background-color: transparent;
 		}
 		&:active .expander-chevron {
 			color: var(--text-secondary);
-			background-color: var(--subtle-fill-tertiary);
+            background-color: transparent;
 		}
 	}
 	&-chevron {
@@ -169,7 +170,7 @@
 		appearance: none;
 		color: var(--text-primary);
 		border-radius: var(--control-corner-radius);
-		background-color: var(--subtle-fill-transparent);
+		background-color: transparent;
 		&:focus-visible {
 			box-shadow: var(--focus-stroke);
 		}
