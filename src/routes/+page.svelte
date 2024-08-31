@@ -26,7 +26,7 @@
  <h2>
    <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
    <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';">Download Ivirius Text Editor</Fluent.Button>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha/ReboundHubInstaller.exe'">Download Rebound 11</Fluent.Button>
+   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha-v0.0.2/ReboundHubInstaller.exe'">Download Rebound 11</Fluent.Button>
  </h2>
 </section>
 
