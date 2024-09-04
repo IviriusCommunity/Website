@@ -84,7 +84,7 @@
             display: flex;
             justify-content: flex-end;
             margin-top: 25px;
-            background-color: var(--fds-control-strong-fill-default);
+            background-color: var(--fds-mica-background-base);
             max-width: 1000px;">
         
     <div class="caption-buttons">
