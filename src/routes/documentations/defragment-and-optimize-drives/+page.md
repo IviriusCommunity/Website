@@ -11,6 +11,10 @@
   import csharp from "svelte-highlight/languages/csharp";
   import "svelte-highlight/styles/onedark.css";
 
+    let code = `-Command "Start-Process 'shell:AppsFolder\\54d2a63e-e616-4159-bed6-c776b8a816e1_yejd587sfa94t' -ArgumentList @( 'SELECTED-SYSTEM 1' ) -Verb RunAs"`;
+    let code1 = `-Command "Start-Process 'shell:AppsFolder\\54d2a63e-e616-4159-bed6-c776b8a816e1_yejd587sfa94t' -ArgumentList @( 'SELECTED 1' ) -Verb RunAs"`;
+    //let code2 = `-Command "Start-Process 'shell:AppsFolder\\54d2a63e-e616-4159-bed6-c776b8a816e1_yejd587sfa94t' -ArgumentList @( 'OPTIMIZEALL-SYSTEM' ) -Verb RunAs"`;
+    //let code3 = `-Command "Start-Process 'shell:AppsFolder\\54d2a63e-e616-4159-bed6-c776b8a816e1_yejd587sfa94t' -ArgumentList @( 'OPTIMIZEALL' ) -Verb RunAs"`;
 </script>
       
 <section class="centered-section-2">
@@ -68,6 +72,17 @@ Rebound Defragment and Optimize Drives also supports command line arguments, but
 
 ## Optimize selected drives
 With system partitions enabled
+  <div style="border: 1px solid rgba(128, 128, 128, 0.5);">
+<Highlight language={csharp} {code} let:highlighted>
+  <LineNumbers {highlighted} />
+</Highlight>
+  </div>
+With system partitions disabled
+  <div style="border: 1px solid rgba(128, 128, 128, 0.5);">
+<Highlight language={csharp} {code1} let:highlighted1>
+  <LineNumbers {highlighted1} />
+</Highlight>
+  </div>
 </section>
 
 <!--Styles-->
