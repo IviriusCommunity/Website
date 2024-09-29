@@ -205,7 +205,9 @@
 
     .main-content {
         flex: 3;
-        padding: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+		padding-bottom: 35px;
         box-sizing: border-box;
         border-top-left-radius: 8px;
         background-color: var(--fds-control-fill-default);

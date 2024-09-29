@@ -34,6 +34,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sveltekit-2": "file:"
+		"highlight.js": "^11.10.0",
+		"svelte-highlight": "^7.7.0",
+		"sveltekit-2": "file:",
+		"svhighlight": "^0.7.1"
 	}
 }

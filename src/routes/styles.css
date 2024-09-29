@@ -23,3 +23,12 @@ body {
 	white-space: nowrap;
 }
 
+/* src/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font to the entire app */
+html, body {
+  font-family: var(--fds-font-family-text);
+  margin: 0;
+  padding: 0;
+}

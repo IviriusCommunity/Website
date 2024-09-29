@@ -1,6 +1,40 @@
 <script>
         import * as Fluent from "fluent-svelte";
         import "fluent-svelte/theme.css";
+        
+    import { CodeBlock } from 'svhighlight';
+ 
+ let code = `
+ public MainWindow()
+ {
+     this.InitializeComponent();
+     RootFrame.Navigate(typeof(ShellPage));
+     CheckWindowProperties();
+     this.ExtendsContentIntoTitleBar = true;
+     this.AppWindow.TitleBar.PreferredHeightOption = Microsoft.UI.Windowing.TitleBarHeightOption.Collapsed;
+     this.AppWindow.TitleBar.ButtonHoverBackgroundColor = Windows.UI.Color.FromArgb(25, 200, 200, 200);
+     this.AppWindow.TitleBar.ButtonPressedBackgroundColor = Windows.UI.Color.FromArgb(15, 200, 200, 200);
+     this.AppWindow.Title = "Rebound Hub";
+     this.SetIcon($"{AppContext.BaseDirectory}\\Assets\\AppIcons\\ReboundHub.ico");
+
+     _msgMonitor ??= new WindowMessageMonitor(this);
+     _msgMonitor.WindowMessageReceived -= Event;
+     _msgMonitor.WindowMessageReceived += Event;
+
+     if (isCrimsonUIEnabled == true)
+     {
+         this.AppWindow.TitleBar.PreferredHeightOption = Microsoft.UI.Windowing.TitleBarHeightOption.Collapsed;
+         CrimsonUIButtons.Visibility = Visibility.Visible;
+         LoadBounds();
+     }
+     mon = new RegistryMonitor(@"Software\Microsoft\Windows\DWM");
+     mon.Start();
+     var x = new ThemeListener();
+     x.ThemeChanged += X_ThemeChanged;
+
+     Rehook();
+     CheckWindow();
+ }`;
 </script>
 
 <svelte:head>
@@ -29,11 +63,13 @@
 
 <section class="centered-min-section">
         <h2>
-  <Fluent.ListItem selected="true" onclick="window.location.href='/documentations/windowdecorations';">WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.ListItem>
-  <Fluent.ListItem disabled="true">CrimsonUI</Fluent.ListItem>
+                
         </h2>
 
 </section>
+
+
+<CodeBlock {code}/>
 
 <section class="margin-section">
                 <Fluent.TextBlock variant="body" align="center">Have you ever wondered how to hide the title bar buttons in UWP, and then searched for hours and hours and did not find anything? That's not because it's impossible, it's because this feature is part of UWP's LimitedAccessFeatures, meaning that it is not documented on Microsoft's website.</Fluent.TextBlock>

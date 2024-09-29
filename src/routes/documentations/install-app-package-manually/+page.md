@@ -7,20 +7,12 @@
         let open = true;
         </script>
       
-      <!--Head-->
-      <svelte:head>
-              <title>Ivirius</title>
-              <meta name="description" content="Ivirius Community official website"/>
-              <meta content="Ivirius Community Community" name="author" />
-              <meta content="#6ba4ff" name="theme-color" />
-      </svelte:head>
-      
-      <section class="centered-section-2">
+<section class="centered-section-2">
         <Fluent.TextBlock variant="titleLarge" style="text-alignment: left; margin-top: 25px;">Install app package manually</Fluent.TextBlock>
       </section>
       
       <!--Author-->
-      <section class="margin-section">
+<section class="margin-section">
         <section style="display: flex; margin-bottom: -30px;">
                 <Fluent.PersonPicture src="https://i.spoo.me/247555" style="width: 30px; height: 30px; margin-right: 15px;"/>
                 <Fluent.TextBlock variant="body" style="margin-left: -25px; margin-top: 5px;">Author: Ivirius</Fluent.TextBlock>
@@ -28,21 +20,21 @@
                 <Fluent.TextBlock variant="body" style="margin-left: 10px; margin-top: 5px; opacity: 0.5;">July 13, 2024</Fluent.TextBlock>
         </section>
 
-        <h2>
+<h2>
                 <Fluent.TextBlock variant="body">In this article, I will show you how to install a UWP app package along with its certificate and dependencies. A UWP package contains all the information required for a UWP, WinUI 3 or Win32 packaged app to install on your system.</Fluent.TextBlock>
         </h2>
         <h2>
                 <Fluent.InfoBar style="margin-top: 20px;" severity="attention" title="Tip!" message="If you want to speed up the process, consider downloading our portable certificate installer for MSIX." open>
                         
-                <Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download the Certificate Installer For MSIX</Fluent.Button>
+<Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download the Certificate Installer For MSIX</Fluent.Button>
                 </Fluent.InfoBar>
-        </h2>
+</h2>
 
-        <div>
+<div>
                 <Fluent.TextBlock variant="body">UWP apps are packaged into bundles that contain all the required dependencies to be installed. When downloading such a bundle online, you might expect it to be easy to install, but it's not always a straightforward task. This article will help you fix the most common problem: missing certificates. When opening a UWP app bundle, you may see this error appear:</Fluent.TextBlock>
         </div>
         
-        <section class="centered-section">
+<section class="centered-section">
                 <img src="https://i.spoo.me/287069" alt="Certificate window"/>
         </section>
         <h2>
@@ -130,7 +122,7 @@
 </section>
 
       <!--Styles-->
-      <style>
+<style>
         /*Import theme*/
               @import url("https://unpkg.com/fluent-svelte/theme.css");
       
