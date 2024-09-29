@@ -5,10 +5,6 @@
 
   //Variables
   let open = true;
-
-import { mdsvex } from 'mdsvex';
-import sveltePreprocess from 'svelte-preprocess';
-
 </script>
 
 <!--Head-->
