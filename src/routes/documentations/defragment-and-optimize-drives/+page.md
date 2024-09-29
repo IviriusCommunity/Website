@@ -79,8 +79,8 @@ With system partitions enabled
   </div>
 With system partitions disabled
   <div style="border: 1px solid rgba(128, 128, 128, 0.5);">
-<Highlight language={csharp} {code1} let:highlighted>
-  <LineNumbers {highlighted} />
+<Highlight language={csharp} {code1} let:highlighted1>
+  <LineNumbers {highlighted1} />
 </Highlight>
   </div>
 </section>
