@@ -53,7 +53,7 @@
                     <Fluent.ListItem disabled>Control Panel</Fluent.ListItem>
                     <Fluent.ListItem disabled>Run</Fluent.ListItem>
                     <Fluent.ListItem disabled>Disk Cleanup</Fluent.ListItem>
-                    <Fluent.ListItem disabled>Defragment and Optimize Drives</Fluent.ListItem>
+                    <Fluent.ListItem onclick="window.location.href='/documentations/rebound11/defragment-and-optimize-drives/';">Defragment and Optimize Drives</Fluent.ListItem>
                     <Fluent.ListItem disabled>TPM Manager</Fluent.ListItem>
                     <Fluent.ListItem disabled>Rebound Hub</Fluent.ListItem>
                 </div>
