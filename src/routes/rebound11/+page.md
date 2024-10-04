@@ -18,7 +18,7 @@
                         <Fluent.TextBlock variant="body" align="center" style="color: black; font-size:18px">Windows 11 as it should have been.</Fluent.TextBlock>
          </h2>
          <h2>
-           <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha-v0.0.2/ReboundHubInstaller.exe';">Download</Fluent.Button>
+           <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha-v0.0.3/ReboundHubInstaller.exe';">Download</Fluent.Button>
          </h2>
         </div>
 </section>
