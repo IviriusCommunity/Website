@@ -41,9 +41,9 @@
     }`;
 </script>
 
-# Documentations
+# Docs
 
-Read documentations about various tools and APIs from Ivirius and less known features in UWP and Windows App SDK.
+Read docs about various tools and APIs from Ivirius and less known features in UWP and Windows App SDK.
 
 Here you can find tutorials for pushing the boundaries of WinUI 3 and UWP by enabling snap layouts on a custom title bar button, building an uncontained UWP app, and completely removing its title bar, etc.
 

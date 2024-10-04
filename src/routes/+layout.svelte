@@ -9,8 +9,8 @@
 			path: "/",
 		},
 		{
-			name: "Documentations",
-			path: "/documentations",
+			name: "Docs",
+			path: "/docs",
 		},
 	];
 
@@ -79,7 +79,7 @@
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/rebound11';">Rebound 11</Fluent.Button>
 						</div>
 						<div>
-							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/documentations/install-app-package-manually';">Certificate Installer For MSIX</Fluent.Button>
+							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/docs/install-app-package-manually';">Certificate Installer For MSIX</Fluent.Button>
 						</div>
 						<div>
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
@@ -96,7 +96,7 @@
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/news';">News</Fluent.Button>
 						</div>
 						<div>
-							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
+							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/docs';">Docs</Fluent.Button>
 						</div>
 						<div>
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='https://discord.gg/windows-apps-hub-714581497222398064';">Developer Sanctuary</Fluent.Button>
@@ -182,7 +182,7 @@
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/rebound11';">Rebound 11</Fluent.Button>
 						</div>
 						<div>
-							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/documentations/install-app-package-manually';">Certificate Installer For MSIX</Fluent.Button>
+							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/docs/install-app-package-manually';">Certificate Installer For MSIX</Fluent.Button>
 						</div>
 						<div>
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
@@ -194,7 +194,7 @@
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/news';">News</Fluent.Button>
 						</div>
 						<div>
-							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
+							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='/docs';">Docs</Fluent.Button>
 						</div>
 						<div>
 							<Fluent.Button variant="hyperlink" style="color: var(--fds-text-primary); height: 32px; margin-right: 15px; align-items: center;" onclick="window.location.href='https://discord.gg/windows-apps-hub-714581497222398064';">Developer Sanctuary</Fluent.Button>

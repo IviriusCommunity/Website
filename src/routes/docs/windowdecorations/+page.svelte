@@ -38,8 +38,8 @@
 </script>
 
 <svelte:head>
-        <title>Ivirius - Documentations</title>
-        <meta name="description" content="Ivirius documentations" />
+        <title>Ivirius - Docs</title>
+        <meta name="description" content="Ivirius docs" />
 </svelte:head>
 
 <section style="display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 10px; background: rgba(25, 25, 25, 0.15); border-bottom: 1px solid rgba(205, 205, 205, 0.25);">
@@ -47,14 +47,14 @@
   <Fluent.TextBlock variant="bodyLarge" style="margin-right: 25px; align-items: center;">Ivirius</Fluent.TextBlock>
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/';">Home</Fluent.Button>
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.Button>
-  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/documentations';">Documentations</Fluent.Button>
+  <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/docs';">Docs</Fluent.Button>
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/contact';">Contact us</Fluent.Button>
   <Fluent.Button style="height: 32px; margin-right: 15px; align-items: center;" variant="hyperlink" onclick="window.location.href='/about';">About</Fluent.Button>
 </section>
 
 <section class="centered-section">
         <h1>
-                <Fluent.TextBlock variant="titleLarge">Documentations - WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.TextBlock>
+                <Fluent.TextBlock variant="titleLarge">Docs - WindowDecorations - Hide the title bar in UWP AppWindow</Fluent.TextBlock>
         </h1>
  <h2>
                 <Fluent.TextBlock variant="body" align="center">This page will teach you how to hide the title bar area completely in UWP.</Fluent.TextBlock>
