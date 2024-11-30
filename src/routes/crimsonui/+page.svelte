@@ -26,7 +26,7 @@
 <!--Download buttons-->
 <section class="centered-section">
 	<h2>
-		<Fluent.Button variant="accent" onclick="window.location.href='https://github.com/IviriusMain/CrimsonUI/releases/download/Release/CrimsonUI.xaml';">Download CrimsonUI</Fluent.Button>
+		<Fluent.Button variant="accent" onclick="window.location.href='https://nuget.org/packages/Crimson';">Download CrimsonUI</Fluent.Button>
 	</h2>
 </section>
 
