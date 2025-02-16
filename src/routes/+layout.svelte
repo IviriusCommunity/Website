@@ -34,7 +34,7 @@
 		<div class="navbar">
 			<div class="navbar-bkg"></div>
 			<div class="menu">
-				<img src="./favicon.png" style="width: 50px; align-self: center;"/>
+				<img src="./favicon.png" style="width: 50px; align-self: center;" alt=""/>
 				<p style="align-self: center; font-size: 20px; margin-bottom: 4px; font-weight: 500;">Ivirius Community</p>
 	<div class="items" style="display: flex; flex-direction: row; gap: 8px;">
 		<div style="width: 1px; height: 30px; margin-left: 15px; align-self: center; background-color: var(--fds-divider-stroke-default);"></div>
@@ -111,12 +111,6 @@
 
     }
 }
-html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;  /* Stack elements vertically */
-        }
         .footer {
             background: var(--fds-solid-background-tertiary);
             padding: 40px 20px;
@@ -212,12 +206,6 @@ html, body {
 
 .overflow-pane {
 	visibility: collapse;
-}
-
-.overflow-pane a {
-    display: block;
-    padding: 8px;
-    color: #0078d4;
 }
 
 /* Make items move to the overflow pane dynamically */
