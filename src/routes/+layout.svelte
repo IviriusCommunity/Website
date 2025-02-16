@@ -19,11 +19,11 @@
 				</div>
 				<div>
 					<h3>Partners and Sponsors</h3>
-					<p><a href="#">Files</a> | <a href="#">FireCubeStudios</a> | <a href="#">spoo.me</a></p>
+					<p><a href="https://blank.org/">Files</a> | <a href="https://blank.org/">FireCubeStudios</a> | <a href="https://blank.org/">spoo.me</a></p>
 				</div>
 				<div>
 					<h3>Social Links</h3>
-					<p><a href="#">Discord</a> | <a href="#">YouTube</a> | <a href="#">Twitter</a> | <a href="#">BlueSky</a> | <a href="#">WhatsApp</a> | <a href="#">Instagram</a> | <a href="#">GitHub</a></p>
+					<p><a href="https://blank.org/">Discord</a> | <a href="https://blank.org/">YouTube</a> | <a href="https://blank.org/">Twitter</a> | <a href="https://blank.org/">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> | <a href="https://blank.org/">Instagram</a> | <a href="#">GitHub</a></p>
 				</div>
 			</div>
 			<div class="footer-bottom">
