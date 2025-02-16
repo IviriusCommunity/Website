@@ -1,246 +1,281 @@
 <script>
-  //Imports
-	import * as Fluent from "fluent-svelte";
-	import "fluent-svelte/theme.css";
-
-  //Variables
-  let open = true;
-</script>
-
-<!--Head-->
-<svelte:head>
-	<title>Ivirius</title>
-	<meta name="description" content="Ivirius Community official website"/>
-	<meta content="Ivirius Community Community" name="author" />
-	<meta content="#6ba4ff" name="theme-color" />
-</svelte:head>
-
-<!--Title-->
-<section class="centered-section-2" style="margin: 0px; alignment:stretch; max-width: 999999px; background-size: cover; background-position:center; background-image: url('https://raw.githubusercontent.com/IviriusMain/Ivirius-Text-Editor-Plus/main/WebsiteBanner.png');">
-	<h1>
-		<Fluent.TextBlock variant="titleLarge" style="color: black">Ivirius</Fluent.TextBlock>
-	</h1>
- <h2>
-		<Fluent.TextBlock variant="body" align="center" style="color: black; font-size:18px">Bring consistency to Windows 11 with fluent apps and tools from Ivirius.</Fluent.TextBlock>
- </h2>
- <h2>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Download Ivirius Text Editor Plus</Fluent.Button>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';">Download Ivirius Text Editor</Fluent.Button>
-   <Fluent.Button variant="accent" style="margin-right: 15px; margin-top: 15px;" onclick="window.location.href='https://github.com/IviriusMain/ReboundHub/releases/download/Alpha-v0.0.3/ReboundHubInstaller.exe'">Download Rebound 11</Fluent.Button>
- </h2>
-</section>
-
-<section class="centered-section" style="margin-top: 20px;">
-  <Fluent.TextBlock variant="titleLarge">Top apps</Fluent.TextBlock>
-</section>
-
-<!--Ivirius Text Editor Plus-->
-<section class="margin-section">
-  <h1>
-          <Fluent.TextBlock variant="title">Ivirius Text Editor Plus</Fluent.TextBlock>
-  </h1>
-  <h2>
-	  <Fluent.TextBlock variant="body">Ivirius Text Editor Plus is a powerful and user-friendly editor for Windows. It features advanced RTF editing with AI assistant Zippy, tabs for multitasking, and a setup with a Win32 look. Enjoy the best of both worlds with CrimsonUI and WinUI integration. The autosave feature ensures your work is safe. Download it from the Microsoft Store for the ultimate text editing experience.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Consistent</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Experience seamless and reliable performance with Ivirius Text Editor Plus, designed with Windows 11’s modern design language. The intuitive interface ensures that your text editing tasks are smooth and uninterrupted, providing a consistent user experience that aligns perfectly with the aesthetics and functionality of Windows 11. With features like autosave and a robust AI assistant, your work is always secure and up-to-date.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Powerful</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Unlock the full potential of your text editing with Ivirius Text Editor Plus. Equipped with advanced AI capabilities and table insertion, this editor empowers you to create and manage documents with ease. The integration of CrimsonUI and WinUI provides a robust and visually appealing interface, while the multitasking tabs and autosave feature ensure you can handle complex projects efficiently. Experience the power of seamless editing and enhanced productivity.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Made for everyone</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Ivirius Text Editor Plus features many themes and customization settings, making sure that everyone can personalize the UI to their liking.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="accent" style="margin-right: 10px;" onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';">Buy</Fluent.Button>
-    <Fluent.Button variant="hyperlink" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-</section>
-
-<!--Ivirius Text Editor-->
-<section class="margin-section">
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Ivirius Text Editor</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Ivirius Text Editor combines the power of Ivirius Text Editor Plus with a consistent user interface using WinUI styles.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="accent" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Download</Fluent.Button>
-    <Fluent.Button variant="hyperlink" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-</section>
-
-<section class="centered-section" style="margin-top: 20px;">
-  <Fluent.TextBlock variant="titleLarge">Rebound 11</Fluent.TextBlock>
-</section>
-
-<!--Rebound 11-->
-<section class="margin-section">
-  <h1>
-          <Fluent.TextBlock variant="title">Windows 11 as it should be</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Rebound 11 is an effort by the Ivirius Team to make Windows 11 more consistent and beautiful.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Simple and intuitive installation</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">Rebound 11 comes as an installation package which allows you to install all the Rebound tools onto your computer with one click.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">All legacy apps and tools replaced</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Rebound apps suite is a group of applications that aims to improve the consistency of Windows.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Powered by the community</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Rebound project is made by a group of dedicated, talented developers who know exactly how to make Windows 11 look its best.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Made using WinUI 3</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">All the Rebound apps are made using WInUI3 for a consistent, modern experience.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">One app to manage it all</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Rebound Hub provides a visually pleasing experience, while allowing you to try out Ivirius.UI and download Rebound 11.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="accent" style="margin-right: 10px;">Download Rebound 11</Fluent.Button>
-    <Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
-  </h3>
-</section>
-
-<section class="centered-section" style="margin-top: 20px;">
-  <Fluent.TextBlock variant="titleLarge">Software development community</Fluent.TextBlock>
-</section>
-
-<!--Developers-->
-<section class="margin-section">
-  <h1>
-          <Fluent.TextBlock variant="title">Ivirius Community</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Ivirius Community is an inclusive, welcoming group of people who are eager to share ideas and experiences with one another. Join our official Discord server and follow our social media using the links below!</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="accent" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Discord</Fluent.Button>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Twitter</Fluent.Button>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">YouTube</Fluent.Button>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">GitHub</Fluent.Button>
-  </h3>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">UWP</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">UWP is a modern, Fluent design framework that allows you to create packaged apps. It is widely seen as one of the precursors of WinUI3, which is part of the Windows App SDK.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">WinUI 3</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">WinUI3 is a modern, versatile UI framework combining the Fluent UI of UWP with the power and stability of WinForms and WPF. WinUI3 is an integral component of the Windows App SDK.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Ivirius.UI</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Ivirius.UI family of libraries allows you to create apps using CrimsonUI (via Ivirius.UI.Styles) and a set of meticulously crafted components (via Ivirius.UI.Conteols). Ivirius.UI packages are currently only available for WinUI3 and the Windows App SDK, but UWP ports are planned.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">CrimsonUI</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">CrimsonUI is a dynamic UI library designed for UWP and Windows App SDK. Rooted in WinUI and influenced by FireCube's GlowUI, CrimsonUI seamlessly blends default WinUI elements with glowing, shiny components. Immerse yourself in stunning animations, ensuring a very smooth and beautiful user experience. Elevate your app's visual appeal with the elegance of CrimsonUI.</Fluent.TextBlock>
-  </h2>
-  <h3>
-    <Fluent.Button variant="hyperlink" style="margin-right: 10px;" onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button>
-  </h3>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Contributions</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">The Ivirius Team welcomes community contributions from other developers in an effort to make our apps even better.</Fluent.TextBlock>
-  </h2>
-  <h1>
-          <Fluent.TextBlock variant="subtitle">Events</Fluent.TextBlock>
-  </h1>
-  <h2>
-          <Fluent.TextBlock variant="body">We host several events in our Discord server (such as the Ivirius Summit), keeping you up to date about several exciting developments with our apps.</Fluent.TextBlock>
-  </h2>
-</section>
-
-<!--Styles-->
-<style>
-  /*Import theme*/
-	@import url("https://unpkg.com/fluent-svelte/theme.css");
-
-	/* Some base styles to get things looking right. */
-	:global(body)
-  {
-    /*Background color*/
-		background-color: var(--fds-solid-background-base);
-
-    /*Background color*/
-		color: var(--fds-text-primary);
-	}
-
-  /*Centered section*/
-  .centered-section
-  {
-    text-align: center;
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 1250px;
-  }
-
-  /*Centered section*/
-  .centered-section-2
-  {
-    text-align: left;
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 1250px;
-  }
-
-  /*Left aligned centered section*/
-  .margin-section
-  {
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 1250px;
-    text-align: justify;
-  }
-  
-  @media (min-width: 1250px) {
-    .centered-section-2 {
-      text-align: center;
-    }
-  }
-</style>
+        //Imports
+              import * as Fluent from "fluent-svelte";
+              import "fluent-svelte/theme.css";
+      
+      </script>
+      
+      <!--Head-->
+      <svelte:head>
+              <title>Ivirius</title>
+              <meta name="description" content="Ivirius Community official website"/>
+              <meta content="Ivirius Community Community" name="author" />
+              <meta content="#6ba4ff" name="theme-color" />
+      
+          <meta property="og:image" content="./homepageheader.png" />
+          <meta property="og:image:alt" content="Ivirius Community" />
+          <meta property="og:image:type" content="image/png" />
+      </svelte:head>
+      <header class="main-header">
+              <div class="header-content">
+                  <!-- Left Side (Title, Subtitle, Buttons) -->
+                  <div class="header-left">
+                      <h1 class="header-title">Rebound v0.1.0</h1>
+                      <p class="header-subtitle">The best of Rebound in a brand new release.</p>
+                      <div class="header-buttons">
+                          <Fluent.Button variant="accent" disabled>Coming Soon</Fluent.Button>
+                          <Fluent.Button variant="hyperlink">Read more</Fluent.Button>
+                      </div>
+                  </div>
+                  
+                  <!-- Right Side (Image) -->
+                  <div class="header-right">
+                      <img src="./homepageheader.png" alt="Main Image" class="header-image"/>
+                  </div>
+              </div>
+          </header>
+          <h1 style="display: flex; justify-content: center; font-size: 40px; margin-top: 50px;">Welcome!</h1>
+          <p style="display: flex; justify-content: center; text-align: center; font-size: 16px; margin: 0 25px 30px 25px;">
+              Learn more about our products, community, and the people that help shape them!
+          </p>
+          
+          <div class="cards-container">
+              <div class="card">
+                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <div class="card-content">
+                      <div>
+                          <h2 class="card-title">Ivirius Text Editor</h2>
+                          <p class="card-description">The #1 WinUI WordPad replacement in the Microsoft Store. Keep your documents updated with autosave, multitask with tabs, use Windows voice typing, view your document in dark mode, and more!</p>
+                      </div>
+                      <div class="card-footer">
+                              <Fluent.Button variant="accent">Download</Fluent.Button>
+                              <Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <div class="card-content">
+                      <div>
+                          <h2 class="card-title">Ivirius Text Editor Plus</h2>
+                          <p class="card-description">The best WinUI WordPad replacement with advanced features. Draw and insert tables, write with generative AI, apply stunning themes, manage your workflow with the homepage, customize the layout as you desire, use vertical tabs and ribbon, and so much more!</p>
+                      </div>
+                      <div class="card-footer">
+                              <Fluent.Button variant="accent">Buy for $1.09</Fluent.Button>
+                              <Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <div class="card-content">
+                      <div>
+                          <h2 class="card-title">Rebound</h2>
+                          <p class="card-description">Make your Windows truly consistent with Rebound. The first safe FOSS Windows mod in the Microsoft Store with WinUI 3 applets to replace every deprecated Windows tool. Featuring apps like Files, Ambie, Character Map UWP, Lively Wallpaper, Wino Mail, and so many others!</p>
+                      </div>
+                      <div class="card-footer">
+                              <Fluent.Button variant="accent" disabled>Download</Fluent.Button>
+                              <Fluent.Button>Contribute</Fluent.Button>
+                              <Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <div class="card-content">
+                      <div>
+                          <h2 class="card-title">CubeKit</h2>
+                          <p class="card-description">Collaboration project with FireCube and Lamparter: the best toolkit for WinUI apps featuring an XAML title bar, the popular GlowUI library, and a lot of useful helpers.</p>
+                      </div>
+                      <div class="card-footer">
+                              <Fluent.Button variant="accent">NuGet Gallery</Fluent.Button>
+                              <Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <div class="card-content">
+                      <div>
+                          <h2 class="card-title">Discord Server</h2>
+                          <p class="card-description">Get early access to apps, talk to community members and project developers, ask questions, contribute, and learn more about Windows development!</p>
+                      </div>
+                      <div class="card-footer">
+                              <Fluent.Button variant="accent">Join</Fluent.Button>
+                              <Fluent.Flyout>
+                                      <Fluent.Button variant="hyperlink">Affiliated servers</Fluent.Button>
+                                      <svelte:fragment slot="flyout">
+                                              <Fluent.Button variant="hyperlink">Developer Sanctuary</Fluent.Button>
+                                              <Fluent.Button variant="hyperlink">Windows Customization Hub</Fluent.Button>
+                                      </svelte:fragment>
+                              </Fluent.Flyout>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Add more cards as needed -->
+          </div>
+          
+      <!--Styles-->
+      <style>
+        /*Import theme*/
+              @import url("https://unpkg.com/fluent-svelte/theme.css");
+      
+              /* Some base styles to get things looking right. */
+              :global(body)
+        {
+          /*Background color*/
+                      background-color: var(--fds-solid-background-base);
+      
+          /*Background color*/
+                      color: var(--fds-text-primary);
+              }
+      
+        .main-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--fds-control-fill-default);
+      }
+      
+      .header-content {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+      }
+      
+      .header-left {
+          flex: 1;
+          max-width: 50%;
+          align-content: center;
+          margin-left: 50px;
+      }
+      
+      .header-title {
+          font-size: 2.5rem;
+          margin-bottom: -10px;
+      }
+      
+      .header-subtitle {
+          font-size: 1.25rem;
+          margin-bottom: 40px;
+      }
+      
+      .header-buttons {
+          display: flex;
+          gap: 15px;
+      }
+      
+      .header-right {
+          flex: 1;
+          max-width: 50%; /* Ensures it remains 50% */
+          height: 600px; /* Max height */
+          position: relative; /* Needed for proper image containment */
+          overflow: hidden; /* Prevents any overflow */
+      }
+      
+      .header-image {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+      }
+      
+      /* Responsiveness: Keep 50/50 ratio and stack when smaller screen */
+      @media (max-width: 768px) {
+          .header-content {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+          }
+      
+          .header-left {
+              max-width: 100%;
+              margin-bottom: 20px;
+              margin-left: 0px;
+              align-items: center;
+              text-align: center;
+          }
+      
+          .header-buttons {
+              align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-top: -20px;
+          gap: 15px;
+      }
+      
+          .header-right {
+              max-width: 100%;
+              position: relative;
+              height: 300px; /* Optional: Adjust this value based on your design needs */
+          }
+      
+          .header-image {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+          }
+      }
+      
+      .cards-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: center; /* Center cards horizontally */
+          align-items: center; /* Align cards vertically */
+          padding: 20px;
+      }
+      
+      .card {
+          width: 500px;
+          height: 425px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 6px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: var(--fds-card-stroke-default);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          background: var(--fds-control-fill-default);
+      }
+      
+      .card-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+      
+      .card-content {
+          flex: 1;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      
+      .card-title {
+              margin-top: -4px;
+          font-size: 1.5em;
+          font-weight: bold;
+      }
+      
+      .card-description {
+          flex-grow: 1;
+          margin: 10px 0;
+      }
+      
+      .card-footer {
+              align-self: stretch;
+               background: var(--fds-control-fill-disabled); 
+               margin: -16px; 
+               padding: 16px;
+               gap: 8px;
+          display: flex; /* Enables flexbox */
+          justify-content: flex-end; /* Aligns content to the right */
+      }
+      
+      
+      </style>
