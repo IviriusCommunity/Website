@@ -41,7 +41,7 @@
           
           <div class="cards-container">
               <div class="card">
-                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <img src="./homepageheader.png" alt="Card Image" class="card-image">
                   <div class="card-content">
                       <div>
                           <h2 class="card-title">Ivirius Text Editor</h2>
@@ -54,7 +54,7 @@
                   </div>
               </div>
               <div class="card">
-                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <img src="./homepageheader.png" alt="Card Image" class="card-image">
                   <div class="card-content">
                       <div>
                           <h2 class="card-title">Ivirius Text Editor Plus</h2>
@@ -67,7 +67,7 @@
                   </div>
               </div>
               <div class="card">
-                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <img src="./homepageheader.png" alt="Card Image" class="card-image">
                   <div class="card-content">
                       <div>
                           <h2 class="card-title">Rebound</h2>
@@ -81,7 +81,7 @@
                   </div>
               </div>
               <div class="card">
-                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <img src="./homepageheader.png" alt="Card Image" class="card-image">
                   <div class="card-content">
                       <div>
                           <h2 class="card-title">CubeKit</h2>
@@ -94,7 +94,7 @@
                   </div>
               </div>
               <div class="card">
-                  <img src="https://private-user-images.githubusercontent.com/71598437/374253886-7d72f5ef-b02a-42bd-a2ba-0096ed446478.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk3MzM1OTEsIm5iZiI6MTczOTczMzI5MSwicGF0aCI6Ii83MTU5ODQzNy8zNzQyNTM4ODYtN2Q3MmY1ZWYtYjAyYS00MmJkLWEyYmEtMDA5NmVkNDQ2NDc4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDE5MTQ1MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzYTEyYTcyMzRhZjk0MzNlYjQxY2JhNDk3ZWM4YWRkOTk1MTA0YTM3NzNjNmRmYzAzM2ZmNTZmMzQ5Y2ExM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dlslgPAPKl6DpmVVnfWHTphqr0Q4VKcq4y1uWjW3Hqo" alt="Card Image" class="card-image">
+                  <img src="./homepageheader.png" alt="Card Image" class="card-image">
                   <div class="card-content">
                       <div>
                           <h2 class="card-title">Discord Server</h2>

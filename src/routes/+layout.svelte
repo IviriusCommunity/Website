@@ -98,7 +98,7 @@
 @media (prefers-color-scheme: light) {
     :global(body) {
     /*Background image*/
-    background-image: url("./MicaLight.png");
+    background-image: url("https://ivirius.com/MicaLight.png");
 
     }
 }
@@ -107,7 +107,7 @@
 @media (prefers-color-scheme: dark) {
     :global(body) {
     /*Background image*/
-    background-image: url("./MicaDark.png");
+    background-image: url("https://ivirius.com/MicaDark.png");
 
     }
 }
