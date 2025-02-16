@@ -23,7 +23,7 @@
 				</div>
 				<div>
 					<h3>Social Links</h3>
-					<p><a href="https://blank.org/">Discord</a> | <a href="https://blank.org/">YouTube</a> | <a href="https://blank.org/">Twitter</a> | <a href="https://blank.org/">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> | <a href="https://blank.org/">Instagram</a> | <a href="#">GitHub</a></p>
+					<p><a href="https://blank.org/">Discord</a> | <a href="https://blank.org/">YouTube</a> | <a href="https://blank.org/">Twitter</a> | <a href="https://blank.org/">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> | <a href="https://blank.org/">Instagram</a> | <a href="https://blank.org/">GitHub</a></p>
 				</div>
 			</div>
 			<div class="footer-bottom">
