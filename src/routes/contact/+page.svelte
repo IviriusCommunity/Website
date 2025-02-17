@@ -40,7 +40,7 @@
 	function renderCaptcha() {
 		if (hcaptchaLoaded && !hcaptchaWidget && document.getElementById('h-captcha-container')) {
 			hcaptchaWidget = window.hcaptcha.render('h-captcha-container', {
-				sitekey: '4d0e187c-e942-4c1c-aa36-d0864a90d60e',
+				sitekey: '4508becc-db6e-4e9e-8756-f5b8a042dfdc',
 				size: 'invisible',  // This makes it invisible
 				callback: onCaptchaVerified,
 				'expired-callback': onCaptchaExpired,
