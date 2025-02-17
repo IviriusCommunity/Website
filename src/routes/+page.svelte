@@ -7,12 +7,12 @@
       
       <!--Head-->
       <svelte:head>
-              <title>Ivirius</title>
+              <title>Ivirius Community</title>
               <meta name="description" content="Ivirius Community official website"/>
-              <meta content="Ivirius Community Community" name="author" />
+              <meta content="Ivirius Community" name="author" />
               <meta content="#6ba4ff" name="theme-color" />
       
-          <meta property="og:image" content="./homepageheader.png" />
+          <meta property="og:image" content="https://ivirius.com/homepageheader.png" />
           <meta property="og:image:alt" content="Ivirius Community" />
           <meta property="og:image:type" content="image/png" />
       </svelte:head>
