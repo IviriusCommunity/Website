@@ -2,89 +2,160 @@
 	//Imports
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
+	import { onMount } from 'svelte';
 
 	//Variables
 	let open = false;
-  let openTooShortSub = false;
-  let errorMessage = '';
+	let openTooShortSub = false;
+	let errorMessage = '';
 
 	let email = '';
 	let subject = '';
 	let message = '';
+	let hcaptchaLoaded = false;
+	let hcaptchaWidget;
+	let captchaToken = '';
 
-  function validateEmail(email) {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  }
+	// Load hCaptcha script
+	onMount(() => {
+		const script = document.createElement('script');
+		script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit';
+		script.async = true;
+		script.defer = true;
+		script.onload = initHCaptcha;
+		document.head.appendChild(script);
 
-	async function sendToDiscord() {
+		return () => {
+			document.head.removeChild(script);
+		};
+	});
 
-    if (!validateEmail(email)) {
-      // add the code to show the email is not valid message
-      errorMessage = 'Email is not valid!';
-	  open = true;
-      return;
-    }
+	function initHCaptcha() {
+		if (window.hcaptcha) {
+			hcaptchaLoaded = true;
+			renderCaptcha();
+		}
+	}
+
+	function renderCaptcha() {
+		if (hcaptchaLoaded && !hcaptchaWidget && document.getElementById('h-captcha-container')) {
+			hcaptchaWidget = window.hcaptcha.render('h-captcha-container', {
+				sitekey: '4508becc-db6e-4e9e-8756-f5b8a042dfdc',
+				size: 'invisible',  // This makes it invisible
+				callback: onCaptchaVerified,
+				'expired-callback': onCaptchaExpired,
+				'error-callback': onCaptchaError
+			});
+		}
+	}
+
+	function onCaptchaVerified(token) {
+		captchaToken = token;
+		proceedWithFormSubmission();
+	}
+
+	function onCaptchaExpired() {
+		captchaToken = '';
+		errorMessage = 'Captcha expired. Please try again.';
+		open = true;
+	}
+
+	function onCaptchaError(error) {
+		errorMessage = 'Captcha error occurred. Please try again.';
+		open = true;
+	}
+
+	function validateEmail(email) {
+		const re = /\S+@\S+\.\S+/;
+		return re.test(email);
+	}
+
+	function validateForm() {
+		if (!validateEmail(email)) {
+			errorMessage = 'Email is not valid!';
+			open = true;
+			return false;
+		}
 
 		if (subject.length < 5) {
-      // add the code to show the subject is not valid message
-      errorMessage = 'Subject must be alteast 5 characters long!';
-	  open = true;
+			errorMessage = 'Subject must be at least 5 characters long!';
+			open = true;
+			return false;
+		}
+
+		if (message.length < 25) {
+			errorMessage = 'Message must be at least 25 characters long!';
+			open = true;
+			return false;
+		}
+
+		return true;
+	}
+
+	function handleSendClick() {
+		if (!validateForm()) return;
+
+		if (hcaptchaLoaded && hcaptchaWidget) {
+			// Execute captcha challenge - this will trigger the captcha verification flow
+			window.hcaptcha.execute(hcaptchaWidget);
+		} else {
+			errorMessage = 'Captcha not loaded. Please try again later.';
+			open = true;
+		}
+	}
+
+	async function proceedWithFormSubmission() {
+		if (!captchaToken) {
+			errorMessage = 'Please complete the captcha verification.';
+			open = true;
 			return;
 		}
 
-    if (message.length < 25) {
-      // add the code to show the message is not valid message
-      errorMessage = 'Message must be alteast 25 characters long!';
-	  open = true;
-      return;
-    }
-
 		const webhookUrl = 'https://ivirius-contact-host.vercel.app/contact';
 		const payload = new FormData();
-    payload.append('email', email);
-    payload.append('subject', subject);
-    payload.append('message', message);
+		payload.append('email', email);
+		payload.append('subject', subject);
+		payload.append('message', message);
+		payload.append('h-captcha-response', captchaToken);
 
 		try {
-      const response = await fetch(webhookUrl, {
-        method: 'POST',
-        body: payload
-      });
+			const response = await fetch(webhookUrl, {
+				method: 'POST',
+				body: payload
+			});
 
-      if (!response.ok) {
-        if (response.status === 429) {
-          // add the code to show the rate limited message
-      errorMessage = 'Rate limited!';
-	  open = true;
-          return;
-        }
-        else {
-          // add the code to show the failed to send message
-      errorMessage = 'Failed to send message!';
-	  open = true;
-          return;
-        }
-      }
+			if (!response.ok) {
+				if (response.status === 429) {
+					errorMessage = 'Rate limited!';
+					open = true;
+					return;
+				} else {
+					errorMessage = 'Failed to send message!';
+					open = true;
+					return;
+				}
+			}
 
-if (response.ok == true)
-{
-      errorMessage = 'Thank you for contacting us. We will reach out to you as soon as possible.';
-	  open = true;
-}
+			if (response.ok == true) {
+				errorMessage = 'Thank you for contacting us. We will reach out to you as soon as possible.';
+				open = true;
+			}
 
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      // add the code to show the error message
-      errorMessage = 'Error';
-	  open = true;
-    }
+			const data = await response.json();
+			console.log(data);
+		} catch (error) {
+			errorMessage = 'Error';
+			open = true;
+		}
 
-    // clear the form
-    email = '';
-    subject = '';
-    message = '';
+		// Reset the captcha
+		window.hcaptcha.reset(hcaptchaWidget);
+		captchaToken = '';
+
+		// Clear the form
+		email = '';
+		subject = '';
+		message = '';
 	}
 </script>
 
@@ -133,14 +204,15 @@ if (response.ok == true)
 			bind:value={message}
 		/>
 	</h3>
+	<div id="h-captcha-container"></div>
 </section>
 
 <section class="right-section">
 	<Fluent.Button style="width: 30%; float: right;" onclick="window.location.href='https://dsc.gg/ivirius'">
 		Contact Us on Discord
 	</Fluent.Button>
-	<div style="width: 5%;"/>
-	<Fluent.Button style="width: 30%; float: right;" variant="accent" on:click={sendToDiscord}>
+	<div style="width: 5%;" />
+	<Fluent.Button style="width: 30%; float: right;" variant="accent" on:click={handleSendClick}>
 		Send
 	</Fluent.Button>
 </section>
@@ -160,11 +232,11 @@ if (response.ok == true)
 	}
 
 	textarea:focus {
-            /* Styles for focus state */
-            border-color: var(--fds-accent-default);   /* Change border color when focused */
-            outline: none;           /* Remove default outline */
-			background-color: var(--fds-control-on-image-fill-default);
-        }
+		/* Styles for focus state */
+		border-color: var(--fds-accent-default); /* Change border color when focused */
+		outline: none; /* Remove default outline */
+		background-color: var(--fds-control-on-image-fill-default);
+	}
 
 	/*Centered section*/
 	.centered-section {
@@ -191,5 +263,10 @@ if (response.ok == true)
 		margin: 0 auto;
 		padding: 25px;
 		max-width: 650px;
+	}
+
+	/* hCaptcha container - for an invisible captcha we don't need special styling */
+	#h-captcha-container {
+		display: none; /* The container is hidden as we're using invisible captcha */
 	}
 </style>
