@@ -21,18 +21,18 @@
     <div class="header-content">
         <!-- Left Side (Title, Subtitle, Buttons) -->
         <div class="header-left">
-            <h1 class="header-title">Rebound v0.1.0</h1>
+            <h1 class="header-title">Rebound v0.0.6</h1>
             <p class="header-subtitle">The best of Rebound in a brand new release.</p>
             <div class="header-buttons">
-                <Fluent.Button variant="accent" disabled>Coming Soon</Fluent.Button>
-                <Fluent.Button variant="hyperlink">Read more</Fluent.Button>
+                <Fluent.Button variant="accent">Download</Fluent.Button>
+                <Fluent.Button variant="hyperlink" onclick="window.location.href='./docs/rebound/release-notes';">Read more</Fluent.Button>
             </div>
         </div>
         
         <!-- Right Side (Image) -->
         <div class="header-right">
             <img 
-                src="./homepageheader.png" 
+                src="./Rebound-v0.0.6-Beta.png" 
                 alt="Main Image" 
                 class="header-image" 
                 loading="lazy" 

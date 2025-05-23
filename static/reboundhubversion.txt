@@ -1,1 +1,1 @@
-v0.0.3 ALPHA
+v0.0.6 Beta

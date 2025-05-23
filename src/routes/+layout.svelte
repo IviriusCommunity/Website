@@ -46,7 +46,7 @@
 							<div slot="override" style="display: flex; width: 250px; background-color: var(--fds-solid-background-base); box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); border-radius: 6px; flex-direction: column; align-items: justify; padding: 4px; gap: 2px;">
 								<Fluent.Button variant="hyperlink" style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);">Ivirius Text Editor</Fluent.Button>
 								<Fluent.Button variant="hyperlink" style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);">Ivirius Text Editor Plus</Fluent.Button>
-								<Fluent.Button variant="hyperlink" style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);">Rebound</Fluent.Button>
+								<Fluent.Button variant="hyperlink" onclick="window.location.href='./rebound';" style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);">Rebound</Fluent.Button>
 								<Fluent.Button variant="hyperlink" style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);">CubeKit</Fluent.Button>
 							</div>
 				</Fluent.Flyout>
