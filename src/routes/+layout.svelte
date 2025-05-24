@@ -24,19 +24,19 @@
 				<div>
 					<h3>Partners and Sponsors</h3>
 					<p>
-						<a href="https://blank.org/">Files</a> |
-						<a href="https://blank.org/">FireCubeStudios</a>
-						| <a href="https://blank.org/">spoo.me</a>
+						<a href="https://files.community/">Files</a> |
+						<a href="https://github.com/FireCubeStudios">FireCubeStudios</a>
+						| <a href="https://spoo.me/">spoo.me</a>
 					</p>
 				</div>
 				<div>
 					<h3>Social Links</h3>
 					<p>
-						<a href="https://blank.org/">Discord</a> | <a href="https://blank.org/">YouTube</a> |
-						<a href="https://blank.org/">Twitter</a>
-						| <a href="https://blank.org/">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> |
-						<a href="https://blank.org/">Instagram</a>
-						| <a href="https://blank.org/">GitHub</a>
+						<a href="https://dsc.gg/ivirius">Discord</a> | <a href="https://www.youtube.com/@ivirius-official">YouTube</a> |
+						<a href="https://x.com/IviriusOfficial">Twitter / x</a>
+						| <a href="https://bsky.app/profile/ivirius-official.bsky.social">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> |
+						<a href="https://www.instagram.com/ivirius.software/">Instagram</a>
+						| <a href="https://github.com/IviriusCommunity">GitHub</a>
 					</p>
 				</div>
 			</div>
