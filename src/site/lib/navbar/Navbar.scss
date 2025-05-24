@@ -1,4 +1,4 @@
-@use "src/lib/mixins" as *;
+@use 'src/lib/mixins' as *;
 
 .navbar {
 	@include flex($align: center, $justify: center);
