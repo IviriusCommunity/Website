@@ -37,20 +37,22 @@
 		<h2>
 			<Fluent.Button
 				variant="accent"
-				on:click={() => window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US'}
+				on:click={() =>
+					(window.location.href = 'https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US')}
 				>Download Ivirius Text Editor Plus</Fluent.Button
 			>
 			<Fluent.Button
 				variant="hyperlink"
-				on:click={() => window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US'}
+				on:click={() =>
+					(window.location.href = 'https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US')}
 				>Download Ivirius Text Editor</Fluent.Button
 			>
 		</h2>
 	</section>
 
 	<h2 id="content">
-		<img alt="Ivirius Text Editor Plus Light" src="https://i.spoo.me/245847"/>
-		<img alt="Ivirius Text Editor Plus Dark" src="https://i.spoo.me/185336"/>
+		<img alt="Ivirius Text Editor Plus Light" src="https://i.spoo.me/245847" />
+		<img alt="Ivirius Text Editor Plus Dark" src="https://i.spoo.me/185336" />
 	</h2>
 </section>
 
@@ -126,9 +128,8 @@
 				>
 			</h2>
 			<h3>
-				<Fluent.Button
-					variant="hyperlink"
-					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
+				<Fluent.Button variant="hyperlink" on:click={() => goto('/ivirius-text-editor-plus')}
+					>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>
@@ -158,9 +159,8 @@
 				>
 			</h2>
 			<h3>
-				<Fluent.Button
-					variant="hyperlink"
-					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
+				<Fluent.Button variant="hyperlink" on:click={() => goto('/ivirius-text-editor-plus')}
+					>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>
@@ -183,9 +183,8 @@
 				>
 			</h2>
 			<h3>
-				<Fluent.Button
-					variant="hyperlink"
-					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
+				<Fluent.Button variant="hyperlink" on:click={() => goto('/ivirius-text-editor-plus')}
+					>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>

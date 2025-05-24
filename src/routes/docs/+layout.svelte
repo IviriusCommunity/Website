@@ -5,18 +5,13 @@
 	import { goto } from '$app/navigation';
 
 	// Helper booleans for expander expansion
-	const isGeneral = [
-		'/docs',
-		'/docs/install-app-package-manually'
-	].includes($page.url.pathname);
+	const isGeneral = ['/docs', '/docs/install-app-package-manually'].includes($page.url.pathname);
 
-	const isUWP = [
-		'/docs/windowdecorations'
-	].includes($page.url.pathname);
+	const isUWP = ['/docs/windowdecorations'].includes($page.url.pathname);
 
-	const isRebound11 = [
-		'/docs/rebound11/defragment-and-optimize-drives'
-	].includes($page.url.pathname);
+	const isRebound11 = ['/docs/rebound11/defragment-and-optimize-drives'].includes(
+		$page.url.pathname
+	);
 </script>
 
 <div class="app">
@@ -28,8 +23,15 @@
 					<h2>
 						<Fluent.Expander expanded={isGeneral} class="newexpander">
 							General <div slot="content">
-								<Fluent.ListItem selected={$page.url.pathname === '/docs'} on:click={() => goto('/docs')}>Home</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/install-app-package-manually'} on:click={() => goto('/docs/install-app-package-manually')}>Install app package manually</Fluent.ListItem>
+								<Fluent.ListItem
+									selected={$page.url.pathname === '/docs'}
+									on:click={() => goto('/docs')}>Home</Fluent.ListItem
+								>
+								<Fluent.ListItem
+									selected={$page.url.pathname === '/docs/install-app-package-manually'}
+									on:click={() => goto('/docs/install-app-package-manually')}
+									>Install app package manually</Fluent.ListItem
+								>
 							</div>
 						</Fluent.Expander>
 
@@ -67,8 +69,7 @@
 						</Fluent.Expander>
 
 						<Fluent.Expander expanded={isRebound11}>
-							Rebound 11 <div slot="content">
-							</div>
+							Rebound 11 <div slot="content"></div>
 						</Fluent.Expander>
 					</h2>
 				</div>

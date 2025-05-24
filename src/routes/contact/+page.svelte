@@ -211,7 +211,7 @@
 <section class="right-section">
 	<Fluent.Button
 		style="width: 30%; float: right;"
-		on:click={() => window.location.href='https://dsc.gg/ivirius'}
+		on:click={() => (window.location.href = 'https://dsc.gg/ivirius')}
 	>
 		Contact Us on Discord
 	</Fluent.Button>

@@ -25,28 +25,28 @@
 				<div>
 					<h3>Partners and Sponsors</h3>
 					<p>
-						<a href="https://files.community/">Files</a> 
+						<a href="https://files.community/">Files</a>
 						|
 						<a href="https://github.com/FireCubeStudios">FireCubeStudios</a>
-						| 
+						|
 						<a href="https://spoo.me/">spoo.me</a>
 					</p>
 				</div>
 				<div>
 					<h3>Social Links</h3>
 					<p>
-						<a href="https://dsc.gg/ivirius">Discord</a> 
+						<a href="https://dsc.gg/ivirius">Discord</a>
 						|
 						<a href="https://www.youtube.com/@ivirius-official">YouTube</a>
 						|
 						<a href="https://x.com/IviriusOfficial">Twitter / x</a>
-						| 
-						<a href="https://bsky.app/profile/ivirius-official.bsky.social">BlueSky</a> 
+						|
+						<a href="https://bsky.app/profile/ivirius-official.bsky.social">BlueSky</a>
 						|
 						<a href="https://whatsapp.com/channel/0029VaHfWsBJ93wPmDfZKy1X">WhatsApp</a>
 						|
 						<a href="https://www.instagram.com/ivirius.software/">Instagram</a>
-						| 
+						|
 						<a href="https://github.com/IviriusCommunity">GitHub</a>
 					</p>
 				</div>
@@ -82,13 +82,19 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
-								on:click={() => window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US'}>
+								on:click={() =>
+									(window.location.href =
+										'https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US')}
+							>
 								Ivirius Text Editor
 							</Fluent.Button>
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
-								on:click={() => window.location.href='https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US'}>
+								on:click={() =>
+									(window.location.href =
+										'https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US')}
+							>
 								Ivirius Text Editor Plus
 							</Fluent.Button>
 							<Fluent.Button
@@ -101,7 +107,10 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
-								on:click={() => window.location.href='https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/'}>
+								on:click={() =>
+									(window.location.href =
+										'https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/')}
+							>
 								CubeKit
 							</Fluent.Button>
 						</div>
@@ -131,7 +140,7 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
-								on:click={() => window.location.href='https://dsc.gg/ivirius'}
+								on:click={() => (window.location.href = 'https://dsc.gg/ivirius')}
 							>
 								Discord Server
 							</Fluent.Button>

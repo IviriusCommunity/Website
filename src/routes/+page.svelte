@@ -27,12 +27,13 @@
 			<div class="header-buttons">
 				<Fluent.Button
 					variant="accent"
-					on:click={() => window.location.href='https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe'}
+					on:click={() =>
+						(window.location.href =
+							'https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe')}
 					>Download</Fluent.Button
 				>
-				<Fluent.Button
-					variant="hyperlink"
-					on:click={() => goto('/docs/rebound/release-notes')}>Read more</Fluent.Button
+				<Fluent.Button variant="hyperlink" on:click={() => goto('/docs/rebound/release-notes')}
+					>Read more</Fluent.Button
 				>
 			</div>
 		</div>
@@ -72,7 +73,9 @@
 			<div class="card-footer">
 				<Fluent.Button
 					variant="accent"
-					on:click={() => window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US'}
+					on:click={() =>
+						(window.location.href =
+							'https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US')}
 					>Download</Fluent.Button
 				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
@@ -81,7 +84,11 @@
 	</div>
 
 	<div class="card">
-		<img src="./ivrPlusPreviewCard.png" alt="Ivirius Text Editor Plus preview" class="card-image cover" />
+		<img
+			src="./ivrPlusPreviewCard.png"
+			alt="Ivirius Text Editor Plus preview"
+			class="card-image cover"
+		/>
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Ivirius Text Editor Plus</h2>
@@ -94,7 +101,9 @@
 			<div class="card-footer">
 				<Fluent.Button
 					variant="accent"
-					on:click={() => window.location.href='https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US'}
+					on:click={() =>
+						(window.location.href =
+							'https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US')}
 					>Buy for $1.09</Fluent.Button
 				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
@@ -117,10 +126,15 @@
 			<div class="card-footer">
 				<Fluent.Button
 					variant="accent"
-					on:click={() => window.location.href='https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe'}
+					on:click={() =>
+						(window.location.href =
+							'https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe')}
 					disabled={false}>Download</Fluent.Button
 				>
-				<Fluent.Button on:click={() => window.location.href='https://github.com/IviriusCommunity/Rebound'}>Contribute</Fluent.Button>
+				<Fluent.Button
+					on:click={() => (window.location.href = 'https://github.com/IviriusCommunity/Rebound')}
+					>Contribute</Fluent.Button
+				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
@@ -137,7 +151,13 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent" on:click={() => window.location.href='https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/'}>NuGet Gallery</Fluent.Button>
+				<Fluent.Button
+					variant="accent"
+					on:click={() =>
+						(window.location.href =
+							'https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/')}
+					>NuGet Gallery</Fluent.Button
+				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
@@ -154,8 +174,9 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent" on:click={() => window.location.href='https://dsc.gg/ivirius'}
-					>Join</Fluent.Button
+				<Fluent.Button
+					variant="accent"
+					on:click={() => (window.location.href = 'https://dsc.gg/ivirius')}>Join</Fluent.Button
 				>
 				<Fluent.Flyout>
 					<Fluent.Button variant="hyperlink">Affiliated servers</Fluent.Button>
