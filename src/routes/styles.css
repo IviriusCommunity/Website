@@ -27,9 +27,10 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Apply the font to the entire app */
-html, body {
-  font-family: var(--fds-font-family-text);
-  font-size: var(--fds-body-font-size);
-  margin: 0;
-  padding: 0;
+html,
+body {
+	font-family: var(--fds-font-family-text);
+	font-size: var(--fds-body-font-size);
+	margin: 0;
+	padding: 0;
 }

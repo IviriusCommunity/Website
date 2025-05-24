@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { page } from "$app/stores";
-	import { TextBlock } from "$lib";
+	import { page } from '$app/stores';
+	import { TextBlock } from '$lib';
 
 	interface Item {
 		href: string;
@@ -23,11 +23,11 @@
 					{href}
 					sveltekit:prefetch
 					class:selected={$page.url.pathname === href ||
-						($page.url.pathname.split("/").length > 1 &&
-							href.split("/").length > 1 &&
+						($page.url.pathname.split('/').length > 1 &&
+							href.split('/').length > 1 &&
 							$page.url.pathname.startsWith(href) &&
-							!(href === "" || href === "/")) ||
-						(href === "/" && $page.url.pathname === "")}
+							!(href === '' || href === '/')) ||
+						(href === '/' && $page.url.pathname === '')}
 				>
 					{#if icon}
 						{@html icon}
@@ -43,5 +43,5 @@
 </header>
 
 <style lang="scss">
-	@use "./Navbar";
+	@use './Navbar';
 </style>

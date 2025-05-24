@@ -3,6 +3,7 @@
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	//Variables
 	let open = false;
@@ -13,7 +14,7 @@
 	let subject = '';
 	let message = '';
 	let hcaptchaLoaded = false;
-	let hcaptchaWidget;
+	let hcaptchaWidget: any;
 	let captchaToken = '';
 
 	// Load hCaptcha script
@@ -41,7 +42,7 @@
 		if (hcaptchaLoaded && !hcaptchaWidget && document.getElementById('h-captcha-container')) {
 			hcaptchaWidget = window.hcaptcha.render('h-captcha-container', {
 				sitekey: '4508becc-db6e-4e9e-8756-f5b8a042dfdc',
-				size: 'invisible',  // This makes it invisible
+				size: 'invisible', // This makes it invisible
 				callback: onCaptchaVerified,
 				'expired-callback': onCaptchaExpired,
 				'error-callback': onCaptchaError
@@ -208,7 +209,10 @@
 </section>
 
 <section class="right-section">
-	<Fluent.Button style="width: 30%; float: right;" onclick="window.location.href='https://dsc.gg/ivirius'">
+	<Fluent.Button
+		style="width: 30%; float: right;"
+		on:click={() => (window.location.href = 'https://dsc.gg/ivirius')}
+	>
 		Contact Us on Discord
 	</Fluent.Button>
 	<div style="width: 5%;" />

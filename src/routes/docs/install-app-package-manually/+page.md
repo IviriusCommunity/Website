@@ -6,7 +6,7 @@
         //Variables
         let open = true;
 </script>
-      
+
 <section class="centered-section-2">
         <Fluent.TextBlock variant="titleLarge" style="text-alignment: left; margin-top: 25px;">Install app package manually</Fluent.TextBlock>
 </section>
@@ -22,8 +22,8 @@
 
 In this article, I will show you how to install a UWP app package along with its certificate and dependencies. A UWP package contains all the information required for a UWP, WinUI 3 or Win32 packaged app to install on your system.
 
-<Fluent.InfoBar style="margin-top: 20px; margin-bottom: 20px;" severity="attention" title="Tip!" message="If you want to speed up the process, consider downloading our portable certificate    installer for MSIX." open>
-        <Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download the Certificate Installer For MSIX</Fluent.Button>
+<Fluent.InfoBar style="margin-top: 20px; margin-bottom: 20px;" severity="attention" title="Tip!" message="If you want to speed up the process, consider downloading our portable certificate installer for MSIX." open>
+<Fluent.Button slot="action" variant="accent" onclick="window.location.href='https://github.com/Ivirius-Main/CertificateInstallerForMSIX/releases/download/Publish/CertificateInstallerForMSIX.exe';">Download the Certificate Installer For MSIX</Fluent.Button>
 </Fluent.InfoBar>
 
 UWP apps are packaged into bundles that contain all the required dependencies to be installed. When downloading such a bundle online, you might expect it to be easy to install, but it's not always a straightforward task. This article will help you fix the most common problem: missing certificates. When opening a UWP app bundle, you may see this error appear:
@@ -44,7 +44,7 @@ Here's how to properly install a UWP package:
 
 <section class="centered-section">
         <img src="https://i.spoo.me/751928"/>
-</section> 
+</section>
 
 ### Step 3 - Press install
 
@@ -58,18 +58,18 @@ Before you begin the installation of an untrusted Universal Windows Platform (UW
 
 <section class="centered-section">
         <img src="https://i.spoo.me/979956"/>
-</section> 
+</section>
 
 Now, click the "Install Certificate..." button. This action will open the Certificate Import Wizard, which will guide you through the process of adding the certificate to your system.
 
 <section class="centered-section">
         <img src="https://i.spoo.me/852685"/>
-</section> 
+</section>
 
 Make sure to select the "Local Machine" option and click "Next". This ensures that the certificate is installed for all users on the system, granting the app the necessary permissions to run properly.
 
 <Fluent.InfoBar style="margin-top: 20px; margin-bottom: 20px;" severity="caution" title="Warning!" message="Requires administrator permissions." open></Fluent.InfoBar>
-      
+
 <section class="centered-section">
         <img src="https://i.spoo.me/443430"/>
 </section> 
@@ -88,7 +88,7 @@ If the app comes with another package that contains dependencies, you might need
 
 <section class="centered-section">
         <img src="https://i.spoo.me/831789"/>
-</section> 
+</section>
 
 ### Step 3 - Install the app
 

@@ -1,9 +1,9 @@
 <script>
-	import "fluent-svelte/theme.css";
+	import 'fluent-svelte/theme.css';
 </script>
 
 <style>
-	@import url("https://unpkg.com/fluent-svelte/theme.css");
+	@import url('https://unpkg.com/fluent-svelte/theme.css');
 
 	/* Some base styles to get things looking right. */
 	:global(body) {
