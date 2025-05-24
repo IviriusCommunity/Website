@@ -3,6 +3,7 @@
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	//Variables
 	let open = false;
@@ -13,7 +14,7 @@
 	let subject = '';
 	let message = '';
 	let hcaptchaLoaded = false;
-	let hcaptchaWidget;
+	let hcaptchaWidget: any;
 	let captchaToken = '';
 
 	// Load hCaptcha script
@@ -210,7 +211,7 @@
 <section class="right-section">
 	<Fluent.Button
 		style="width: 30%; float: right;"
-		onclick="window.location.href='https://dsc.gg/ivirius'"
+		on:click={() => window.location.href='https://dsc.gg/ivirius'}
 	>
 		Contact Us on Discord
 	</Fluent.Button>

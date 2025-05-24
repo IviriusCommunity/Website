@@ -1,6 +1,7 @@
 <script>
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
+	import { goto } from '$app/navigation';
 </script>
 
 <svelte:head>
@@ -52,7 +53,7 @@
 
 <section class="centered-section">
 	<h2>
-		<Fluent.Button variant="accent" onclick="window.location.href='/';">Home page</Fluent.Button>
+		<Fluent.Button variant="accent" on:click={() => goto('/')}>Home page</Fluent.Button>
 	</h2>
 </section>
 

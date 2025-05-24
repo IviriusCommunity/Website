@@ -2,6 +2,7 @@
 	//Imports
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
+	import { goto } from '$app/navigation';
 	//Variables
 	let open = true;
 </script>
@@ -36,20 +37,20 @@
 		<h2>
 			<Fluent.Button
 				variant="accent"
-				onclick="window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US';"
+				on:click={() => window.location.href='https://apps.microsoft.com/detail/9N4T9H9182J5?hl=en-US'}
 				>Download Ivirius Text Editor Plus</Fluent.Button
 			>
 			<Fluent.Button
 				variant="hyperlink"
-				onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US';"
+				on:click={() => window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US'}
 				>Download Ivirius Text Editor</Fluent.Button
 			>
 		</h2>
 	</section>
 
 	<h2 id="content">
-		<img alt="Ivirius Text Editor Plus Light" src="https://i.spoo.me/245847" />
-		<img alt="Ivirius Text Editor Plus Dark" src="https://i.spoo.me/185336" />
+		<img alt="Ivirius Text Editor Plus Light" src="https://i.spoo.me/245847"/>
+		<img alt="Ivirius Text Editor Plus Dark" src="https://i.spoo.me/185336"/>
 	</h2>
 </section>
 
@@ -75,13 +76,13 @@
 				>
 			</p>
 		</div>
-		<img src="https://i.spoo.me/599398" />
+		<img src="https://i.spoo.me/599398" alt="Easy table insertion" />
 	</h2>
 </section>
 
 <section class="margin-section">
 	<h2 id="content-right">
-		<img src="https://i.spoo.me/852738" />
+		<img src="https://i.spoo.me/852738" alt="Multi-page printing" />
 		<div>
 			<h1>
 				<Fluent.TextBlock variant="subtitle">Multi-page printing</Fluent.TextBlock>
@@ -127,17 +128,17 @@
 			<h3>
 				<Fluent.Button
 					variant="hyperlink"
-					onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button
+					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>
-		<img src="https://i.spoo.me/899402" />
+		<img src="https://i.spoo.me/899402" alt="Rebound 11 integration" />
 	</h2>
 </section>
 
 <section class="margin-section">
 	<h2 id="content-right">
-		<img src="https://i.spoo.me/370255" />
+		<img src="https://i.spoo.me/370255" alt="CrimsonUI" />
 		<div>
 			<h1>
 				<Fluent.TextBlock variant="subtitle">CrimsonUI</Fluent.TextBlock>
@@ -159,7 +160,7 @@
 			<h3>
 				<Fluent.Button
 					variant="hyperlink"
-					onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button
+					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>
@@ -184,11 +185,11 @@
 			<h3>
 				<Fluent.Button
 					variant="hyperlink"
-					onclick="window.location.href='/ivirius-text-editor-plus';">Learn more</Fluent.Button
+					on:click={() => goto('/ivirius-text-editor-plus')}>Learn more</Fluent.Button
 				>
 			</h3>
 		</div>
-		<img src="https://i.spoo.me/690832" />
+		<img src="https://i.spoo.me/690832" alt="Zippy with ChatGPT" />
 	</h2>
 </section>
 
@@ -293,13 +294,6 @@
 	}
 
 	@media (max-width: 1000px) {
-		#div {
-			max-width: 100%;
-			/* Set the maximum width of each image to 100% on smaller screens */
-			margin-bottom: 10px;
-			/* Keep the same bottom margin between images */
-		}
-
 		#content-right img {
 			max-width: 100%;
 			/* Set the maximum width of each image to 100% on smaller screens */

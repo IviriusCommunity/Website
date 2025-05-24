@@ -2,6 +2,7 @@
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
 	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
 
 	// Helper booleans for expander expansion
 	const isGeneral = [
@@ -28,9 +29,9 @@
 					<h2>
 						<Fluent.Expander expanded={isGeneral} class="newexpander">
 							General <div slot="content">
-								<Fluent.ListItem selected={$page.url.pathname === '/docs'} onclick="window.location.href='/docs';">Home</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/crimsonui'} onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/install-app-package-manually'} onclick="window.location.href='/docs/install-app-package-manually';">Install app package manually</Fluent.ListItem>
+								<Fluent.ListItem selected={$page.url.pathname === '/docs'} on:click={() => goto('/docs')}>Home</Fluent.ListItem>
+								<Fluent.ListItem selected={$page.url.pathname === '/crimsonui'} on:click={() => goto('/crimsonui')}>CrimsonUI</Fluent.ListItem>
+								<Fluent.ListItem selected={$page.url.pathname === '/docs/install-app-package-manually'} on:click={() => goto('/docs/install-app-package-manually')}>Install app package manually</Fluent.ListItem>
 							</div>
 						</Fluent.Expander>
 
@@ -52,7 +53,7 @@
 								<Fluent.ListItem disabled>Full customization sample</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
 								<Fluent.ListItem disabled>Acrylic Glass</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/windowdecorations'} onclick="window.location.href='/docs/windowdecorations';">WindowDecorations</Fluent.ListItem>
+								<Fluent.ListItem selected={$page.url.pathname === '/docs/windowdecorations'} on:click={() => goto('/docs/windowdecorations')}>WindowDecorations</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Converters</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Helpers</Fluent.ListItem>
 								<Fluent.ListItem disabled>Uncontained app</Fluent.ListItem>
@@ -72,7 +73,7 @@
 								<Fluent.ListItem disabled>Control Panel</Fluent.ListItem>
 								<Fluent.ListItem disabled>Run</Fluent.ListItem>
 								<Fluent.ListItem disabled>Disk Cleanup</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/rebound11/defragment-and-optimize-drives'} onclick="window.location.href='/docs/rebound11/defragment-and-optimize-drives/';">Defragment and Optimize Drives</Fluent.ListItem>
+								<Fluent.ListItem selected={$page.url.pathname === '/docs/rebound11/defragment-and-optimize-drives'} on:click={() => goto('/docs/rebound11/defragment-and-optimize-drives')}>Defragment and Optimize Drives</Fluent.ListItem>
 								<Fluent.ListItem disabled>TPM Manager</Fluent.ListItem>
 								<Fluent.ListItem disabled>Rebound Hub</Fluent.ListItem>
 							</div>
