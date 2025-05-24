@@ -24,10 +24,14 @@
 			<h1 class="header-title">Rebound v0.0.6</h1>
 			<p class="header-subtitle">The best of Rebound in a brand new release.</p>
 			<div class="header-buttons">
-				<Fluent.Button variant="accent">Download</Fluent.Button>
+				<Fluent.Button
+					variant="accent"
+					onClick="window.location.href='https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe'"
+					>Download</Fluent.Button
+				>
 				<Fluent.Button
 					variant="hyperlink"
-					onclick="window.location.href='./docs/rebound/release-notes';">Read more</Fluent.Button
+					onclick="window.location.href='./docs/rebound/release-notes'">Read more</Fluent.Button
 				>
 			</div>
 		</div>
@@ -36,7 +40,7 @@
 		<div class="header-right">
 			<img
 				src="./Rebound-v0.0.6-Beta.png"
-				alt="Main Image"
+				alt="Reboud Hero Demo Visual"
 				class="header-image"
 				loading="lazy"
 				width="1200"
@@ -54,7 +58,7 @@
 
 <div class="cards-container">
 	<div class="card">
-		<img src="./homepageheader.png" alt="Card Image" class="card-image" />
+		<img src="./homepageheader.png" alt="Ivirius Text Editor preview" class="card-image" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Ivirius Text Editor</h2>
@@ -65,14 +69,18 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent">Download</Fluent.Button>
+				<Fluent.Button
+					variant="accent"
+					onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US'"
+					>Download</Fluent.Button
+				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
 	</div>
 
 	<div class="card">
-		<img src="./homepageheader.png" alt="Card Image" class="card-image" />
+		<img src="./homepageheader.png" alt="Ivirius Text Editor Plus preview" class="card-image" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Ivirius Text Editor Plus</h2>
@@ -83,14 +91,18 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent">Buy for $1.09</Fluent.Button>
+				<Fluent.Button
+					variant="accent"
+					onclick="window.location.href='https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US'"
+					>Buy for $1.09</Fluent.Button
+				>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
 	</div>
 
 	<div class="card">
-		<img src="./homepageheader.png" alt="Card Image" class="card-image" />
+		<img src="./homepageheader.png" alt="Rebound 11 preview" class="card-image" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Rebound</h2>
@@ -102,15 +114,19 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent" disabled>Download</Fluent.Button>
-				<Fluent.Button>Contribute</Fluent.Button>
+				<Fluent.Button
+					variant="accent"
+					onclick="window.location.href='https://github.com/IviriusCommunity/Rebound/releases/download/v0.0.6-Beta/Rebound.Hub.Installer.exe'"
+					disabled={false}>Download</Fluent.Button
+				>
+				<Fluent.Button onClick="window.location.href='https://github.com/IviriusCommunity/Rebound'">Contribute</Fluent.Button>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
 	</div>
 
 	<div class="card">
-		<img src="./homepageheader.png" alt="Card Image" class="card-image" />
+		<img src="./homepageheader.png" alt="NuGet Gallery Preview" class="card-image" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">CubeKit</h2>
@@ -120,14 +136,14 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent">NuGet Gallery</Fluent.Button>
+				<Fluent.Button variant="accent" onClick="window.location.href='https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/'">NuGet Gallery</Fluent.Button>
 				<Fluent.Button variant="hyperlink">Learn more</Fluent.Button>
 			</div>
 		</div>
 	</div>
 
 	<div class="card">
-		<img src="./homepageheader.png" alt="Card Image" class="card-image" />
+		<img src="./homepageheader.png" alt="Discord Server Card" class="card-image" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Discord Server</h2>
@@ -137,7 +153,9 @@
 				</p>
 			</div>
 			<div class="card-footer">
-				<Fluent.Button variant="accent">Join</Fluent.Button>
+				<Fluent.Button variant="accent" onclick="window.location.href='https://dsc.gg/ivirius'"
+					>Join</Fluent.Button
+				>
 				<Fluent.Flyout>
 					<Fluent.Button variant="hyperlink">Affiliated servers</Fluent.Button>
 					<svelte:fragment slot="flyout">

@@ -32,9 +32,16 @@
 				<div>
 					<h3>Social Links</h3>
 					<p>
-						<a href="https://dsc.gg/ivirius">Discord</a> | <a href="https://www.youtube.com/@ivirius-official">YouTube</a> |
+						<a href="https://dsc.gg/ivirius">Discord</a> |
+						<a href="https://www.youtube.com/@ivirius-official">YouTube</a>
+						|
 						<a href="https://x.com/IviriusOfficial">Twitter / x</a>
-						| <a href="https://bsky.app/profile/ivirius-official.bsky.social">BlueSky</a> | <a href="https://blank.org/">WhatsApp</a> |
+						| <a href="https://bsky.app/profile/ivirius-official.bsky.social">BlueSky</a> |
+						<a
+							href="https://whatsapp.com/channel/0029VaHfWsBJ93wPmDfZKy1X
+">WhatsApp</a
+						>
+						|
 						<a href="https://www.instagram.com/ivirius.software/">Instagram</a>
 						| <a href="https://github.com/IviriusCommunity">GitHub</a>
 					</p>
