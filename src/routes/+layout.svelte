@@ -81,22 +81,25 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='https://apps.microsoft.com/detail/9mv281zzf51p?hl=en-US&gl=US'"
 								>Ivirius Text Editor</Fluent.Button
 							>
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='https://apps.microsoft.com/detail/9n4t9h9182j5?hl=en-US&gl=US'"
 								>Ivirius Text Editor Plus</Fluent.Button
 							>
 							<Fluent.Button
 								variant="hyperlink"
-								onclick="window.location.href='./rebound';"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='./rebound';"
 								>Rebound</Fluent.Button
 							>
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='https://www.nuget.org/packages/Riverside.Toolkit.WinUI.Controls.Primitives/'"
 								>CubeKit</Fluent.Button
 							>
 						</div>
@@ -113,6 +116,7 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='./docs'"
 								>Docs</Fluent.Button
 							>
 							<Fluent.Button
@@ -123,6 +127,7 @@
 							<Fluent.Button
 								variant="hyperlink"
 								style="display: flex; flex-direction: column; align-items: flex-start; color: var(--fds-text-primary);"
+								onclick="window.location.href='https://dsc.gg/ivirius'"
 								>Discord Server</Fluent.Button
 							>
 						</div>
