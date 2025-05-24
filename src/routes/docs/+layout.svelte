@@ -7,7 +7,6 @@
 	// Helper booleans for expander expansion
 	const isGeneral = [
 		'/docs',
-		'/crimsonui',
 		'/docs/install-app-package-manually'
 	].includes($page.url.pathname);
 
@@ -30,7 +29,6 @@
 						<Fluent.Expander expanded={isGeneral} class="newexpander">
 							General <div slot="content">
 								<Fluent.ListItem selected={$page.url.pathname === '/docs'} on:click={() => goto('/docs')}>Home</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/crimsonui'} on:click={() => goto('/crimsonui')}>CrimsonUI</Fluent.ListItem>
 								<Fluent.ListItem selected={$page.url.pathname === '/docs/install-app-package-manually'} on:click={() => goto('/docs/install-app-package-manually')}>Install app package manually</Fluent.ListItem>
 							</div>
 						</Fluent.Expander>
@@ -53,7 +51,7 @@
 								<Fluent.ListItem disabled>Full customization sample</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
 								<Fluent.ListItem disabled>Acrylic Glass</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/windowdecorations'} on:click={() => goto('/docs/windowdecorations')}>WindowDecorations</Fluent.ListItem>
+								<Fluent.ListItem disabled>WindowDecorations</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Converters</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Helpers</Fluent.ListItem>
 								<Fluent.ListItem disabled>Uncontained app</Fluent.ListItem>
@@ -70,12 +68,6 @@
 
 						<Fluent.Expander expanded={isRebound11}>
 							Rebound 11 <div slot="content">
-								<Fluent.ListItem disabled>Control Panel</Fluent.ListItem>
-								<Fluent.ListItem disabled>Run</Fluent.ListItem>
-								<Fluent.ListItem disabled>Disk Cleanup</Fluent.ListItem>
-								<Fluent.ListItem selected={$page.url.pathname === '/docs/rebound11/defragment-and-optimize-drives'} on:click={() => goto('/docs/rebound11/defragment-and-optimize-drives')}>Defragment and Optimize Drives</Fluent.ListItem>
-								<Fluent.ListItem disabled>TPM Manager</Fluent.ListItem>
-								<Fluent.ListItem disabled>Rebound Hub</Fluent.ListItem>
 							</div>
 						</Fluent.Expander>
 					</h2>

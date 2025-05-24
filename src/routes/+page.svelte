@@ -81,7 +81,7 @@
 	</div>
 
 	<div class="card">
-		<img src="./homepageheader.png" alt="Ivirius Text Editor Plus preview" class="card-image" />
+		<img src="./ivrPlusPreviewCard.png" alt="Ivirius Text Editor Plus preview" class="card-image cover" />
 		<div class="card-content">
 			<div>
 				<h2 class="card-title">Ivirius Text Editor Plus</h2>
