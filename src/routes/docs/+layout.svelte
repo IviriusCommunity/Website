@@ -2,6 +2,21 @@
 	import * as Fluent from 'fluent-svelte';
 	import 'fluent-svelte/theme.css';
 	import { page } from '$app/stores';
+
+	// Helper booleans for expander expansion
+	const isGeneral = [
+		'/docs',
+		'/crimsonui',
+		'/docs/install-app-package-manually'
+	].includes($page.url.pathname);
+
+	const isUWP = [
+		'/docs/windowdecorations'
+	].includes($page.url.pathname);
+
+	const isRebound11 = [
+		'/docs/rebound11/defragment-and-optimize-drives'
+	].includes($page.url.pathname);
 </script>
 
 <div class="app">
@@ -11,7 +26,7 @@
 				<div class="panel">
 					<!-- Panel content -->
 					<h2>
-						<Fluent.Expander expanded class="newexpander">
+						<Fluent.Expander expanded={isGeneral} class="newexpander">
 							General <div slot="content">
 								<Fluent.ListItem selected={$page.url.pathname === '/docs'} onclick="window.location.href='/docs';">Home</Fluent.ListItem>
 								<Fluent.ListItem selected={$page.url.pathname === '/crimsonui'} onclick="window.location.href='/crimsonui';">CrimsonUI</Fluent.ListItem>
@@ -19,7 +34,7 @@
 							</div>
 						</Fluent.Expander>
 
-						<Fluent.Expander>
+						<Fluent.Expander expanded={false}>
 							WinUI 3 <div slot="content">
 								<Fluent.ListItem disabled>Full customization sample</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
@@ -32,7 +47,7 @@
 							</div>
 						</Fluent.Expander>
 
-						<Fluent.Expander>
+						<Fluent.Expander expanded={isUWP}>
 							UWP <div slot="content">
 								<Fluent.ListItem disabled>Full customization sample</Fluent.ListItem>
 								<Fluent.ListItem disabled>Ivirius.Windowing API</Fluent.ListItem>
@@ -52,7 +67,7 @@
 							</div>
 						</Fluent.Expander>
 
-						<Fluent.Expander>
+						<Fluent.Expander expanded={isRebound11}>
 							Rebound 11 <div slot="content">
 								<Fluent.ListItem disabled>Control Panel</Fluent.ListItem>
 								<Fluent.ListItem disabled>Run</Fluent.ListItem>
